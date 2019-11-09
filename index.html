@@ -1,72 +1,83 @@
-<Doctype html>
+<!Doctype html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
-        <title>Mishka</title>
+      <meta charset="utf-8">
+      <title>Mishka</title>
     </head>
     <body>
         <header class="header">
-          <a><img src="#" alt="#"></img></a>
-          <button></button>
+          <a class="header_logo">
+            <img src="#" alt="#"/>
+          </a>
+          <button class="header_button"></button>
         </header>
         <main>
           <section class="intro">
-            <p>Милые штучки ручной работы для дома</p>
-            <ul>
-              <li>
-                <a href="catalog.html">Предметы интерьера</a>
+            <h1 class="visually-hidden">Mishka</h1>
+            <p class="intro_text">Милые штучки ручной работы для дома</p>
+          </section>
+          <section class="product">
+            <h2 class="visually-hidden">Товары</h2>
+            <ul class="product_list reset_list">
+              <li class="product_item">
+                <a class="product_link" href="catalog.html">Предметы интерьера</a>
               </li>
-              <li>
-                <a href="catalog.html">Детские игрушки</a>
+              <li class="product_item">
+                <a class="product_link" href="catalog.html">Детские игрушки</a>
               </li>
             </ul>
-          </section>
-          <section class="products">
-            <h2>Вязаные корзинки</h2>
-            <h3>Товар недели</h3>
-            <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и размерах.</p>
-            <table>
-              <tr>
-                <td>Цвет:</td>
-                <td>&#171;Тифанни	&#187;&#47;серый</td>
+            <h2 class="product_title">Вязаные корзинки</h2>
+            <h3 class="product_subtitile">Товар недели</h3>
+            <p class="product_decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и размерах.</p>
+            <table class="product_characteristic">
+              <tr class="product_characteristic_row characteristic_color">
+                <td class="characteristic_row_color">Цвет:</td>
+                <td class="characterisic_row_description color_description">&#171;Тифанни	&#187;&#47;серый</td>
               </tr>
-              <tr>
-                <td>Диаметр:</td>
-                <td>25см</td>
+              <tr class="product_characteristic_row characteristic_diameter">
+                <td class="characteristic_row_diameter">Диаметр:</td>
+                <td class="characterisic_row_description diameter_description">25см</td>
               </tr>
-              <tr>
-                <td>Высота:</td>
-                <td>15см</td>
+              <tr class="product_characteristic_row characteristic-height">
+                <td class="characteristic_row_height">Высота:</td>
+                <td class="characteristic_row_description height_description">15см</td>
               </tr>
             </table>
-            <figure>
-              <img src="#" alt="#">
-              <figcaption>
+            <figure class="product_wrapper">
+              <img class="product_image" src="#" alt="#">
+              <figcaption class="product_price">
                 Цена: 990 руб.
               </figcaption>
             </figure>
-            <button>Заказать</button>
+            <button class="products-button">Заказать</button>
           </section>
-          <section class="about-us">
-            <h2>Коротко о нас:</h2>
-            <ul>
-              <li>Экологически чистые материалы</li>
-              <li>Скандинавский стиль по российской цене</li>
-              <li>Увеличивает лайки на фотографиях</li>
-              <li>Связано в ручную с любовью и умилением</li>
-              <li>Поддержка отечественного производителя</li>
-              <li>Поставляется в подарочной упаковке</li>
+          <section class="about_us">
+            <h2 class="about_us_title">Коротко о нас:</h2>
+            <ul class="about_us_list reset_list">
+              <li class="about_us_item item-eco">Экологически чистые материалы</li>
+              <li class="about_us_item item-saving">Скандинавский стиль по российской цене</li>
+              <li class="about_us_item item-like">Увеличивает лайки на фотографиях</li>
+              <li class="about_us_item item-knitting">Связано в ручную с любовью и умилением</li>
+              <li class="about_us_item item-patriotism">Поддержка отечественного производителя</li>
+              <li class="about_us_item item-present">Поставляется в подарочной упаковке</li>
             </ul>
           </section>
         </main>
         <footer class="footer">
-          <ul>
-            <li><a href="#">Инстаграм</a></li>
-            <li><a href="#">Фэйсбук</a></li>
-            <li><a href="#">Твиттер</a></li>
+          <ul class="footer_list social_list">
+            <li class="social_item">
+              <a class="social_link instagram_link" href="#">Инстаграм</a>
+            </li>
+            <li class="social_item">
+              <a class="social_link facebook_link" href="#">Фэйсбук</a>
+            </li>
+            <li class="social_item">
+              <a class="social_link twitter_link" href="#">Твиттер</a></li>
           </ul>
-          <p>Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive"><img src="#"/></a>
+          <p class="footer_copyright">Разработано</p>
+          <a class="footer_copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="#" alt="#"/>
+          </a>
         </footer>
     </body>
 </html>
