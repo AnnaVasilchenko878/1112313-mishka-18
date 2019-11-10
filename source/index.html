@@ -1,12 +1,108 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Mishka</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <a class="header__logo">
+      <img class="logo__image" src="#" alt="#">
+    </a>
+    <button class="header__button" type="button" aria-label="Меню сайта"></button>
+    <nav class="header__navigaton_menu">
+      <ul class="navigation-menu__navigation-list reset-list">
+        <li class="navigation-list__navigation-item">
+          <a class="navigation-item__link">Каталог товаров</a>
+        </li>
+        <li class="navigation-list__navigation-item">
+          <a class="navigation-item__link">Вязание на заказ</a>
+        </li>
+        <li class="navigation-list__navigation-item">
+          <button class="navigation-item__button button-search" type="button" aria-label="Поиск по сайту"></button>
+          <a class="navigation-item__link">Поиск по сайту</a>
+        </li>
+        <li class="navigation-list__navigation_item">
+          <button class="navigation-item__button button-basket" type="button" aria-label="Корзина"></button>
+          <a class="navigation-item__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h1 class="visually-hidden">Mishka</h1>
+      <p class="intro__text">Милые штучки ручной работы для дома</p>
+    </section>
+    <section class="products">
+      <h2 class="visually-hidden">Товары</h2>
+      <ul class="products__list reset-list">
+        <li class="products-list__item">
+          <a class="products-item__link" href="catalog.html">Предметы интерьера</a>
+        </li>
+        <li class="products-list__item">
+          <a class="products-item__link" href="catalog.html">Детские игрушки</a>
+        </li>
+      </ul>
+    </section>
+    <section class="top-week-product">
+      <h2 class="top-week-product__title">Вязаные корзинки</h2>
+      <h3 class="top-week-product__subtitile">Товар недели</h3>
+      <p class="top-week-productt__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и размерах.
+      </p>
+      <table class="top-week-product__details">
+        <tr class="top-week-product-details__row details_color">
+          <td class="details-row__color">Цвет:</td>
+          <td class="details-row__description color-description">&#171;Тифанни&#187;&#47;серый</td>
+        </tr>
+        <tr class="top-week-productt-details__row details-diameter">
+          <td class="details-row__diameter">Диаметр:</td>
+          <td class="details-row__description diameter-description">25см</td>
+        </tr>
+        <tr class="top-week-product-details__row details-height">
+          <td class="details-row__height">Высота:</td>
+          <td class="details-row__description height-description">15см</td>
+        </tr>
+      </table>
+        <img class="top-week-product__image" src="#" alt="#">
+        <p class="top-week-product__price">Цена: 990 руб.</p>
+      <button class="products__button" type="button">Заказать</button>
+    </section>
+    <section class="about-us">
+      <h2 class="about-us__title">Коротко о нас:</h2>
+      <ul class="about-us__list reset-list">
+        <li class="about-us-list__item item-eco">Экологически чистые материалы</li>
+        <li class="about-us-list__item item-saving">Скандинавский стиль по российской цене</li>
+        <li class="about-us-list__item item-like">Увеличивает лайки на фотографиях</li>
+        <li class="about-us-list__item item-knitting">Связано в ручную с любовью и умилением</li>
+        <li class="about-us-list__item item-patriotism">Поддержка отечественного производителя</li>
+        <li class="about-us-list__item item-present">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__social">
+      <ul class="footer__social-list reset-list">
+        <li class="social-list__social-item">
+          <a class="social-item__social-link instagram-link" href="#"
+            aria-label="Переход на Мишку в Инстаграм">Инстаграм</a>
+        </li>
+        <li class="social-list__social-item">
+          <a class="social-item__social-link facebook-link" href="#" aria-label="Переход на Мишку в Фэйсбук">Фэйсбук</a>
+        </li>
+        <li class="social-list__social_item">
+          <a class="social-item__social_link twitter_link" href="#" aria-label="Переход на Мишку в Твиттер">Твиттер</a>
+        </li>
+      </ul>
+    </section>
+    <p class="footer__copyright">Разработано
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__image" src="#" alt="#">
+      </a>
+    </p>
+  </footer>
+</body>
+
 </html>
