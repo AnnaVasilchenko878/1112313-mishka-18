@@ -6,26 +6,46 @@
   </head>
   <body>
     <header class="header">
-      <a class="header_logo" href="index.html">
-        <img src="#" alt="#">
+      <a class="header__logo">
+        <img class="logo__image" src="#" alt="#"/>
       </a>
-      <button class="header_buttom"></button>
+      <button class="header__button"></button>
+      <nav class="header__navigaton_menu">
+        <ul class="navigation_menu__navigation_list reset_list">
+          <li class="navigation_list__navigation_item">
+            <a class="navigation_item__link">Каталог товаров</a>
+          </li>
+          <li class="navigation_list__navigation_item">
+            <a class="navigation_item__link">Вязание на заказ</a>
+          </li>
+          <li class="navigation_list__navigation_item">
+            <button class="navigation_item__button button_search"></button>
+            <a class="navigation_item__link">Поиск по сайту</a>
+          </li>
+          <li class="navigation_list__navigation_item">
+            <button class="navigation_item__button button_basket"></button>
+            <a class="navigation_item__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <footer class="footer">
-      <ul class="footer_list social_list">
-        <li class="social_item">
-          <a class="social_link instagram_link" href="#">Инстаграм</a>
+      <ul class="footer__social_list reset_list">
+        <li class="social_list__social_item">
+          <a class="social_item__social_link instagram_link" href="#">Инстаграм</a>
         </li>
-        <li class="social_item">
-          <a class="social_link facebook_link" href="#">Фэйсбук</a>
+        <li class="social_list__social_item">
+          <a class="social_item__social_link facebook_link" href="#">Фэйсбук</a>
         </li>
-        <li class="social_item">
-          <a class="social_link twitter_link" href="#">Твиттер</a></li>
+        <li class="social_list__social_item">
+          <a class="social_item__social_link twitter_link" href="#">Твиттер</a>
+        </li>
       </ul>
-      <p class="footer_copyright">Разработано</p>
-      <a class="footer_copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="#" alt="#"/>
-      </a>
-     </footer>
+      <p class="footer__copyright">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="#" alt="#"/>
+        </a>
+      </p>
+    </footer>
     </body>
 </html>

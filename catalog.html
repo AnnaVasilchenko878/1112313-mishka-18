@@ -6,58 +6,80 @@
   </head>
   <body>
     <header class="header">
-      <a class="header_logo" href="index.html"><img src="#" alt="#"></a>
-      <button class="header_buttom"></button>
+      <a class="header__logo">
+        <img class="logo__image" src="#" alt="#"/>
+      </a>
+      <button class="header__button"></button>
+      <nav class="header__navigaton_menu">
+        <ul class="navigation_menu__navigation_list reset_list">
+          <li class="navigation_list__navigation_item">
+            <a class="navigation_item__link">Каталог товаров</a>
+          </li>
+          <li class="navigation_list__navigation_item">
+            <a class="navigation_item__link">Вязание на заказ</a>
+          </li>
+          <li class="navigation_list__navigation_item">
+            <button class="navigation_item__button button_search"></button>
+            <a class="navigation_item__link">Поиск по сайту</a>
+          </li>
+          <li class="navigation_list__navigation_item">
+            <button class="navigation_item__button button_basket"></button>
+            <a class="navigation_item__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="products">
         <h2 class="visually-hidden">Наша продукция</h2>
-        <ul class="products-list reset-list">
-          <li class="products_item">
-            <a class="products_link_image image_bunny" href="#">
-              <img src="#" alt="#"/>
+        <ul class="products__list reset-list">
+          <li class="products_list__item">
+            <a class="products_item__image_link" href="#">
+              <img class="link__image_bunny" src="#" alt="#"/>
             </a>
-            <a class="products_link" href="#">Зайчик-попрыгайчик</a>
-            <p class="products_descriprion">Рост 30 см, вес 200г</p>
-            <p class="products_price">1200 руб.</p>
-            <button class="products-button"></button>
+            <a class="products_item__link_name" href="#">Зайчик-попрыгайчик</a>
+            <p class="products_item__descriprion">Рост 30 см, вес 200г</p>
+            <p class="products_item__price">1200 руб.</p>
+            <button class="products_item__button_basket"></button>
           </li>
-          <li class="products_item">
-            <a class="products_link_image image_basket" href="#">
-              <img src="#" alt="#"/>
+          <li class="products_list__item">
+            <a class="products_item__image_link" href="#">
+              <img class="link__image_basket"src="#" alt="#"/>
             </a>
-            <a class="products_link" href="#">Корзина для белья</a>
-            <p class="products_descriprion">Диаметр 15см, высота 10см</p>
-            <p class="products_price">690 руб.</p>
-            <button class="products-button"></button>
+            <a class="products_item__link_name" href="#">Корзина для белья</a>
+            <p class="products_item__descriprion">Диаметр 15см, высота 10см</p>
+            <p class="products_item__price">690 руб.</p>
+            <button class="products_item__button_basket"></button>
           </li>
-          <li class="products_item">
-            <a class="products_link_image image_basket" href="#">
-              <img src="#" alt="#"/>
+          <li class="products_list__item">
+            <a class="products_item__image_link" href="#">
+              <img class="link__image_basket"src="#" alt="#"/>
             </a>
-            <a class="products_link" href="#">Большая корзина для игрушек</a>
-            <p class="products_descriprion">Диаметр 30см, высота 30см</p>
-            <p class="products_price">1500 руб.</p>
-            <button class="products-button"></button>
+            <a class="products_item__link_name" href="#">Большая корзина для игрушек</a>
+            <p class="products_item__descriprion">Диаметр 30см, высота 30см</p>
+            <p class="products_item__price">1500 руб.</p>
+            <button class="products_item__button_basket"></button>
           </li>
         </ul>
         </section>
     </main>
     <footer class="footer">
-      <ul class="footer_list social_list">
-        <li class="social_item">
-          <a class="social_link instagram_link" href="#">Инстаграм</a>
+      <ul class="footer__social_list reset_list">
+        <li class="social_list__social_item">
+          <a class="social_item__social_link instagram_link" href="#">Инстаграм</a>
         </li>
-        <li class="social_item">
-          <a class="social_link facebook_link" href="#">Фэйсбук</a>
+        <li class="social_list__social_item">
+          <a class="social_item__social_link facebook_link" href="#">Фэйсбук</a>
         </li>
-        <li class="social_item">
-          <a class="social_link twitter_link" href="#">Твиттер</a></li>
+        <li class="social_list__social_item">
+          <a class="social_item__social_link twitter_link" href="#">Твиттер</a>
+        </li>
       </ul>
-      <p class="footer_copyright">Разработано</p>
-      <a class="footer_copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="#" alt="#"/>
-      </a>
+      <p class="footer__copyright">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="#" alt="#"/>
+        </a>
+      </p>
     </footer>
     </body>
 </html>

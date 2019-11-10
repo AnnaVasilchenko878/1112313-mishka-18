@@ -6,25 +6,25 @@
     </head>
     <body>
         <header class="header">
-          <a class="header_logo">
-            <img src="#" alt="#"/>
+          <a class="header__logo">
+            <img class="logo__image" src="#" alt="#"/>
           </a>
-          <button class="header_button"></button>
-          <nav class="header_navigaton_menu">
-            <ul class="navigation_list reset_list">
-              <li class="navigation_item">
-                <a class="navigation_link">Каталог товаров</a>
+          <button class="header__button"></button>
+          <nav class="header__navigaton_menu">
+            <ul class="navigation_menu__navigation_list reset_list">
+              <li class="navigation_list__navigation_item">
+                <a class="navigation_item__link">Каталог товаров</a>
               </li>
-              <li class="navigation_item">
-                <a class="navigation_link">Вязание на заказ</a>
+              <li class="navigation_list__navigation_item">
+                <a class="navigation_item__link">Вязание на заказ</a>
               </li>
-              <li class="navigation_item">
-                <button></button>
-                <a class="navigation_link">Поиск по сайту</a>
+              <li class="navigation_list__navigation_item">
+                <button class="navigation_item__button button_search"></button>
+                <a class="navigation_item__link">Поиск по сайту</a>
               </li>
-              <li class="navigation_item">
-                <button></button>
-                <a class="navigation_link">Корзина: пока пуста</a>
+              <li class="navigation_list__navigation_item">
+                <button class="navigation_item__button button_basket"></button>
+                <a class="navigation_item__link">Корзина: пока пуста</a>
               </li>
             </ul>
           </nav>
@@ -32,70 +32,72 @@
         <main>
           <section class="intro">
             <h1 class="visually-hidden">Mishka</h1>
-            <p class="intro_text">Милые штучки ручной работы для дома</p>
+            <p class="intro__text">Милые штучки ручной работы для дома</p>
           </section>
           <section class="product">
             <h2 class="visually-hidden">Товары</h2>
-            <ul class="product_list reset_list">
-              <li class="product_item">
-                <a class="product_link" href="catalog.html">Предметы интерьера</a>
+            <ul class="product__list reset_list">
+              <li class="product_list__item">
+                <a class="product_item__link" href="catalog.html">Предметы интерьера</a>
               </li>
-              <li class="product_item">
-                <a class="product_link" href="catalog.html">Детские игрушки</a>
+              <li class="product_list__item">
+                <a class="product_item__link" href="catalog.html">Детские игрушки</a>
               </li>
             </ul>
-            <h2 class="product_title">Вязаные корзинки</h2>
-            <h3 class="product_subtitile">Товар недели</h3>
-            <p class="product_decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и размерах.</p>
-            <table class="product_characteristic">
-              <tr class="product_characteristic_row characteristic_color">
-                <td class="characteristic_row_color">Цвет:</td>
-                <td class="characterisic_row_description color_description">&#171;Тифанни	&#187;&#47;серый</td>
+            <h2 class="product__title">Вязаные корзинки</h2>
+            <h3 class="product__subtitile">Товар недели</h3>
+            <p class="product__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и размерах.</p>
+            <table class="product__characteristic">
+              <tr class="product_characteristic__row characteristic_color">
+                <td class="characteristic_row__color">Цвет:</td>
+                <td class="characterisic_row__description color_description">&#171;Тифанни	&#187;&#47;серый</td>
               </tr>
-              <tr class="product_characteristic_row characteristic_diameter">
-                <td class="characteristic_row_diameter">Диаметр:</td>
-                <td class="characterisic_row_description diameter_description">25см</td>
+              <tr class="product_characteristic__row characteristic_diameter">
+                <td class="characteristic_row__diameter">Диаметр:</td>
+                <td class="characterisic_row__description diameter_description">25см</td>
               </tr>
-              <tr class="product_characteristic_row characteristic-height">
-                <td class="characteristic_row_height">Высота:</td>
-                <td class="characteristic_row_description height_description">15см</td>
+              <tr class="product_characteristic__row characteristic-height">
+                <td class="characteristic_row__height">Высота:</td>
+                <td class="characteristic_row__description height_description">15см</td>
               </tr>
             </table>
-            <figure class="product_wrapper">
-              <img class="product_image" src="#" alt="#">
-              <figcaption class="product_price">
+            <figure class="product__gallery">
+              <img class="gallry__image" src="#" alt="#">
+              <figcaption class="gallery_price">
                 Цена: 990 руб.
               </figcaption>
             </figure>
-            <button class="products-button">Заказать</button>
+            <button class="products__button">Заказать</button>
           </section>
           <section class="about_us">
-            <h2 class="about_us_title">Коротко о нас:</h2>
-            <ul class="about_us_list reset_list">
-              <li class="about_us_item item-eco">Экологически чистые материалы</li>
-              <li class="about_us_item item-saving">Скандинавский стиль по российской цене</li>
-              <li class="about_us_item item-like">Увеличивает лайки на фотографиях</li>
-              <li class="about_us_item item-knitting">Связано в ручную с любовью и умилением</li>
-              <li class="about_us_item item-patriotism">Поддержка отечественного производителя</li>
-              <li class="about_us_item item-present">Поставляется в подарочной упаковке</li>
+            <h2 class="about_us__title">Коротко о нас:</h2>
+            <ul class="about_us__list reset_list">
+              <li class="about_us_list__item item-eco">Экологически чистые материалы</li>
+              <li class="about_us_list__item item-saving">Скандинавский стиль по российской цене</li>
+              <li class="about_us_list__item item-like">Увеличивает лайки на фотографиях</li>
+              <li class="about_us_list__item item-knitting">Связано в ручную с любовью и умилением</li>
+              <li class="about_us_list__item item-patriotism">Поддержка отечественного производителя</li>
+              <li class="about_us_list__item item-present">Поставляется в подарочной упаковке</li>
             </ul>
           </section>
         </main>
         <footer class="footer">
-          <ul class="footer_list social_list">
-            <li class="social_item">
-              <a class="social_link instagram_link" href="#">Инстаграм</a>
+          <ul class="footer__social_list reset_list">
+            <li class="social_list__social_item">
+              <a class="social_item__social_link instagram_link" href="#">Инстаграм</a>
             </li>
-            <li class="social_item">
-              <a class="social_link facebook_link" href="#">Фэйсбук</a>
+            <li class="social_list__social_item">
+              <a class="social_item__social_link facebook_link" href="#">Фэйсбук</a>
             </li>
-            <li class="social_item">
-              <a class="social_link twitter_link" href="#">Твиттер</a></li>
+            <li class="social_list__social_item">
+              <a class="social_item__social_link twitter_link" href="#">Твиттер</a>
+            </li>
           </ul>
-          <p class="footer_copyright">Разработано</p>
-          <a class="footer_copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="#" alt="#"/>
-          </a>
+          <p class="footer__copyright">Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__image" src="#" alt="#"/>
+            </a>
+          </p>
         </footer>
     </body>
 </html>
