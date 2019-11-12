@@ -5,26 +5,26 @@
   <title>Mishka</title>
 </head>
 <body>
-  <header class="header">
-    <a class="header__logo">
-      <img class="logo__image" src="#" alt="#">
+  <header class="header header__toggle">
+    <a class="header__logo-link">
+      <img class="header__logo-image" src="#" alt="#">
     </a>
-    <button class="header__button" type="button" aria-label="Меню сайта"></button>
-    <nav class="header__navigaton-menu">
-      <ul class="navigation-menu__navigation-list reset-list">
-        <li class="navigation-list__navigation-item">
-          <a class="navigation-item__link">Каталог товаров</a>
+    <button class="header__button header__button--menu-site" type="button" aria-label="Меню сайта"></button>
+    <nav class="header__navigaton-menu site-nav">
+      <ul class="site-nav__list reset-list">
+        <li class="site-nav__item">
+          <a class="site-nav__link">Каталог товаров</a>
         </li>
-        <li class="navigation-list__navigation-item">
-          <a class="navigation-item__link">Вязание на заказ</a>
-        </li>пше
-        <li class="navigation-list__navigation-item">
-          <button class="navigation-item__button button-search" type="button" aria-label="Поиск по сайту"></button>
-          <a class="navigation-item__link">Поиск по сайту</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link">Вязание на заказ</a>
         </li>
-        <li class="navigation-list__navigation_item">
-          <button class="navigation-item__button button-basket" type="button" aria-label="Корзина"></button>
-          <a class="navigation-item__link">Корзина: пока пуста</a>
+        <li class="site-nav__item">
+          <button class="site-nav__button site-nav__button--search" type="button" aria-label="Поиск по сайту"></button>
+          <a class="site-nav__link">Поиск по сайту</a>
+        </li>
+        <li class="site-nav__item">
+          <button class="site-nav__button site-nav__button--basket" type="button" aria-label="Корзина"></button>
+          <a class="site-nav__link">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -32,70 +32,68 @@
   <main>
     <section class="intro">
       <!-- Исправить название секции после получения новых данных-->
-      <h1 class="visually-hidden">Mishka</h1>
-      <!-- Анализировать перспективу заголовка первого уровня -->
-      <p class="intro__text">Милые штучки ручной работы для дома</p>
+      <h1 class="intro__title">Милые штучки ручной работы для дома</h1>
     </section>
+
     <section class="products">
       <h2 class="visually-hidden">Товары</h2>
-      <ul class="products__list reset_list">
-        <li class="products__item">
-          <a class="products__link" href="catalog.html">Предметы интерьера</a>
+      <ul class="products__menu catalog-menu reset_list">
+        <li class="catalog-menu__item">
+          <a class="catalog-menu__link" href="catalog.html">Предметы интерьера</a>
         </li>
-        <li class="products__item">
-          <a class="products__link" href="catalog.html">Детские игрушки</a>
+        <li class="catalog-menu__item">
+          <a class="catalog-menu__link" href="catalog.html">Детские игрушки</a>
         </li>
       </ul>
     </section>
+
     <section class="top-week-product">
       <h2 class="top-week-product__title">Вязаные корзинки</h2>
       <h3 class="top-week-product__subtitile">Товар недели</h3>
-      <p class="top-week-product__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
-        размерах.
+      <p class="top-week-product__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и размерах.
       </p>
       <table class="top-week-product__detais">
-        <tr class="top-week-product__detais-row">
+        <tr class="top-week-product-details__details-row">
           <td class="detais-row__name">Цвет:</td>
           <td class="detais-row__value">&#171;Тифанни &#187;&#47;серый</td>
         </tr>
-        <tr class="top-week-product__detais-row">
+        <tr class="top-week-product-details__details-row">
           <td class="detais-row__name">Диаметр:</td>
           <td class="detais-row__value">25см</td>
         </tr>
-        <tr class="top-week-product__detais-row">
+        <tr class="top-week-product-details__details-row">
           <td class="detais-row__name">Высота:</td>
           <td class="detais-row__value">15см</td>
         </tr>
       </table>
       <img class="top-week-product__image" src="#" alt="#">
       <p>Цена: 990 руб.</p>
-      <button class="button top-week-product-button" type="button" aria-label="Выбрать размеры">Заказать</button>
+      <button class="top-week-product__button top-week-product__button--to-order" type="button" aria-label="Выбрать размеры">Заказать</button>
     </section>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list reset-list">
-        <li class="about-us__item abut-us-item--eco">Экологически чистые материалы</li>
-        <li class="about-us__item abut-us-saving">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item abut-us-like">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item abut-us-knitting">Связано в ручную с любовью и умилением</li>
-        <li class="about-us__item abut-us-patriotism">Поддержка отечественного производителя</li>
-        <li class="about-us__item abut-us-present">Поставляется в подарочной упаковке</li>
+        <li class="about-us-list__about-us-list-item about-us-list__about-us-list-item--eco">Экологически чистые материалы</li>
+        <li class="about-us-list__about-us-list-item about-us-list__about-us-list-item--saving">Скандинавский стиль по российской цене</li>
+        <li class="about-us-list__about-us-list-item about-us-list__about-us-list-item--like">Увеличивает лайки на фотографиях</li>
+        <li class="about-us-list__about-us-list-item about-us-list__about-us-list-item--knitting">Связано в ручную с любовью и умилением</li>
+        <li class="about-us-list__about-us-list-item about-us-list__about-us-list-item--patriotism">Поддержка отечественного производителя</li>
+        <li class="about-us-list__about-us-list-item about-us-list__about-us-list-item--present">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
   </main>
   <footer class="footer">
     <section class="footer__footer-social">
       <h2 class="vidually-hodden">Мишка в соцсетях</h2>
-      <ul class="footer__social social-list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#"
-            aria-label="Переход на Мишку в инстаграм">Инстаграм</a>
+      <ul class="footer-social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link  social-list__link--instagram" href="#" aria-label="Переход на Мишку в инстаграм">Инстаграм</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#" aria-label="Переход на Мишку в фэйсбук">Фэйсбук</a>
+        <li class="social-list__item">
+          <a class="social-item__link social-list__link--facebook" href="#" aria-label="Переход на Мишку в фэйсбук">Фэйсбук</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#" aria-label="Переход на Мишку в твитере">Твиттер</a>
+        <li class="social-list__item">
+          <a class="social-item__link social-list__link--twitter" href="#" aria-label="Переход на Мишку в твитере">Твиттер</a>
         </li>
       </ul>
     </section>
