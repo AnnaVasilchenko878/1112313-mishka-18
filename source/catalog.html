@@ -1,92 +1,94 @@
 <!Doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>Каталог|Mishka</title>
-</head>
-<body>
-  <header class="header">
-    <a class="header__logo" href="index.html"><img src="#" alt="#"></a>
-    <button class="header__button" type="button" aria-label="Открыть меню">></button>
-    <nav class="header__navigaton-menu">
-      <ul class="navigation__list reset-list">
-        <li class="navigation__item">
-          <a class="navigation__link">Каталог товаров</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link">Вязание на заказ</a>
-        </li>
-        <li class="navigation__item">
-          <button class="navigation__button button-icon--search" type="button"></button>
-          <a class="navigation__link" aria-label="Поиск по сайту">Поиск по сайту</a>
-        </li>
-        <li class="navigation__item">
-          <button class="navigation__button button-icon--basket" type="button" aria-label="Корзина"></button>
-          <a class="navigation__link">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="catalog">
-      <h1>Каталог товаров</h1>
-      <ul class="catalog-list reset-list">
-        <li class="catalog__item">
-          <a class="catalog__link_image" href="#">
-            <img src="#" alt="#">
-          </a>
-          <h3 class="catalog__products-name">
-            <a class="catalog__link" href="#">Зайчик-попрыгайчик</a>
-          </h3>
-          <p class="catalog__description">Рост 30 см, вес 200г</p>
-          <p class="catalog__price">1200 руб.</p>
-          <button class="catalog-button" type="button" aria-label="Добавить в корзину"></button>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog-link__image" href="#">
-            <img src="#" alt="#">
-          </a>
-          <h3 class="catalog__products-name">
-            <a class="catalog__link" href="#">Корзина для белья</a>
-          </h3>
-          <p class="catalog__description">Диаметр 15см, высота 10см</p>
-          <p class="catalog__price">690 руб.</p>
-          <button class="catalog-button" type="button" aria-label="Добавить в корзину"></button>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog-link__image" href="#">
-            <img src="#" alt="#">
-          </a>
-          <h3 class="catalog__products-name">
-            <a class="catalog__link" href="#">Большая корзина для игрушек</a>
-          </h3>
-          <p class="catalog__description">Диаметр 30см, высота 30см</p>
-          <p class="catalog__price">1500 руб.</p>
-          <button class="catalog-button" type="button" aria-label="Добавить в корзину"></button>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="footer">
-    <section class="footer__footer-social">
-      <h2 class="vidually-hodden">Мишка в соцсетях</h2>
-      <ul class="footer__social social-list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#"
-            aria-label="Переход на Мишку в инстаграм">Инстаграм</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#" aria-label="Переход на Мишку в фэйсбук">Фэйсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#" aria-label="Переход на Мишку в твитере">Твиттер</a>
-        </li>
-      </ul>
-    </section>
-    <p class="footer__copyright">Разработано</p>
-    <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="#" alt="#">
-    </a>
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог|Mishka</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo">
+        <img class="logo__image" src="#" alt="#">
+      </a>
+      <button class="header__button" type="button"  aria-label="Меню сайта"></button>
+      <nav class="header__navigaton-menu">
+        <ul class="navigation-menu__navigation-list reset-list">
+          <li class="navigation-list__navigation-item">
+            <a class="navigation-item__link">Каталог товаров</a>
+          </li>
+          <li class="navigation-list__navigation-item">
+            <a class="navigation-item__link">Вязание на заказ</a>
+          </li>
+          <li class="navigation-list__navigation-item">
+            <button class="navigation-item__button button-search" type="button" aria-label="Поиск по сайту"></button>
+            <a class="navigation-item__link">Поиск по сайту</a>
+          </li>
+          <li class="navigation-list__navigation-item">
+            <button class="navigation-item__button button-basket" type="button" aria-label="Корзина"></button>
+            <a class="navigation-item__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог товаров</h1>
+        <ul class="catalog__list reset-list">
+          <li class="catalog-list__item">
+            <a class="catalog-item__image-link" href="#">
+              <img class="link__image-bunny" src="#" alt="#">
+            </a>
+            <div class="catalog-wrapper">
+              <a class="catalog-item__link-name" href="#">Зайчик-попрыгайчик</a>
+              <p class="catalog-item__descriprion">Рост 30 см, вес 200г</p>
+              <p class="catalog-item__price">1200 руб.</p>
+              <button class="catalog-item__button-basket" type="button" aria-label="Корзина"></button>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <a class="catalog-item__image_link" href="#">
+              <img class="link__image-basket"src="#" alt="#">
+            </a>
+            <div class="catalog-wrapper">
+              <a class="catalog-item__link-name" href="#">Корзина для белья</a>
+              <p class="catalog-item__descriprion">Диаметр 15см, высота 10см</p>
+              <p class="catalog-item__price">690 руб.</p>
+              <button class="catalog-item__button-basket" type="button" aria-label="Корзина"></button>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <a class="catalog-item__image-link" href="#">
+              <img class="link__image-basket"src="#" alt="#">
+            </a>
+            <div class="catalog-wrapper">
+              <a class="catalog-item__link_name" href="#">Большая корзина для игрушек</a>
+              <p class="catalog-item__descriprion">Диаметр 30см, высота 30см</p>
+              <p class="catalog-item__price">1500 руб.</p>
+              <button class="catalog-item__button-basket" type="button" aria-label="Корзина"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__social">
+        <h2 class="visually-hidden">Мишка в соцсетях</h2>
+        <ul class="footer-social__social-list reset-list">
+          <li class="social-list__social-item">
+            <a class="social-item__social-link instagram-link" href="#" aria-label="Переход на Мишку в Инстаграм">Инстаграм</a>
+          </li>
+          <li class="social-list__social-item">
+            <a class="social-item__social-link facebook-link" href="#" aria-label="Переход на Мишку в Фэйсбук">Фэйсбук</a>
+          </li>
+          <li class="social-list__social-item">
+            <a class="social-item__social-link twitter-link" href="#" aria-label="Переход на Мишку в Твиттер">Твиттер</a>
+          </li>
+        </ul>
+      </section>
+      <p class="footer__copyright">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="#" alt="#">
+        </a>
+      </p>
+    </footer>
+    </body>
 </html>
