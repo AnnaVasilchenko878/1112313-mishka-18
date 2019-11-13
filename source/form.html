@@ -29,17 +29,83 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Вязание на заказ</h1>
-    <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form action="" method="get">
-      <ul>
-        <li>
-          <label for="">Тип</label>
-          <input type="radio" name=""
-          <input type=""
-        </li>
-      </ul>
+  <main class="registration">
+    <h1 class="registration__title">Вязание на заказ</h1>
+    <p class="registration__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="registration__group group-type">
+        <legend class="group-type__title">Тип</legend>
+        <ul class="group-type__list reset-list">
+          <li class="group-type__item">
+            <input class="group-type__input" type="radio" name="product-type" id="type-accessories" value="Аксессуар для интерьера" checked>
+            <label class="group-type__label" for="type-accessories">Аксессуар для интерьера</label>
+          </li>
+          <li class="group-type__item">
+            <input class="group-type__input" type="radio" name="product-type" id="type-toys" value="Детская игрушка">
+            <label class="group-type__label" for="type-toys">Детская игрушка</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="registration__group group-color">
+        <legend class="group-color__title">Цвет</legend>
+        <ul class="group-color__list reset-list">
+          <li class="group-color__item">
+            <input class="group-color__input" type="checkbox" name="product-color" id="color-white" value="Белый" checked>
+            <label class="group-color__label" for="color-white">Белый</label>
+          </li>
+          <li class="group-color__item">
+            <input class="group-color__input" type="checkbox" name="product-color" id="color-grey" value="Серый" checked>
+            <label class="group-color__label" for="color-grey">Серый</label>
+          </li>
+          <li class="group-color__item">
+            <input class="group-color__input" type="checkbox" name="product-color" id="color-tiffany" value="Тифани">
+            <label class="group-color__label" for="color-tiffany">&#171;Тифани&#187;</label>
+          </li>
+          <li class="group-color__item">
+            <input class="group-color__input" type="checkbox" name="product-color" id="color-black" value="Черный">
+            <label class="group-color__label" for="color-black">Черный</label>
+          </li>
+          <li class="group-color__item">
+            <input class="group-color__input" type="checkbox" name="product-color" id="color-pink" value="Розовый">
+            <label class="group-color__label" for="color-pink">Розовый</label>
+          </li>
+          <li class="group-color__item">
+            <input class="group-color__input" type="checkbox" name="product-color" id="color-orange" value="Оранжевый">
+            <label class="group-color__label" for="color-orange">Оранжевый</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="registration__group user-data">
+        <legend class="user-dara">Фио</legend>
+         <ul class="user-data__list reset-list">
+           <li class="user-data__item">
+             <label class="user-data__label" for="user-name">Имя:</label>
+             <input class="user-data__input" type="text" name="username" id="user-name" placeholder="Введите ваше имя*" required>
+           </li>
+           <li class="user-data__item">
+             <label class="user-data__label" for="user-surename">Фамилия:</label>
+             <input class="user-data__input" type="text" name="usersurename" id="user-surename" placeholder="Введите вашу фамилию*" required>
+           </li>
+           <li class="user-data__item">
+             <label class="user-data__item" for="user-patronymic">Отчество:</label>
+             <input class="user-data__label" type="text" name="userpatronymic" id="patronymic" placeholder="Введите ваше отчество*" requared>
+           </li>
+           <li class="user-data__item">
+             <label class="user-data__label" for="user-phone">Тел</label>
+             <input class="user-data__input user-data__input--icon-phone" type="text" name="userphone" id="user-phone" placeholder="+7 XXX XXX XX XX*" requared>
+           </li>
+           <li class="user-data__item">
+             <label class="user-data__label" for="user-email">E-mail</label>
+             <input class="user-data__input user-data__input--icon-envelop" type="text" name="useremail" id="user-email" placeholder="Ваш Email*" required>
+           </li>
+           <li>
+             <label>Доп</label>
+             <textarea col="20" row="20">Опишите все ваши пожелания к заказу</textarea>
+           </li>
+         </ul>
+         <p>*Поля обязательны для заполнения</p>
+      </fieldset>
+      <button type="submit">Отправить заказ</button>
     </form>
   </main>
   <footer class="footer">
