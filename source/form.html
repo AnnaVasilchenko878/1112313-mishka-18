@@ -6,24 +6,24 @@
 </head>
 <body>
   <header class="header header__toggle">
-    <a class="header__logo-link">
+    <a class="header__logo-link" href="index.html" aria-label="Перейти на главную">
       <img class="header__logo-image" src="#" alt="#">
     </a>
-    <button class="header__button header__button--menu-site" type="button" aria-label="Меню сайта"></button>
+    <button class="header__button header__button--menu-site" type="button" aria-label="Открыть меню сайта"></button>
     <nav class="header__navigaton-menu site-nav">
       <ul class="site-nav__list reset-list">
         <li class="site-nav__item">
-          <a class="site-nav__link">Каталог товаров</a>
+          <a class="site-nav__link" href="catalog.html" aria-label="Перейти в каталог">Каталог товаров</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link">Вязание на заказ</a>
+          <a class="site-nav__link" href="form.html" aria-label="Оформить заказ">Вязание на заказ</a>
         </li>
         <li class="site-nav__item">
           <button class="site-nav__button site-nav__button--search" type="button" aria-label="Поиск по сайту"></button>
           <a class="site-nav__link">Поиск по сайту</a>
         </li>
         <li class="site-nav__item">
-          <button class="site-nav__button site-nav__button--basket" type="button" aria-label="Корзина"></button>
+          <button class="site-nav__button site-nav__button--basket" type="button" aria-label="Перейти в корзину"></button>
           <a class="site-nav__link">Корзина: пока пуста</a>
         </li>
       </ul>
@@ -32,7 +32,7 @@
   <main class="registration">
     <h1 class="registration__title">Вязание на заказ</h1>
     <p class="registration__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form  class="registration__form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="registration__group group-type">
         <legend class="group-type__title">Тип</legend>
         <ul class="group-type__list reset-list">
@@ -76,7 +76,7 @@
         </ul>
       </fieldset>
       <fieldset class="registration__group user-data">
-        <legend class="user-dara">Фио</legend>
+        <legend class="user-data__title">Фио</legend>
          <ul class="user-data__list reset-list">
            <li class="user-data__item">
              <label class="user-data__label" for="user-name">Имя:</label>
@@ -88,24 +88,29 @@
            </li>
            <li class="user-data__item">
              <label class="user-data__item" for="user-patronymic">Отчество:</label>
-             <input class="user-data__label" type="text" name="userpatronymic" id="patronymic" placeholder="Введите ваше отчество*" requared>
+             <input class="user-data__label" type="text" name="userpatronymic" id="user-patronymic" placeholder="Введите ваше отчество*" required>
            </li>
-           <li class="user-data__item">
-             <label class="user-data__label" for="user-phone">Тел</label>
-             <input class="user-data__input user-data__input--icon-phone" type="text" name="userphone" id="user-phone" placeholder="+7 XXX XXX XX XX*" requared>
+          </ul>
+      </fieldset>
+      <fieldset class="registration__group user-contacts">
+        <legend class="visually-hidden">Контактные данные клиента</legend>
+          <ul class="user-contacts__list reset-list">
+           <li class="user-contacts__item">
+             <label class="user-contacts__label" for="user-phone">Тел</label>
+             <input class="user-contacts__input user-data__input--icon-phone" type="text" name="userphone" id="user-phone" placeholder="+7 XXX XXX XX XX*" required>
            </li>
-           <li class="user-data__item">
-             <label class="user-data__label" for="user-email">E-mail</label>
-             <input class="user-data__input user-data__input--icon-envelop" type="text" name="useremail" id="user-email" placeholder="Ваш Email*" required>
+           <li class="user-contacts__item">
+             <label class="user-contacts__label" for="user-email">E-mail</label>
+             <input class="user-contacts__input user-data__input--icon-envelop" type="text" name="useremail" id="user-email" placeholder="Ваш Email*" required>
            </li>
            <li>
-             <label>Доп</label>
-             <textarea col="20" row="20">Опишите все ваши пожелания к заказу</textarea>
+             <label class="user-contacts__label" for="user-comments">Доп</label>
+             <textarea cols="20" rows="20" id="user-comments">Опишите все ваши пожелания к заказу</textarea>
            </li>
          </ul>
-         <p>*Поля обязательны для заполнения</p>
       </fieldset>
-      <button type="submit">Отправить заказ</button>
+      <p class="registration__explanation">*Поля обязательны для заполнения</p>
+      <button class="registration__button registration__button--submit" type="submit" aria-label="Отправить">Отправить заказ</button>
     </form>
   </main>
   <footer class="footer">
@@ -114,20 +119,20 @@
       <ul class="footer__list">
         <li class="social__item">
           <a class="social__link  social__link--instagram" href="#"
-            aria-label="Переход на Мишку в инстаграм">Инстаграм</a>
+            aria-label="Перейти на Мишку в инстаграм">Инстаграм</a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#"
-            aria-label="Переход на Мишку в фэйсбук">Фэйсбук</a>
+            aria-label="Перейти на Мишку в фэйсбук">Фэйсбук</a>
         </li>
         <li class="social-list__item">
           <a class="social-item__link social__link--twitter" href="#"
-            aria-label="Переход на Мишку в твитере">Твиттер</a>
+            aria-label="Перейти на Мишку в твитере">Твиттер</a>
         </li>
       </ul>
     </section>
     <p class="footer__copyright copyright">Разработано</p>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчиков">
       <img src="#" alt="#">
     </a>
   </footer>
