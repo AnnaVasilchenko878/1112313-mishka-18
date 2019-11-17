@@ -1,9 +1,11 @@
 <!Doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Mishka</title>
 </head>
+
 <body>
   <header class="header header__toggle">
     <a class="header__logo-link" aria-label="Логотип компании">
@@ -23,7 +25,8 @@
           <a class="site-nav__link" href="#">Поиск по сайту</a>
         </li>
         <li class="site-nav__item">
-          <button class="site-nav__button site-nav__button--basket" type="button" aria-label="Перейти в корзину"></button>
+          <button class="site-nav__button site-nav__button--basket" type="button"
+            aria-label="Перейти в корзину"></button>
           <a class="site-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
@@ -38,17 +41,20 @@
       <h2 class="visually-hidden">Товары</h2>
       <ul class="products__menu catalog-menu reset_list">
         <li class="catalog-menu__item">
-          <a class="catalog-menu__link" href="catalog.html" aria-label="Перейти в каталог предметов интерьера">Предметы интерьера</a>
+          <a class="catalog-menu__link" href="catalog.html" aria-label="Перейти в каталог предметов интерьера">Предметы
+            интерьера</a>
         </li>
         <li class="catalog-menu__item">
-          <a class="catalog-menu__link" href="catalog.html" aria-label="Перейти в каталог детских игрушек">Детские игрушки</a>
+          <a class="catalog-menu__link" href="catalog.html" aria-label="Перейти в каталог детских игрушек">Детские
+            игрушки</a>
         </li>
       </ul>
     </section>
     <section class="top-week-product">
       <h2 class="top-week-product__title">Вязаные корзинки</h2>
       <h3 class="top-week-product__subtitile">Товар недели</h3>
-      <p class="top-week-product__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и размерах.
+      <p class="top-week-product__decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
+        размерах.
       </p>
       <table class="top-week-product__detais">
         <tr class="top-week-product-details__details-row">
@@ -66,7 +72,8 @@
       </table>
       <img class="top-week-product__image" src="#" alt="#">
       <p class="to-week-product__price">Цена: 990 руб.</p>
-      <button class="top-week-product__button top-week-product__button--to-order" type="button" aria-label="Выбрать размеры">Заказать</button>
+      <button class="top-week-product__button top-week-product__button--to-order" type="button"
+        aria-label="Выбрать размеры">Заказать</button>
     </section>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
@@ -81,33 +88,39 @@
     </section>
     <section class="reviews reviews-card">
       <h2 class="reviews-card__title">Отзывы</h2>
-      <p class="reviews-card__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      <h3 class="reviews-card__auto-name">Анастасия Красильникова</h3>
+      <blockquote class="reviews-card__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
+        количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+        фотографии сразу стали более стильными, а также набирают больше лайков!
+        <cite class="reviews-card__autor-name">Анастасия Красильникова</cite>
+      </blockquote>
       <p class="reviews-card__autor-nickname">@misssssiskras</p>
-      <button class="reviews-card__button reviews-card__button--review-back" type="button" aria-label="Показать предыдущий отзыв"></button>
-      <button class="reviews-card__button reviews-card__button--review-next" type="button" aria-label="Показать следующий отзыв"></button>
+      <div class="reviews-card__wrapper">
+        <button class="reviews-card__button reviews-card__button--review-back" type="button"
+          aria-label="Показать предыдущий отзыв"></button>
+        <button class="reviews-card__button reviews-card__button--review-next" type="button"
+          aria-label="Показать следующий отзыв"></button>
+      </div>
       <a class="reviews-card__link" href="#" aria-label="Пререйти на сайт с отзывами">Написать</a>
     </section>
-    <section class="сommunication сontacts">
+    <section class="сontacts">
       <h2 class="contacts__title">Контакты</h2>
       <ul class="contacts__list">
         <li class="contacts__item">
           <h3 class="contacts__title">e-mail:</h3>
-          <p class="contacts__adress">info@mimimishkashop.ru</p>
+          <p class="contacts__adress"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">адрес:</h3>
-          <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         </li>
       </ul>
       <div class="contacts__map">
         <img class="contacts__img" src="#" alt="#">
       </div>
-      <div class="contacts__map i-bem">
-<!-- Здесь будет интерактивная карта -->
+      <div class="contacts__map map">
+        <!-- Здесь будет интерактивная карта -->
       </div>
-<!-- Дописать подходящий aria-label -->
-      <a class="contacts__link contacts__link--typing" href="#" aria-label="">Напишите нам</a>
+      <a class="contacts__link contacts__link--typing" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="footer">
@@ -115,20 +128,24 @@
       <h2 class="vidually-hodden">Мишка в соцсетях</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link  social__link--instagram" href="#" aria-label="Перейти на Мишку в инстаграм">Инстаграм</a>
+          <a class="social__link  social__link--instagram" href="#"
+            aria-label="Перейти на Мишку в инстаграм">Инстаграм</a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#" aria-label="Перейти на Мишку в фэйсбук">Фэйсбук</a>
         </li>
         <li class="social-list__item">
-          <a class="social-item__link social__link--twitter" href="#" aria-label="Перейти на Мишку в твитере">Твиттер</a>
+          <a class="social-item__link social__link--twitter" href="#"
+            aria-label="Перейти на Мишку в твитере">Твиттер</a>
         </li>
       </ul>
     </section>
     <p class="footer__copyright copyright">Разработано</p>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчиков">
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+      aria-label="Перейти на сайт разработчиков">
       <img src="#" alt="#">
     </a>
   </footer>
 </body>
+
 </html>
