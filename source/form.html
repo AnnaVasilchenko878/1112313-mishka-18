@@ -33,12 +33,15 @@
     </nav>
   </header>
   <main>
-    <section class="registration">
-      <h1 class="registration__title">Вязание на заказ</h1>
-      <p class="registration__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+    <section class="registration-intro">
+      <h1 class="registration-intro__title">Вязание на заказ</h1>
+      <p class="registration-intro__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+        и мы
         свяжемся с вами, чтобы уточнить детали.</p>
+    </section>
+    <section class="registration">
       <form class="registration__form" action="https://echo.htmlacademy.ru" method="post">
-<!-- Проверить актуальность миксования после получения новых данных -->
+        <!-- Проверить актуальность миксования после получения новых данных -->
         <fieldset class="registration__group group-type">
           <legend class="group-type__title">Тип</legend>
           <ul class="group-type__list reset-list">
@@ -120,7 +123,8 @@
             </li>
             <li>
               <label class="user-contacts__label" for="user-comments">Доп</label>
-              <textarea cols="20" rows="10" id="user-comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea cols="20" rows="10" id="user-comments"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </li>
           </ul>
         </fieldset>
