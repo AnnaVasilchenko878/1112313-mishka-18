@@ -6,48 +6,48 @@ html {
   *::after {
     box-sizing: inherit;
   }
+}
 
-  body {
-    margin: 0 auto;
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 321px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #444444;
+
+  background-color: #ffffff;
+
+  a {
+    text-decoration: none;
+  }
+
+  .reset-list {
+    margin: 0;
     padding: 0;
-    width: 321px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    color: #444444;
 
-    background-color: #ffffff;
+    list-style: none;
+  }
 
-    a {
-      text-decoration: none;
-    }
+  .visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
 
-    .reset-list {
-      margin: 0;
-      padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
 
-      list-style: none;
-    }
+    white-space: nowrap;
 
-    .visually-hidden:not(:focus):not(:active),
-    input[type="checkbox"].visually-hidden,
-    input[type="radio"].visually-hidden {
-      position: absolute;
+    border: 0;
 
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      overflow: hidden;
-
-      white-space: nowrap;
-
-      border: 0;
-
-      clip: rect(0, 0, 0, 0);
-      -webkit-clip-path: inset(100%);
-      clip-path: inset(100%);
-    }
+    clip: rect(0, 0, 0, 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
   }
 }
