@@ -1,6 +1,16 @@
 .copyright {
-  color: #000000;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 18px;
+  display: flex;
+
+  &__title {
+    color: #000000;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18px;
+    width: 125px;
+    margin-right: 30px;
+  }
+
+  &__link {
+    width: 27px;
+  }
 }
