@@ -34,7 +34,7 @@
       </svg>
     </a>
     <button class="header__button header__button--menu-site" type="button" aria-label="Открыть меню сайта"></button>
-    <!-- <nav class="header__navigaton-menu site-nav">
+    <nav class="header__navigaton-menu site-nav">
       <ul class="site-nav__list reset-list">
         <li class="site-nav__item">
           <a class="site-nav__link" href="catalog.html" aria-label="Перейти в каталог">Каталог товаров</a>
@@ -51,18 +51,19 @@
           <a class="site-nav__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-    </nav>-->
+    </nav>
   </header>
   <main>
     <section class="intro">
       <h1 class="intro__title">Каталог товаров</h1>
     </section>
     <section class="catalog">
+      <h2 class="vusually-hidden">Информация о товарах</h2>
       <ul class="catalog__list reset-list">
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#" aria-label="Перейти к подробному описанию товара">
             <img class="product-card__image product-card__image--bunny" src="img/photo-hare-mobile@1x.jpg" width="260"
-              height="195" alt="#">
+              height="195" alt="Игрушка зайчик-попрыгайчик">
           </a>
           <div class="product-card-wrapper">
             <a class="product-card__link-name" href="#"
@@ -76,7 +77,7 @@
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#" aria-label="Перейти к подробному описанию товара">
             <img class="product-card__image product-card__image--basket" src="img/photo-bowl-mobile@1x.jpg" width="260"
-              height="195" alt="#">
+              height="195" alt="Корзина для белья">
           </a>
           <div class="product-card-wrapper">
             <a class="product-card__link-name" href="#" aria-label="Перейти к подробному описанию товара">Корзина для
@@ -90,7 +91,7 @@
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#" aria-label="Перейти к подробному описанию товара">
             <img class="product-card__image product-card__image--basket" src="img/photo-toys-mobile@1x.jpg" width="260"
-              height="195" alt="#">
+              height="195" alt="Большая корзина для игрушек">
           </a>
           <div class="product-card-wrapper">
             <a class="product-card__link-name" href="#" aria-label="Перейти к подробному описанию товара">Большая
@@ -106,10 +107,9 @@
     <section class="develop-process production">
       <h2 class="production__title">Процесс производства</h2>
       <div class="production__video-wrapper">
-        <img class="production__image" src="#" alt="#">
-        <button class="production__button" aria-label="Воспроизвести видео">
-          <img class="production__buttom-image">
-        </button>
+        <img class="production__image" src="img/video-mobile@1x.jpg" alt="Процесс производства продукции">
+        <!-- Добавить через CSS картинку -->
+        <button class="production__button" aria-label="Воспроизвести видео"></button>
       </div>
       <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
