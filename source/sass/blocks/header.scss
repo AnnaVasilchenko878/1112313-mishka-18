@@ -2,15 +2,17 @@
   min-height: 80px;
   border-bottom: 1px solid #ececec;
 
-  &__logo-link {
+  .header__logo-link {
     margin-left: 116px;
     margin-right: 67px;
   }
+
   &__button {
     border: none;
     background-color: transparent;
   }
 }
+
 .header-toggle {
 
   &__logo-link {
@@ -18,18 +20,21 @@
     margin-right: 67px;
   }
 }
+
 .site-nav {
   &__item {
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid #ececec;
     padding: 19px 69px;
   }
+
   &__link {
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
     color: #000000;
   }
+
   &__button {
     border: none;
     background-color: transparent;
@@ -37,4 +42,3 @@
     margin-right: 14px;
   }
 }
-
