@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  border: 1px solid black;
   margin: 0 auto;
   padding: 0;
   font-weight: 400;
@@ -24,6 +25,18 @@ body {
   color: #444444;
 
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 770px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: $desktop-width;
+  }
 }
 
 a {
@@ -114,21 +127,82 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-width: $mobile-width) {
-  .site-nav {
-    display: none;
-  }
-}
+@media (min-width: $mobile-width) {}
 
+// +++++++++++++header-tablet++++++++++++++
 @media (min-width: $tablet-width) {
-
-  .site-nav {
-    display: block;
+  .header {
+    background-color: #ffffff;
+    display: flex;
   }
+
+  .header-navigation-menu {
+    width: auto;
+  }
+
+  .header__wrapper {
+    width: 50%;
+    border-right: 1px solid #ececec;
+  }
+
+  .header__button {
+    display: none;
+    position: absolute;
+  }
+
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-nav__item {
+    width: 50%;
+    border-right: 1px solid #ececec;
+
+    &--search {
+      order: 1;
+    }
+
+    &--basket {
+      order: 2;
+    }
+  }
+
+  .site-nav__link--hidden {
+    display: none;
+    position: absolute;
+  }
+
 }
 
+// +++++++++++++++header-desktop
 @media (min-width: $desktop-width) {
-  display: block;
+  .header {
+    background-color: #ffffff;
+  }
+
+  .header__navigation-menu {
+    width: auto;
+  }
+
+  .header__wrapper {
+    display: none;
+    position: absolute;
+  }
+
+  .site-nav__list {
+    display: flex;
+  }
+
+  .site-nav__item {
+    border-right: 1px solid #ececec;
+    width: 25%;
+    padding-top: 26px;
+
+    &--reset-border {
+      border-right: none;
+    }
+  }
 }
 
 // =================intro=========================
@@ -168,19 +242,55 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@media (min-width: $tablet-width) {
+  .intro-promo {
+    min-height: 628px;
+    background-color: #f9f9f9;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .intro-promo__title {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+    width: 517px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .intro-promo {
+    min-height: 628px;
+    background-color: #f9f9f9;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .intro-promo__title {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+    width: 621px;
+  }
+}
+
 // ===================products======================
 .catalog-menu__item {
   background-color: #63d1bb;
+  position: relative;
 
   &:before {
-    width: 40px;
+    content: "";
+    width: 61px;
     height: 62px;
     background-color: orange;
     display: block;
     position: absolute;
     top: 5px;
     left: 5px;
-
   }
 
   .catalog-menu__link {
@@ -196,7 +306,50 @@ input[type="radio"].visually-hidden {
 
 .catalog-menu__item--background-dark {
   background-color: #56c3b2;
-  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    background-color: #f9f9f9;
+  }
+
+  .products__menu {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .catalog-menu__item {
+    width: 338px;
+    padding: 7px 36px;
+  }
+
+  .catalog-menu__link {
+    font-size: 20px;
+    line-height: 30px;
+    width: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    background-color: #f9f9f9;
+  }
+
+  .products__menu {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .catalog-menu__item {
+    width: 525px;
+    padding: 7px 36px;
+  }
+
+  .catalog-menu__link {
+    font-size: 20px;
+    line-height: 30px;
+    width: 94px;
+  }
 }
 
 // ================top-week-products=================
