@@ -1,3 +1,9 @@
+// ===========переменные==========
+$mobile-width: 320px;
+$tablet-width: 770px;
+$desktop-width: 1150px;
+
+// =========дефолтные стили=============
 html {
   box-sizing: border-box;
 
@@ -9,10 +15,8 @@ html {
 }
 
 body {
-  border: 1px solid black;
   margin: 0 auto;
   padding: 0;
-  width: 321px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -20,30 +24,30 @@ body {
   color: #444444;
 
   background-color: #ffffff;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  .visually-hidden:not(:focus):not(:active),
-  input[type="checkbox"].visually-hidden,
-  input[type="radio"].visually-hidden {
-    position: absolute;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    border: 0;
+  border: 0;
 
-    clip: rect(0, 0, 0, 0);
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-  }
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .reset-list {
@@ -58,19 +62,26 @@ body {
   background-color: transparent;
 }
 
-// header
+//==============header================
 .header {
   min-height: 80px;
+  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+
+  &__wrapper {
+    border-bottom: 1px solid #ececec;
+    padding: 22px 0;
+  }
 
   .header__logo-link {
     margin-left: 116px;
     margin-right: 67px;
+    width: 86px;
   }
 
   &__button {
-    border: none;
-    background-color: transparent;
+    margin-top: -9px;
+    width: 20px;
   }
 }
 
@@ -103,7 +114,24 @@ body {
   }
 }
 
-// intro
+@media (min-width: $mobile-width) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .site-nav {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  display: block;
+}
+
+// =================intro=========================
 .intro {
   min-height: 135px;
   color: #010000;
@@ -123,7 +151,8 @@ body {
   }
 }
 
-// intro-promo
+// ++++++++++++++++INGEX PAGE+++++++++++
+// ===============intro-promo===========
 .intro-promo {
   background-color: #ffffff;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -139,7 +168,7 @@ body {
   }
 }
 
-// products
+// ===================products======================
 .catalog-menu__item {
   background-color: #63d1bb;
 
@@ -170,7 +199,7 @@ body {
   margin-bottom: 34px;
 }
 
-// top-week-products
+// ================top-week-products=================
 .top-week-product {
   margin-bottom: 76px;
 
@@ -234,7 +263,7 @@ body {
   margin-bottom: 28px;
 }
 
-// about-us
+// ================about-us========================
 .about-us {
   &__title {
     margin-left: 30px;
@@ -257,7 +286,7 @@ body {
   }
 }
 
-// reviews
+// =================reviews======================
 .reviews {
   margin-left: 30px;
 
@@ -311,14 +340,8 @@ body {
   }
 }
 
-// footer
-.footer {
-  background-color: #f1f1f1;
-}
-
-// contacts
+// =================contacts======================
 .contacts {
-
 
   &__title {
     color: #000000;
@@ -367,12 +390,13 @@ body {
   }
 }
 
-// footer
+// ===============footer=================
 .footer {
   margin-top: 39px;
+  background-color: #f1f1f1;
 }
 
-// social
+// ================footer-social=======================
 .social {
   &__list {
     display: flex;
@@ -388,7 +412,7 @@ body {
   }
 }
 
-// copyright
+// ====================footer-copyright====================
 .copyright {
   display: flex;
 
@@ -407,6 +431,7 @@ body {
   }
 }
 
+// +++++++++++++CATALOG PAGE+++++++++++++++
 // ==============catalog===============
 .catalog__list {
   margin-bottom: 30px;
@@ -468,7 +493,7 @@ body {
   }
 }
 
-// production
+// ==============production==========
 .production {
   &__title {
     color: #000000;
@@ -504,6 +529,7 @@ body {
   }
 }
 
+// +++++++++++++++++FORM PAGE+++++++++++++
 // ================form============
 .registration {
   margin-left: 30px;
