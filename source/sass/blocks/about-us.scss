@@ -1,18 +1,19 @@
-.about-us {
-  &__title {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 88px;
-    color: #000000;
-  }
-  &__item {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-bottom: 85px;
-    color: #000000;
-  }
+.about-us__title {
+  margin-left: 30px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 88px;
+  color: #000000;
+}
+
+.about-us__item {
+  width: 251px;
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 85px;
+  color: #000000;
 }

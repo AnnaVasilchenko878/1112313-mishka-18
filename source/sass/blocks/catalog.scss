@@ -1,50 +1,26 @@
-.catalog__list {
+.catalog-menu__item {
+  background-color: $tiffany-color;
 
-  .catalog__item {
-    width: 260px;
-    height: 373px;
-    margin-left: 30px;
-    margin-bottom: 60px;
+  &:before {
+    width: 40px;
+    height: 62px;
+    background-color: orange;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
 }
-.product-card {
-  &__image {
-    background-color: #dcdcdc;
-    margin-bottom: 31px;
-  }
-
-  &__link-name {
-    color: #000000;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 17px;
-  }
-
-  &__description {
-    font-size: 13px;
-    line-height: 30px;
-    border-bottom: 1px solid #ececec;
-    margin-bottom: 55px;
-  }
-  &__wrapper-flex {
-    display: flex;
-  }
-
-  &__price {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 24px;
-    width: 74px;
-  }
-  //сделать рефакторинг
-  &__button {
-    border: none;
-    background-color: transparent;
-    width: 20px;
-    height: 19px;
-  }
+.catalog-menu__link {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 106px;
+  padding: 30px 29px;
+  display: block;
 }
-
+.catalog-menu__item--background-dark {
+  background-color: $tiffany-color;
+  margin-bottom: 34px;
+}
