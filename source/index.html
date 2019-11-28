@@ -15,7 +15,7 @@
         <picture>
           <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
           <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
-           <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
           <img src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
         </picture>
       </a>
@@ -82,29 +82,37 @@
       </ul>
     </section>
     <section class="top-week-product">
-      <h2 class="top-week-product__title">Вязаные корзинки</h2>
-      <h3 class="top-week-product__subtitle">Товар недели</h3>
-      <p class="top-week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
-        размерах.
-      </p>
-      <table class="top-week-product__details">
-        <tr class="top-week-product-details__details-row">
-          <td class="detais-row__name">Цвет:</td>
-          <td class="detais-row__value">&#171;Тифанни &#187;&#47;серый</td>
-        </tr>
-        <tr class="top-week-product-details__details-row">
-          <td class="detais-row__name">Диаметр:</td>
-          <td class="detais-row__value">25см</td>
-        </tr>
-        <tr class="top-week-product-details__details-row">
-          <td class="detais-row__name">Высота:</td>
-          <td class="detais-row__value">15см</td>
-        </tr>
-      </table>
-      <img class="top-week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
-        alt="Продукт недели вязанная корзинка">
-      <p class="top-week-product__price">Цена: 990 руб.</p>
-      <button class="button top-week-product__button" type="button" aria-label="Выбрать размеры">Заказать</button>
+      <div class="top-week-product__wrapper">
+        <h2 class="top-week-product__title">Вязаные корзинки</h2>
+        <h3 class="top-week-product__subtitle">Товар недели</h3>
+      </div>
+      <div class="top__week-product__wrapper-flex">
+        <div class="top-week-product__wrapper-description">
+          <p class="top-week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести
+            расцветках,
+            и
+            размерах.
+          </p>
+          <table class="top-week-product__details">
+            <tr class="top-week-product-details__details-row">
+              <td class="detais-row__name">Цвет:</td>
+              <td class="detais-row__value">&#171;Тифанни &#187;&#47;серый</td>
+            </tr>
+            <tr class="top-week-product-details__details-row">
+              <td class="detais-row__name">Диаметр:</td>
+              <td class="detais-row__value">25см</td>
+            </tr>
+            <tr class="top-week-product-details__details-row">
+              <td class="detais-row__name">Высота:</td>
+              <td class="detais-row__value">15см</td>
+            </tr>
+          </table>
+        </div>
+        <img class="top-week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
+          alt="Продукт недели вязанная корзинка">
+        <p class="top-week-product__price">Цена: 990 руб.</p>
+        <button class="button top-week-product__button" type="button" aria-label="Выбрать размеры">Заказать</button>
+      </div>
     </section>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
