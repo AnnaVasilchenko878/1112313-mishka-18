@@ -9,7 +9,7 @@ $tiffany-color: #63d1bb;
   font-style: normal;
   font-weight: 400;
   font-family: "Open Sans";
-  src: local("Open Sans") local(OpenSans-Regular),
+  src: local("Open Sans") local(opensans-regular),
     url("../fonts/opensans.woff") format("woff"),
     url("../fonts/opensans.woff2") format("woff2");
 }
@@ -18,7 +18,7 @@ $tiffany-color: #63d1bb;
   font-style: bold;
   font-weight: 700;
   font-family: "Open Sans";
-  src: local("Open Sans Bold") local(OpenSans-Bold),
+  src: local("Open Sans Bold") local(opensans-bold),
     url("../fonts/opensansbold.woff") format("woff"),
     url("../fonts/opensansbold.woff2") format("woff2");
 }
@@ -44,7 +44,6 @@ body {
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $text-color;
-
   background-color: $main-background;
 
   a {
@@ -55,19 +54,14 @@ body {
   input[type="checkbox"].visually-hidden,
   input[type="radio"].visually-hidden {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
     overflow: hidden;
-
     white-space: nowrap;
-
     border: 0;
-
     clip: rect(0, 0, 0, 0);
-    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
   }
 }
@@ -100,13 +94,6 @@ body {
   background-color: transparent;
 }
 
-
-.header__logo-link {
-  margin-left: 116px;
-  margin-right: 67px;
-}
-
-
 .site-nav__item {
   text-align: left;
   border-bottom: 1px solid $border-color;
@@ -121,11 +108,9 @@ body {
 }
 
 .site-nav__button {
-
   margin-left: -50px;
   margin-right: 14px;
 }
-
 
 // intro
 .intro {
@@ -147,7 +132,6 @@ body {
   padding-top: 47px;
 }
 
-
 // intro-promo
 .intro-promo {
   background-color: $main-background;
@@ -157,19 +141,12 @@ body {
   margin-bottom: -25px;
 }
 
-.intro__title {
-  padding: 70px 13px 120px 13px;
-  width: 244px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-
 // products
 .catalog-menu__item {
   background-color: $tiffany-color;
 
-  &:before {
+  &::before {
+    content: "";
     width: 40px;
     height: 62px;
     background-color: orange;
@@ -189,7 +166,6 @@ body {
   padding: 30px 29px;
   display: block;
 }
-
 
 .catalog-menu__item--background-dark {
   background-color: $tiffany-color;
@@ -254,7 +230,6 @@ body {
   margin-left: 30px;
 }
 
-
 .top-week-product__details {
   width: 387px;
   margin-left: 30px;
@@ -281,7 +256,6 @@ body {
   margin-bottom: 85px;
   color: #000000;
 }
-
 
 // reviews
 .reviews {
@@ -337,9 +311,7 @@ body {
   border: 2px solid $text-color;
 }
 
-
 // contacts
-
 .contacts__title {
   color: #000000;
   font-size: 18px;
@@ -357,7 +329,6 @@ body {
 
 .contacts__item {
   display: flex;
-
 }
 
 .contacts__subtitle {
@@ -386,7 +357,6 @@ body {
   border: 2px solid $text-color;
   margin-left: 30px;
 }
-
 
 // footer
 .footer {
@@ -439,8 +409,6 @@ body {
   margin-bottom: 91px;
 }
 
-
-
 .product-card__image {
   background-color: #dcdcdc;
   margin-bottom: -8px;
@@ -488,9 +456,7 @@ body {
   height: 19px;
 }
 
-
 // production
-
 .production__title {
   color: #000000;
   font-size: 17px;
@@ -523,7 +489,6 @@ body {
   border: 2px solid $text-color;
   margin-left: 64px;
 }
-
 
 // ================form============
 .registration {
@@ -566,7 +531,6 @@ body {
   border: 2px solid $text-color;
 }
 
-
 .group-type__label {
   color: #000000;
   font-size: 17px;
@@ -574,15 +538,12 @@ body {
   line-height: 18px;
 }
 
-
-
 .group-color__label {
   color: #000000;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
 }
-
 
 .user-data__label {
   color: #000000;
