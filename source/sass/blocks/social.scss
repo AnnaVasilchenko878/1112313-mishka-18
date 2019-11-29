@@ -1,9 +1,12 @@
-.social {
-  &__list {
-    display: flex;
-  }
-  &__item {
-    width: 23px;
-    margin-right: 10px;
-  }
+.social__list {
+  display: flex;
+  width: 144px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+  padding-top: 30px;
+}
+
+.social__item {
+  width: 23px;
+  margin-right: 41px;
 }

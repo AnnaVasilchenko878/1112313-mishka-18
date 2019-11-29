@@ -1,0 +1,68 @@
+.registration {
+  margin-left: 30px;
+}
+
+.registration__group {
+  border: none;
+}
+
+.registration__text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 242px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.registration__title {
+  color: $tiffany-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.registration__explanation {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.registration__button {
+  color: $text-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 20px 26px;
+  border: 2px solid $text-color;
+}
+
+.group-type__label {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.group-color__label {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.user-data__label {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.user-contacts__label {
+  color: $tiffany-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}

@@ -1,44 +1,32 @@
 .header {
   min-height: 80px;
-  border-bottom: 1px solid #ececec;
-
-  .header__logo-link {
-    margin-left: 116px;
-    margin-right: 67px;
-  }
-
-  &__button {
-    border: none;
-    background-color: transparent;
-  }
+  border-bottom: 1px solid $border-color;
 }
 
-.header-toggle {
-
-  &__logo-link {
-    margin-left: 116px;
-    margin-right: 67px;
-  }
+.header__logo-link {
+  margin-left: 116px;
+  margin-right: 67px;
 }
 
-.site-nav {
-  &__item {
-    text-align: left;
-    border-bottom: 1px solid #ececec;
-    padding: 19px 69px;
-  }
+.header__button {
+  border: none;
+  background-color: transparent;
+}
 
-  &__link {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #000000;
-  }
+.site-nav__item {
+  text-align: left;
+  border-bottom: 1px solid $border-color;
+  padding: 19px 69px;
+}
 
-  &__button {
-    border: none;
-    background-color: transparent;
-    margin-left: -50px;
-    margin-right: 14px;
-  }
+.site-nav__link {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.site-nav__button {
+  margin-left: -50px;
+  margin-right: 14px;
 }

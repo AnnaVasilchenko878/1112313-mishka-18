@@ -1,7 +1,8 @@
 .catalog-menu__item {
   background-color: $tiffany-color;
 
-  &:before {
+  &::before {
+    content: "";
     width: 40px;
     height: 62px;
     background-color: orange;
@@ -11,6 +12,7 @@
     left: 5px;
   }
 }
+
 .catalog-menu__link {
   color: #ffffff;
   font-size: 19px;
@@ -20,6 +22,7 @@
   padding: 30px 29px;
   display: block;
 }
+
 .catalog-menu__item--background-dark {
   background-color: $tiffany-color;
   margin-bottom: 34px;
