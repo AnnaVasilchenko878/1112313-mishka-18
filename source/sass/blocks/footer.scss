@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 39px;
+  background-color: #f1f1f1;
+}
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+  }
+}
+@media (min-width: $desktop-width) {
+  .footer {
+    min-height: 90px;
+  }
+}
