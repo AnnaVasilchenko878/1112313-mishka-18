@@ -1,18 +1,35 @@
 .intro {
-  min-height: 500px;
-  color: #010000;
-  background-color: #f1f1f1;
+  min-height: 150px;
   margin-bottom: 30px;
+
+  color: #010000;
+
+  background-color: #f1f1f1;
 }
 
 .intro__title {
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 30px;
-  color: #010000;
-  text-align: center;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
   margin-bottom: 17px;
   padding-top: 47px;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: #010000;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

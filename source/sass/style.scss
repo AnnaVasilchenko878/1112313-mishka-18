@@ -1,10 +1,11 @@
-@import "blocks/variables.scss";
-@import "blocks/fonts.scss";
+@import "blocks/base/variables.scss";
+@import "blocks/base/fonts.scss";
 @import "blocks/defaultstyle.scss";
+@import "blocks/mixins.scss";
 @import "blocks/header.scss";
 @import "blocks/intro.scss";
 @import "blocks/intro-promo.scss";
-@import "blocks/catalog-menu.scss";
+@import "blocks/product.scss";
 @import "blocks/top-week-products.scss";
 @import "blocks/about-us.scss";
 @import "blocks/reviews.scss";
@@ -12,6 +13,6 @@
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/catalog-product.scss";
+@import "blocks/catalog.scss";
 @import "blocks/production.scss";
 @import "blocks/form-registration.scss";
