@@ -1,22 +1,25 @@
 .about-us__title {
-  margin-left: 30px;
-  font-size: 25px;
+  margin-bottom: 88px;
+  margin-left: -75px;
+
   font-weight: 700;
+  font-size: 25px;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 88px;
   color: #000000;
 }
 
 .about-us__item {
-  width: 251px;
-  margin-left: 30px;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-bottom: 85px;
-  color: #000000;
   position: relative;
+
+  width: 251px;
+  margin-bottom: 85px;
+  margin-left: 30px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
 
   &::before {
     content: "";
@@ -33,60 +36,70 @@
     background-position: center;
   }
 }
+
 .about-us__item--saving {
   &::before {
     background-image: url("../img/icon-feature-money.svg");
   }
 }
+
 .about-us__item--like {
   &::before {
     background-image: url("../img/icon-feature-heart.svg");
   }
 }
+
 .about-us__item--knitting {
   &::before {
     background-image: url("../img/icon-feature-ball.svg");
   }
 }
+
 .about-us__item--patriotism {
   &::before {
     background-image: url("../img/icon-feature-rocket.svg");
   }
 }
+
 .about-us__item--present {
   &::before {
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
+
 @media (min-width: $tablet-width) {
   .about-us {
     margin-left: 50px;
   }
+
   .about-us__title {
-    font-size: 43px;
-    font-weight: 700;
-    line-height: 50px;
     margin-bottom: 95px;
     margin-left: -409px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
+
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
     width: 750px;
   }
+
   .about-us__item {
     width: 295px;
     margin-right: 50px;
 
-    font-weight: 700;
     font-size: 20px;
     line-height: 22px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .about-us {
     margin-left: 196px;
   }
+
   .about-us__title {
     margin-bottom: 131px;
     margin-left: -572px;
@@ -95,13 +108,15 @@
     font-size: 53px;
     line-height: 57px;
   }
+
   .about-us__list {
     width: 937px;
   }
+
   .about-us__item {
     width: 290px;
     margin-right: 148px;
 
-    line-height: 20px;
+    line-height: 22px;
   }
 }

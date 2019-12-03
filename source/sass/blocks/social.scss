@@ -10,12 +10,14 @@
   width: 23px;
   margin-right: 41px;
 }
+
 @media (min-width: $tablet-width) {
   .social {
     width: 256px;
     margin: 0 auto;
   }
 }
+
 @media (min-width: $desktop-width) {
   .social {
     width: 256px;

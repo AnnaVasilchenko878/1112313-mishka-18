@@ -1,36 +1,40 @@
 .header {
   min-height: 80px;
+
   border-bottom: 1px solid $border-color;
 }
 
 .header__logo-link {
   width: 86px;
-  margin-left: 116px;
   margin-right: 67px;
+  margin-left: 116px;
 }
 
 .header__button {
-  border: none;
   background-color: transparent;
+  border: none;
 }
 
 .site-nav__item {
-  text-align: left;
-  border-bottom: 1px solid $border-color;
   padding: 19px 69px;
+
+  text-align: left;
+
+  border-bottom: 1px solid $border-color;
 }
 
 .site-nav__link {
-  font-size: 17px;
   font-weight: 700;
+  font-size: 17px;
   line-height: 24px;
   color: #000000;
 }
 
 .site-nav__button {
-  margin-left: -50px;
   margin-right: 14px;
+  margin-left: -50px;
 }
+
 @media (min-width: $tablet-width) {
   .header {
     display: flex;
@@ -79,10 +83,12 @@
     display: none;
   }
 }
+
 @media (min-width: $desktop-width) {
   .header {
     background-color: #ffffff;
   }
+
   .header__navigation-menu {
     width: auto;
   }
