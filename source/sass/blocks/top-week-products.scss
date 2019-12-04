@@ -60,6 +60,16 @@
 
   background-color: $main-background;
   border: 2px solid $text-color;
+
+  &:hover {
+    color: #ececec;
+
+    background-color: #444444;
+  }
+  &:active {
+    // уточнить свойство rgba
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .top-week-product__details {

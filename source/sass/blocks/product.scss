@@ -18,7 +18,12 @@
     background-position: center;
   }
 }
-
+.catalog-menu__item {
+  // Может написать функцию li+5px
+  &:hover {
+    margin-top: -5px;
+  }
+}
 .catalog-menu__item--background-dark {
   background-color: #56c3b2;
 
@@ -41,7 +46,7 @@
 @media (min-width: $tablet-width) {
   .products__menu {
     display: flex;
-    margin-left: 510px;
+    margin-left: 53px;
   }
 
   .catalog-menu__item {

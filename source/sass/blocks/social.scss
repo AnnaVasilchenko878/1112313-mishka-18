@@ -10,7 +10,14 @@
   width: 23px;
   margin-right: 41px;
 }
-
+.social-item__link--icon {
+  &:hover {
+    fill: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
 @media (min-width: $tablet-width) {
   .social {
     width: 256px;
