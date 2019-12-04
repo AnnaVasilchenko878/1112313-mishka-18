@@ -44,6 +44,17 @@ body {
     clip-path: inset(100%);
   }
 }
+.reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
 
 @media (min-width: $mobile-width) {
   body {

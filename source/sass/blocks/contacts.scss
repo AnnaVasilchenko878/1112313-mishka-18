@@ -47,3 +47,24 @@
 
   border: 2px solid $text-color;
 }
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -3px;
+      left: 600px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .contacts__list {
+    display: flex;
+  }
+}

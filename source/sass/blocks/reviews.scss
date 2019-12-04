@@ -87,9 +87,28 @@
   }
 }
 @media (min-width: $tablet-width) {
+  .reviews {
+    background-color: #ffffff;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
 
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 87px;
+  }
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: 642px;
+    margin-bottom: 68px;
+  }
+  .reviews__autor-name {
+    font-size: 18px;
+  }
+  .reviews__autor-link {
+    display: block;
   }
 }
