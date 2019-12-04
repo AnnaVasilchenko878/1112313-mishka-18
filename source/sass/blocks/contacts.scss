@@ -47,11 +47,13 @@
 
   border: 2px solid $text-color;
 }
+
 @media (min-width: $tablet-width) {
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -64,7 +66,46 @@
       background-position: center;
     }
   }
+
   .contacts__list {
     display: flex;
+  }
+
+  .contacts__item {
+    margin-right: 107px;
+  }
+
+  .contacts__img {
+    width: 768px;
+    height: 457px;
+    margin-bottom: 19px;
+  }
+
+  .contacts__link {
+    margin-left: 271px;
+
+    &:hover {
+      color: #ececec;
+
+      background-color: #444444;
+    }
+
+    &:active {
+      // уточнить свойство rgba
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1050px;
+    display: flex;
+  }
+  .contacts__wrapper {
+    width: 517px;
+  }
+  .contacts__map {
+    width: 525px;
+    height: 527px;
   }
 }
