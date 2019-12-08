@@ -12,26 +12,94 @@
   }
 }
 @mixin button-default {
-  border: none;
   background-color: transparent;
+  border: none;
+}
+@mixin button-style {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  text-transform: uppercase;
+
+  border: 2px solid #444444;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+
+    background-color: #444444;
+  }
+  &:active {
+    color: #c7c7c7;
+  }
+}
+@mixin arrow-state {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 @mixin list-default {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 @mixin icon-state {
-    &:hover {
-      fill: #46c1ae;
-      transition: 0.2
-      }
+  &:hover,
+  &:focus {
+    transition: 0.2;
 
-    &:active {
-      opacity: 0.3;
-      transition: 0.2;
-    }
+    fill: #46c1ae;;
   }
+
+  &:active {
+    opacity: 0.3;
+
+    transition: 0.2;
+  }
+}
+@mixin links-state {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+@mixin product-state {
+  &:hover,
+  &:focus {
+    box-shadow: 0px 6px 10px;
+  }
+  &:active {
+    box-shadow: 0px 3px 5px;
+  }
+}
+@mixin copyright-state {
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+@mixin margin-reset {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 .social-item__link--icon {
   @include icon-state;
 }
