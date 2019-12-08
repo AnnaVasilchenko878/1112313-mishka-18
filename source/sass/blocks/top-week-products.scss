@@ -30,7 +30,10 @@
 
   line-height: 24px;
 }
-
+.top-week-product__wrapper-image {
+  max-width: 260px;
+  max-height: 315px;
+}
 .top-week-product__image {
   margin-bottom: 29px;
   margin-left: 30px;
@@ -52,14 +55,7 @@
   margin-left: 30px;
   padding: 20px 85px;
 
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  color: $text-color;
-  text-transform: uppercase;
-
-  background-color: $main-background;
-  border: 2px solid $text-color;
+@include button-style;
 }
 
 .top-week-product__details {
@@ -113,7 +109,10 @@
   .top-week-product__price {
     font-size: 20px;
   }
-
+  .top-week-product__wrapper-image {
+    max-width: 333px;
+    max-height: 404px;
+  }
   .top-week-product__image {
     width: 333px;
     height: 404px;
@@ -140,4 +139,8 @@
 
     line-height: 17px;
   }
+    .top-week-product__wrapper-image {
+      max-width: 525px;
+      max-height: 636px;
+    }
 }

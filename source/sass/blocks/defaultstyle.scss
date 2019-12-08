@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  margin: 0 auto;
   padding: 0;
 
   font-weight: 400;
@@ -19,17 +18,11 @@ body {
   color: $text-color;
 
   background-color: $main-background;
-  border: 1px solid black;
 
   a {
     text-decoration: none;
   }
-  .button {
-    @include button-default;
-  }
-  .reset-list {
-    @include list-default;
-  }
+
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
   input[type="radio"].visually-hidden {
@@ -49,21 +42,29 @@ body {
     clip-path: inset(100%);
   }
 }
-
+.button {
+  @include button-default;
+}
+.reset-list {
+  @include list-default;
+}
 @media (min-width: $mobile-width) {
-  body {
+  .page-container {
     width: 320px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $tablet-width) {
-  body {
+  .page-container {
     width: 770px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
+  .page-container {
     width: $desktop-width;
+    margin: 0 auto;
   }
 }

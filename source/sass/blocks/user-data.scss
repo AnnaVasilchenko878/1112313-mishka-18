@@ -1,0 +1,12 @@
+.user-data {
+  @include fieldset-reset;
+}
+.user-data__item {
+  @include margin-reset;
+}
+.user-data__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
