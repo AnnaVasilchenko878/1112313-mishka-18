@@ -1,11 +1,13 @@
-@import "node_modules/node-normalize-scss/_normalize.scss";
 @import "blocks/base/variables.scss";
 @import "blocks/base/fonts.scss";
+@import "blocks/global/mixins.scss";
 @import "blocks/base/defaultstyle.scss";
 @import "blocks/global/header.scss";
+@import "blocks/components/site-nav.scss";
 @import "blocks/components/intro.scss";
 @import "blocks/components/intro-promo.scss";
 @import "blocks/components/product.scss";
+@import "blocks/components/catalog-menu.scss";
 @import "blocks/components/top-week-products.scss";
 @import "blocks/components/about-us.scss";
 @import "blocks/components/reviews.scss";
@@ -13,7 +15,11 @@
 @import "blocks/global/footer.scss";
 @import "blocks/components/social.scss";
 @import "blocks/components/copyright.scss";
+@import "blocks/components/product-card.scss";
 @import "blocks/components/catalog.scss";
 @import "blocks/components/production.scss";
-@import "blocks/components/form-registration.scss";
+@import "blocks/components/registration.scss";
 @import "blocks/components/group-type.scss";
+@import "blocks/components/group-color.scss";
+@import "blocks/components/user-data.scss";
+@import "blocks/components/user-contacts.scss";

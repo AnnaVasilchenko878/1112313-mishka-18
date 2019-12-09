@@ -43,16 +43,16 @@
 .reviews__button {
   width: 50px;
   margin-right: 80px;
+
+  @include arrow-state;
+}
+
+.reviews-card__button-icon {
+  @include arrow-state;
 }
 
 .reviews__link {
   padding: 20px 80px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: $text-color;
-  text-transform: uppercase;
-
-  border: 2px solid $text-color;
+  @include button-style;
 }

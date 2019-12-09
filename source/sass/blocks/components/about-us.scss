@@ -21,6 +21,9 @@
   line-height: 20px;
   color: #000000;
 
+  @include margin-reset;
+
+
   &::before {
     content: "";
     position: absolute;
@@ -92,6 +95,30 @@
 
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--saving {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--knitting {
+      order: 2;
+    }
+
+    &--patriotism {
+      order: 4;
+    }
+
+    &--present {
+      order: 6;
+    }
   }
 }
 

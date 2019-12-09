@@ -16,6 +16,8 @@
 
 .contacts__item {
   display: flex;
+
+  @include margin-reset;
 }
 
 .contacts__subtitle {
@@ -32,6 +34,8 @@
 }
 
 .contacts__map {
+  max-width: 322px;
+  max-height: 457px;
   margin-bottom: 39px;
 }
 
@@ -39,11 +43,5 @@
   margin-left: 30px;
   padding: 19px 52px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
-  color: $text-color;
-  text-transform: uppercase;
-
-  border: 2px solid $text-color;
+  @include button-style;
 }

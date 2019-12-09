@@ -4,14 +4,24 @@
   background-color: #f1f1f1;
 }
 
-@media (min-width: $tablet-width) {
-  .footer {
-    display: flex;
+@media (min-width: $mobile-width) {
+  .footer__logo-image {
+    position: absolute;
+
+    display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .footer {
-    min-height: 90px;
+    display: flex;
+    align-items: baseline;
+    padding: 11px 50px;
+  }
+
+  .footer__logo-image {
+    position: static;
+
+    display: block;
   }
 }
