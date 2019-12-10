@@ -1,3 +1,6 @@
+.group-type{
+ @include fieldset-reset;
+}
 .group-type__item{
   @include margin-reset;
 }
