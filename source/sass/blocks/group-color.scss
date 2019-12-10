@@ -1,0 +1,12 @@
+.group-color {
+  @include fieldset-reset;
+}
+.group-color__item {
+  @include margin-reset;
+}
+.group-color__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}

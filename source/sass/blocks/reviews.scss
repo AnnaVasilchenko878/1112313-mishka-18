@@ -49,8 +49,12 @@
 }
 
 .reviews__button {
+    @include arrow-state;
   width: 50px;
   margin-right: 80px;
+}
+.reviews-card__button-icon {
+  @include arrow-state;
 }
 
 .reviews-card__button-icon {
@@ -64,32 +68,6 @@
 }
 
 .reviews__link {
+  @include button-style;
   padding: 20px 80px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: $text-color;
-  text-transform: uppercase;
-  margin-left: 30px;
-
-  border: 2px solid $text-color;
-
-  &:hover {
-    color: #ececec;
-
-    background-color: #444444;
-  }
-
-  &:active {
-    // уточнить свойство rgba
-    color: rgba(0, 0, 0, 0.3);
-  }
-}
-@media (min-width: $tablet-width) {
-
-  .reviews__title {
-    font-size: 43px;
-    line-height: 50px;
-  }
 }

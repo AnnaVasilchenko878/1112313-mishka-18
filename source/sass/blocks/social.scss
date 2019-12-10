@@ -7,6 +7,7 @@
 }
 
 .social__item {
+  @include margin-reset;
   width: 23px;
   margin-right: 41px;
 }

@@ -10,6 +10,7 @@
 }
 
 .about-us__item {
+  @include margin-reset;
   position: relative;
 
   width: 251px;
@@ -92,6 +93,30 @@
 
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--saving {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--knitting {
+      order: 2;
+    }
+
+    &--patriotism {
+      order: 4;
+    }
+
+    &--present {
+      order: 6;
+    }
   }
 }
 

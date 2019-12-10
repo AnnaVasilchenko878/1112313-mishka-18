@@ -16,11 +16,7 @@
 .copyright__link {
   width: 27px;
 }
-.copyright__link--icon {
-  &:hover {
-    fill: #46c1ae;
-  }
-  &:active {
-    opacity: 0.3;
-  }
+.copyright__link-icon {
+  @include copyright-state;
+  fill: $tiffany-color;
 }
