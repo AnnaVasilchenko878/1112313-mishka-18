@@ -7,15 +7,20 @@
 }
 
 .social__item {
-  @include margin-reset;
   width: 23px;
   margin-right: 41px;
+
+  @include margin-reset;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     width: 256px;
     margin: 0 auto;
+  }
+
+  .social__list {
+    margin-bottom: 0;
   }
 }
 

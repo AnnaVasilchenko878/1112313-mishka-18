@@ -16,7 +16,9 @@
 .copyright__link {
   width: 27px;
 }
+
 .copyright__link-icon {
-  @include copyright-state;
   fill: $tiffany-color;
+
+  @include copyright-state;
 }

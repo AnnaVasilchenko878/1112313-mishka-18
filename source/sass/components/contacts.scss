@@ -17,6 +17,8 @@
 .contacts__item {
   @include margin-reset;
   display: flex;
+
+  @include margin-reset;
 }
 
 .contacts__subtitle {
@@ -42,4 +44,6 @@
   @include button-style;
   margin-left: 30px;
   padding: 19px 52px;
+
+  @include button-style;
 }

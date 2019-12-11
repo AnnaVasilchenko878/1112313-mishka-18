@@ -1,9 +1,7 @@
-.group-type{
- @include fieldset-reset;
-}
-.group-type__item{
+.group-type__item {
   @include margin-reset;
 }
+
 .group-type__label {
   font-weight: 700;
   font-size: 17px;

@@ -53,8 +53,9 @@
 @media (min-width: $desktop-width) {
   .catalog-menu__item {
     width: 525px;
+
     &::before {
-      left:437px;
+      left: 437px;
     }
   }
 }

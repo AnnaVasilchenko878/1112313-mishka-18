@@ -11,31 +11,34 @@
 <body>
   <div class="page-container">
     <header class="header header__toggle">
-      <div class="header__wrapper">
-        <a class="header__logo-link" aria-label="Логотип компании">
-          <picture>
-            <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
-            <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
-            <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
-            <img src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
-          </picture>
-        </a>
-        <button class="button header__button header__button--menu-site" type="button" aria-label="Открыть меню сайта">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="19.958px" height="14px" viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14"
-            xml:space="preserve">
-            <rect fill="#231F20" width="19.958" height="2" />
-            <rect y="6" fill="#231F20" width="19.958" height="2" />
-            <rect y="12" fill="#231F20" width="19.958" height="2" />
-          </svg>
-        </button>
-      </div>
       <nav class="header__navigaton-menu site-nav">
         <ul class="site-nav__list reset-list">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--logo">
+            <div class="header__wrapper">
+              <a class="header__logo-link" aria-label="Логотип компании">
+                <picture>
+                  <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
+                  <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
+                  <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                  <img src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
+                </picture>
+              </a>
+              <button class="button header__button header__button--menu-site" type="button"
+                aria-label="Открыть меню сайта">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px"
+                  viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
+                  <rect fill="#231F20" width="19.958" height="2" />
+                  <rect y="6" fill="#231F20" width="19.958" height="2" />
+                  <rect y="12" fill="#231F20" width="19.958" height="2" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="site-nav__item site-nav__item--catalog">
             <a class="site-nav__link" href="catalog.html" aria-label="Перейти в каталог товаров">Каталог товаров</a>
           </li>
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--knitting">
             <a class="site-nav__link" href="form.html" aria-label="Перейти к оформлению заказа">Вязание на заказ</a>
           </li>
           <li class="site-nav__item site-nav__item--search">
@@ -62,6 +65,9 @@
             </button>
             <a class="site-nav__link" href="#">Корзина: пока пуста</a>
           </li>
+          <li class="site-nav__item site-nav__item--free-delivery">Бесплатная доставка по России</li>
+          <li class="site-nav__item site-nav__item--new-product">Новые поступления</li>
+          <li class="site-nav__item site-nav__item--sale">Распродажа</li>
         </ul>
       </nav>
     </header>
@@ -108,12 +114,12 @@
                 <td class="detais-row__value">15см</td>
               </tr>
             </table>
+            <div class="top-week-product__wrapper-image">
+              <img class="top-week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
+                alt="Продукт недели вязанная корзинка">
+            </div>
             <p class="top-week-product__price">Цена: 990 руб.</p>
             <button class="button top-week-product__button" type="button" aria-label="Выбрать размеры">Заказать</button>
-          </div>
-          <div class="top-week-product__wrapper-image">
-            <img class="top-week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
-              alt="Продукт недели вязанная корзинка">
           </div>
         </div>
       </section>
@@ -174,14 +180,23 @@
           </li>
         </ul>
         <div class="contacts__map">
-          <img class="contacts__img" src="img/map-mobile@1x.jpg" width="322" height="457"
-            alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <div class="contacts__wrapper">
+            <img class="contacts__img" src="img/map-mobile@1x.jpg" width="322" height="457"
+              alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </div>
         </div>
         <!-- Здесь будет интерактивная карта -->
         <a class="button contacts__link contacts__link--typing" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="footer">
+      <a class="footer__logo-link" aria-label="Логотип компании">
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+          <img class="footer__logo-image" src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
+        </picture>
+      </a>
       <section class="footer__social social">
         <h2 class="visually-hidden">Мишка в соцсетях</h2>
         <ul class="social__list reset-list">

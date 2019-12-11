@@ -3,10 +3,11 @@
 }
 
 .catalog__item {
-  @include margin-reset;
   width: 260px;
   margin-bottom: 30px;
   margin-left: 30px;
+
+  @include margin-reset;
 }
 
 @media (min-width: $tablet-width) {

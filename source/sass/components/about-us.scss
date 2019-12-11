@@ -22,6 +22,9 @@
   line-height: 20px;
   color: #000000;
 
+  @include margin-reset;
+
+
   &::before {
     content: "";
     position: absolute;

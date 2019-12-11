@@ -1,0 +1,206 @@
+.site-nav__item {
+  padding: 15px 51px;
+
+  text-align: left;
+
+  border-bottom: 1px solid $border-color;
+
+  @include margin-reset;
+
+  &--sale,
+  &--new-product,
+  &--free-delivery {
+    position: absolute;
+    display: none;
+  }
+}
+
+.site-nav__link {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  @include links-state;
+}
+
+.site-nav__button {
+  margin-right: 14px;
+  margin-left: -50px;
+}
+
+.button__icon {
+  fill: #d3d2d2;
+
+  @include icon-state;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-nav__item {
+    border-right: 1px solid #ececec;
+
+    &--logo {
+      order: 1;
+      width: 370px;
+      padding-top: 14px;
+    }
+
+    &--catalog {
+      order: 4;
+      width: 192px;
+      padding: 20px 24px;
+
+      background-color: #f9f9f9;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    &--knitting {
+      order: 4;
+      width: 192px;
+      padding: 20px 24px;
+
+      background-color: #f9f9f9;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    &--search {
+      order: 2;
+      width: 60px;
+      padding: 19px 29px;
+    }
+
+    &--basket {
+      order: 3;
+      width: 340px;
+      padding: 19px 65px;
+    }
+
+    &--free-delivery {
+      position: static;
+
+      display: block;
+      order: 5;
+      width: 386px;
+      padding-top: 20px;
+      padding-left: 106px;
+
+      background-color: #f9f9f9;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    &--new-product,
+    &--sale {
+      position: absolute;
+
+      display: none;
+    }
+  }
+
+  .site-nav__button {
+    margin-right: 19px;
+    margin-left: -17px;
+  }
+
+  .site-nav__link--hidden {
+    position: absolute;
+
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav__list {
+    display: flex;
+  }
+
+  .site-nav__item {
+    padding-top: 26px;
+
+    border-right: 1px solid #ececec;
+
+    &--reset-border {
+      border-right: none;
+    }
+
+    &--logo {
+      order: 3;
+      width: 300px;
+    }
+
+    &--catalog {
+      order: 1;
+
+      background-color: #ffffff;
+      border-bottom: 1px solid #ececec;
+    }
+
+    &--knitting {
+      order: 2;
+      width: 230px;
+
+      background-color: #ffffff;
+      border-right: none;
+      border-bottom: 1px solid #ececec;
+    }
+
+    &--search {
+      order: 4;
+      width: 85px;
+    }
+
+    &--basket {
+      order: 5;
+
+      border-right: none;
+    }
+
+    &--free-delivery {
+      order: 8;
+      width: 575px;
+      padding-top: 25px;
+      padding-left: 293px;
+
+      border-right: none;
+    }
+
+    &--new-product {
+      position: static;
+
+      display: block;
+      order: 6;
+      padding-top: 25px;
+      padding-left: 41px;
+
+      font-weight: 700;
+      color: #000000;
+
+      background-color: #f9f9f9;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    &--sale {
+      position: static;
+
+      display: block;
+      order: 7;
+      padding-top: 25px;
+      padding-left: 41px;
+
+      font-weight: 700;
+      color: #000000;
+
+      background-color: #f9f9f9;
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+}

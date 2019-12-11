@@ -37,19 +37,24 @@
   padding: 13px 20px;
 
   border-top: 1px solid $border-color;
+
   border-bottom: 1px solid $border-color;
 }
 
 .reviews__button {
-    @include arrow-state;
+
   width: 50px;
   margin-right: 80px;
+
+  @include arrow-state;
 }
+
 .reviews-card__button-icon {
   @include arrow-state;
 }
 
 .reviews__link {
-  @include button-style;
   padding: 20px 80px;
+
+  @include button-style;
 }
