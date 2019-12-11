@@ -39,6 +39,9 @@
   .site-nav__list {
     display: flex;
     flex-wrap: wrap;
+    &--promo {
+      border-bottom: none;
+    }
   }
 
   .site-nav__item {
@@ -82,7 +85,7 @@
       padding: 19px 65px;
     }
 
-    &--free-delivery {
+     &--free-delivery {
       position: static;
 
       display: block;
@@ -176,6 +179,7 @@
 
       display: block;
       order: 6;
+      width: 263px;
       padding-top: 25px;
       padding-left: 41px;
 

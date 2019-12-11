@@ -28,7 +28,7 @@
     width: 316px;
     margin-right: 31px;
 
-    &--margin-reset {
+    &:last-child {
       margin-right: 0;
     }
   }

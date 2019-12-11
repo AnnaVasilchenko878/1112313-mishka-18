@@ -3,16 +3,17 @@
 
   border-bottom: 1px solid $border-color;
 }
-
+.header__wrapper {
+  display: flex;
+}
 .header__logo-link {
   width: 86px;
-  margin-right: 67px;
-  margin-left: 116px;
+  margin-right: 112px;
+  margin-left: 30px;
 }
 
 .header__button {
-  background-color: transparent;
-  border: none;
+  @include button-default;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,13 +48,6 @@
   .header__navigation-menu {
     width: auto;
   }
-
-  .header__wrapper {
-    position: absolute;
-
-    display: none;
-  }
-
   .site-nav__item {
     width: 25%;
     padding-top: 26px;

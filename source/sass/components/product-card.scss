@@ -79,7 +79,7 @@
   .product-card__description {
     margin-bottom: 161px;
 
-    &--margin-reset {
+    &:last-child {
       margin-bottom: 130px;
     }
 

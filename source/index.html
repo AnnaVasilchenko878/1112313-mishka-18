@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>Mishka</title>
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -16,10 +15,10 @@
           <li class="site-nav__item site-nav__item--logo">
             <div class="header__wrapper">
               <a class="header__logo-link" aria-label="Логотип компании">
-                <picture>
-                  <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
-                  <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
+                <picture class="header__logo-image">
                   <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                  <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
+                  <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
                   <img src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
                 </picture>
               </a>
@@ -65,9 +64,15 @@
             </button>
             <a class="site-nav__link" href="#">Корзина: пока пуста</a>
           </li>
+        </ul>
+        <ul class="site-nav__list site-nav__list--promo reset-list">
           <li class="site-nav__item site-nav__item--free-delivery">Бесплатная доставка по России</li>
-          <li class="site-nav__item site-nav__item--new-product">Новые поступления</li>
-          <li class="site-nav__item site-nav__item--sale">Распродажа</li>
+          <li class="site-nav__item site-nav__item--new-product">
+            <a class="site-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="site-nav__item site-nav__item--sale">
+            <a class="site-nav__link">Распродажа</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -115,8 +120,12 @@
               </tr>
             </table>
             <div class="top-week-product__wrapper-image">
-              <img class="top-week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
-                alt="Продукт недели вязанная корзинка">
+              <picture class="top-week-product__image" >
+                <source srcset="img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)">
+                <source srcset="img/triple-set-tablet@1x.jpg" media="(min-width: 770px)">
+                <source srcset="img/triple-set-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/triple-set-mobile@1x.jpg" alt="Продукт недели вязанная корзинка">
+              </picture>
             </div>
             <p class="top-week-product__price">Цена: 990 руб.</p>
             <button class="button top-week-product__button" type="button" aria-label="Выбрать размеры">Заказать</button>
