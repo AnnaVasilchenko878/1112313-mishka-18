@@ -10,6 +10,7 @@
 }
 
 .about-us__item {
+  @include margin-reset;
   position: relative;
 
   width: 251px;
@@ -20,6 +21,9 @@
   font-size: 17px;
   line-height: 20px;
   color: #000000;
+
+  @include margin-reset;
+
 
   &::before {
     content: "";
@@ -35,35 +39,35 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-}
 
-.about-us__item--saving {
-  &::before {
-    background-image: url("../img/icon-feature-money.svg");
+  &--saving {
+    &::before {
+      background-image: url("../img/icon-feature-money.svg");
+    }
   }
-}
 
-.about-us__item--like {
-  &::before {
-    background-image: url("../img/icon-feature-heart.svg");
+  &--like {
+    &::before {
+      background-image: url("../img/icon-feature-heart.svg");
+    }
   }
-}
 
-.about-us__item--knitting {
-  &::before {
-    background-image: url("../img/icon-feature-ball.svg");
+  &--knitting {
+    &::before {
+      background-image: url("../img/icon-feature-ball.svg");
+    }
   }
-}
 
-.about-us__item--patriotism {
-  &::before {
-    background-image: url("../img/icon-feature-rocket.svg");
+  &--patriotism {
+    &::before {
+      background-image: url("../img/icon-feature-rocket.svg");
+    }
   }
-}
 
-.about-us__item--present {
-  &::before {
-    background-image: url("../img/icon-feature-gift.svg");
+  &--present {
+    &::before {
+      background-image: url("../img/icon-feature-gift.svg");
+    }
   }
 }
 
@@ -83,15 +87,38 @@
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
-    width: 750px;
+    width: 737px;
   }
 
   .about-us__item {
     width: 295px;
-    margin-right: 50px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--saving {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--knitting {
+      order: 2;
+    }
+
+    &--patriotism {
+      order: 4;
+    }
+
+    &--present {
+      order: 6;
+    }
   }
 }
 
@@ -116,7 +143,6 @@
   .about-us__item {
     width: 290px;
     margin-right: 148px;
-
     line-height: 22px;
   }
 }

@@ -1,0 +1,35 @@
+.catalog__list {
+  margin-bottom: 30px;
+}
+
+.catalog__item {
+  width: 260px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+
+  @include margin-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    display: flex;
+    width: 634px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    display: block;
+    width: 316px;
+    margin-right: 31px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

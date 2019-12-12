@@ -16,19 +16,17 @@
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.5;
   }
 }
 .catalog-menu__item {
-  // Может написать функцию li+5px
-  &:hover {
-    margin-top: -5px;
-  }
-}
-.catalog-menu__item--background-dark {
-  background-color: #56c3b2;
+  @include catalog-menu-state;
 
-  &::before {
-    background-image: url("../img/icon-toy.svg");
+&--background-dark {
+    background-color: #56c3b2;
+    &::before {
+      background-image: url("../img/icon-toy.svg");
+    }
   }
 }
 
@@ -44,11 +42,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .products__menu {
-    display: flex;
-    margin-left: 53px;
-  }
-
   .catalog-menu__item {
     width: 334px;
   }
@@ -60,10 +53,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .products__menu {
-    margin-left: 60px;
-  }
   .catalog-menu__item {
     width: 525px;
+
+    &::before {
+      left: 437px;
+    }
   }
 }

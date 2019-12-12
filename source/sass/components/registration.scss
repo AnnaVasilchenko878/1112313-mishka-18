@@ -1,0 +1,98 @@
+.registration__group {
+  border: none;
+}
+
+.registration__text {
+  width: 242px;
+  margin-bottom: 44px;
+  margin-left: 10px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.registration__title {
+  position: relative;
+
+  margin-bottom: 39px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $tiffany-color;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 56px;
+
+    width: 198px;
+    height: 1px;
+
+    background-color: $tiffany-color;
+  }
+}
+
+.registration__explanation {
+  margin-bottom: 26px;
+  margin-left: 14px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.registration__button {
+  margin-left: 14px;
+  padding: 20px 45px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $text-color;
+  text-transform: uppercase;
+
+  border: 2px solid $text-color;
+  // добавить миксин состояния
+}
+
+@media (min-width: $tablet-width) {
+  .registration__text {
+    width: 612px;
+    padding-left: 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .registration__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .registration__explanation {
+    width: 300px;
+  }
+
+  .registration__button {
+    width: 268px;
+    margin-right: -137px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .registration__text {
+    width: 672px;
+    margin: 0 auto;
+  }
+
+  .registration__button {
+    margin-right: 174px;
+  }
+
+  .registration__explanation {
+    margin-right: 115px;
+  }
+}

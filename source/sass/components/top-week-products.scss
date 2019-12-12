@@ -31,6 +31,11 @@
   line-height: 24px;
 }
 
+.top-week-product__wrapper-image {
+  max-width: 260px;
+  max-height: 315px;
+}
+
 .top-week-product__image {
   margin-bottom: 29px;
   margin-left: 30px;
@@ -70,10 +75,11 @@
     // уточнить свойство rgba
     color: rgba(0, 0, 0, 0.3);
   }
+  @include button-style;
 }
 
 .top-week-product__details {
-  width: 387px;
+  width: 350px;
   margin-bottom: 28px;
   margin-left: 30px;
 }
@@ -124,15 +130,25 @@
     font-size: 20px;
   }
 
+  .top-week-product__wrapper-image {
+    max-width: 333px;
+    max-height: 404px;
+    position: relative;
+  }
+
   .top-week-product__image {
     width: 333px;
     height: 404px;
+    position: absolute;
+    top: -279px;
+    left: 345px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .top-week-product {
     margin-left: 227px;
+    margin-bottom: 300px;
   }
 
   .top-week-product__title {
@@ -149,5 +165,14 @@
     margin-left: -133px;
 
     line-height: 17px;
+  }
+
+  .top-week-product__wrapper-image {
+    max-width: 525px;
+    max-height: 636px;
+  }
+  .top-week-product__image {
+    top: -286px;
+    left: 399px;
   }
 }

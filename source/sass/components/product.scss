@@ -1,0 +1,12 @@
+@media (min-width: $tablet-width) {
+  .products__menu {
+    display: flex;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__menu {
+    margin-left: 60px;
+  }
+}

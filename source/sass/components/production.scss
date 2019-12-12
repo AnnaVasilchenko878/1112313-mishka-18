@@ -26,6 +26,11 @@
   }
 }
 
+.production__video-wrapper {
+  min-width: 260px;
+  min-height: 150px;
+}
+
 .production__image {
   margin-left: 30px;
 }
@@ -100,6 +105,16 @@
     // Сделать миксин для состояния кнопки и добавить сюда
   }
 }
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .production__video-wrapper {
+    min-width: 668px;
+    min-height: 455px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .production__video-wrapper {
+    min-width: 682px;
+    min-height: 455px;
+  }
 }
