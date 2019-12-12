@@ -15,9 +15,9 @@
 }
 
 .contacts__item {
-  @include margin-reset;
   display: flex;
 
+  @include margin-reset;
   @include margin-reset;
 }
 
@@ -35,9 +35,9 @@
 }
 
 .contacts__map {
-  margin-bottom: 39px;
   max-width: 322px;
   max-height: 457px;
+  margin-bottom: 39px;
 }
 
 .contacts__link {

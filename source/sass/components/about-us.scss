@@ -10,7 +10,6 @@
 }
 
 .about-us__item {
-  @include margin-reset;
   position: relative;
 
   width: 251px;
@@ -143,6 +142,7 @@
   .about-us__item {
     width: 290px;
     margin-right: 148px;
+
     line-height: 22px;
   }
 }
