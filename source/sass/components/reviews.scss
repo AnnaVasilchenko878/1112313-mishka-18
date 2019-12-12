@@ -1,0 +1,58 @@
+.reviews {
+  margin-left: 30px;
+}
+
+.reviews__title {
+  margin-bottom: 38px;
+  margin-left: 30px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__autor-name {
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
+}
+
+.reviews__autor-link {
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.reviews__wrapper-button {
+  width: 257px;
+  margin-bottom: 38px;
+  margin-left: 4px;
+  padding: 13px 20px;
+
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.reviews__button {
+  width: 50px;
+  margin-right: 80px;
+
+  @include arrow-state;
+}
+
+.reviews-card__button-icon {
+  @include arrow-state;
+}
+
+.reviews__link {
+  padding: 20px 80px;
+
+  @include button-style;
+}

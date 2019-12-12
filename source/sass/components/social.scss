@@ -1,0 +1,31 @@
+.social__list {
+  display: flex;
+  width: 144px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+  padding-top: 30px;
+}
+
+.social__item {
+  width: 23px;
+  margin-right: 41px;
+
+  @include margin-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 256px;
+    margin: 0 auto;
+  }
+
+  .social__list {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 256px;
+  }
+}

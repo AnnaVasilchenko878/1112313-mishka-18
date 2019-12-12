@@ -1,34 +1,26 @@
 html {
   box-sizing: border-box;
+}
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-  margin: 0 auto;
   padding: 0;
-  width: 321px;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
-  color: #444444;
+  color: $text-color;
 
-  background-color: #ffffff;
+  background-color: $main-background;
 
   a {
     text-decoration: none;
-  }
-
-  .reset-list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
   }
 
   .visually-hidden:not(:focus):not(:active),
@@ -47,7 +39,35 @@ body {
     border: 0;
 
     clip: rect(0, 0, 0, 0);
-    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
+  }
+}
+
+.button {
+  @include button-default;
+}
+
+.reset-list {
+  @include list-default;
+}
+
+@media (min-width: $mobile-width) {
+  .page-container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-container {
+    width: 770px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-container {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }
