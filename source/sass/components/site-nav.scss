@@ -59,6 +59,7 @@
       padding: 20px 24px;
 
       background-color: #f9f9f9;
+      background-color: #f1f1f1;
       border-right: none;
       border-bottom: none;
     }
@@ -69,6 +70,7 @@
       padding: 20px 24px;
 
       background-color: #f9f9f9;
+      background-color: #f1f1f1;
       border-right: none;
       border-bottom: none;
     }
@@ -85,7 +87,7 @@
       padding: 19px 65px;
     }
 
-     &--free-delivery {
+    &--free-delivery {
       position: static;
 
       display: block;
@@ -95,6 +97,7 @@
       padding-left: 106px;
 
       background-color: #f9f9f9;
+      background-color: #f1f1f1;
       border-right: none;
       border-bottom: none;
     }
@@ -128,6 +131,10 @@
     padding-top: 26px;
 
     border-right: 1px solid #ececec;
+
+    &--promo {
+      border-bottom: none;
+    }
 
     &--reset-border {
       border-right: none;
@@ -167,7 +174,7 @@
 
     &--free-delivery {
       order: 8;
-      width: 575px;
+      width: 599px;
       padding-top: 25px;
       padding-left: 293px;
 
@@ -187,6 +194,7 @@
       color: #000000;
 
       background-color: #f9f9f9;
+      background-color: #f1f1f1;
       border-right: none;
       border-bottom: none;
     }
@@ -203,6 +211,7 @@
       color: #000000;
 
       background-color: #f9f9f9;
+      background-color: #f1f1f1;
       border-right: none;
       border-bottom: none;
     }

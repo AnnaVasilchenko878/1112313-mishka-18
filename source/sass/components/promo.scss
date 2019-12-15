@@ -1,4 +1,18 @@
-.catalog-menu__item {
+@media (min-width: $tablet-width) {
+  .promo-menu {
+    display: flex;
+    margin-top: 329px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-menu {
+    margin-left: 60px;
+  }
+}
+
+.promo-menu__item {
   position: relative;
 
   background-color: $tiffany-color;
@@ -28,7 +42,7 @@
   }
 }
 
-.catalog-menu__link {
+.promo-menu__link {
   display: block;
   width: 106px;
   padding: 30px 29px;
@@ -40,18 +54,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-menu__item {
+  .promo-menu__item {
     width: 334px;
   }
 
-  .catalog-menu__link {
+  .promo-menu__link {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-menu__item {
+  .promo-menu__item {
     width: 525px;
 
     &::before {

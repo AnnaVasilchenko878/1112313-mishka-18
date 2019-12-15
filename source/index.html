@@ -64,8 +64,6 @@
             </button>
             <a class="site-nav__link" href="#">Корзина: пока пуста</a>
           </li>
-        </ul>
-        <ul class="site-nav__list site-nav__list--promo reset-list">
           <li class="site-nav__item site-nav__item--free-delivery">Бесплатная доставка по России</li>
           <li class="site-nav__item site-nav__item--new-product">
             <a class="site-nav__link" href="#">Новые поступления</a>
@@ -78,19 +76,14 @@
     </header>
     <main>
       <section class="intro intro-promo">
-        <!-- Исправить название секции после получения новых данных-->
         <h1 class="intro-promo__title">Милые штучки ручной<br> работы для дома</h1>
-      </section>
-      <section class="products">
-        <h2 class="visually-hidden">Товары</h2>
-        <ul class="products__menu catalog-menu reset-list">
-          <li class="catalog-menu__item">
-            <a class="catalog-menu__link" href="catalog.html"
-              aria-label="Перейти в каталог предметов интерьера">Предметы
+        <ul class="intro-promo__menu promo-menu reset-list">
+          <li class="promo-menu__item">
+            <a class="promo-menu__link" href="catalog.html" aria-label="Перейти в каталог предметов интерьера">Предметы
               интерьера</a>
           </li>
-          <li class="catalog-menu__item catalog-menu__item--background-dark">
-            <a class="catalog-menu__link" href="catalog.html" aria-label="Перейти в каталог детских игрушек">Детские
+          <li class="promo-menu__item catalog-menu__item--background-dark">
+            <a class="promo-menu__link" href="catalog.html" aria-label="Перейти в каталог детских игрушек">Детские
               игрушки</a>
           </li>
         </ul>
@@ -101,7 +94,6 @@
           <h3 class="top-week-product__subtitle">Товар недели</h3>
         </div>
         <div class="top-week-product__wrapper-flex">
-
           <div class="top-week-product__wrapper-description">
             <p class="top-week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести
               расцветках, и размерах.</p>
@@ -144,17 +136,19 @@
         </ul>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper">
-            <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
-            количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
-            мои
-            фотографии сразу стали более стильными, а также набирают больше лайков!
-          </blockquote>
-          <cite class="reviews__autor-name">Анастасия Красильникова</cite>
-          <a class="reviews__autor-link" href="#">@misssssiskras</a>
+        <div class="reviews__wrapper-flex">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__wrapper">
+            <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
+              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
+              мои
+              фотографии сразу стали более стильными, а также набирают больше лайков!
+            </blockquote>
+            <cite class="reviews__autor-name">Анастасия Красильникова</cite>
+            <a class="reviews__autor-link" href="#">@misssssiskras</a>
+          </div>
         </div>
-        <div class="reviews__wrapper-flex-tablet">
+        <div class="reviews__wrapper-flex-buttons">
           <div class="reviews__wrapper-button">
             <button class="button reviews-card__button reviews-card__button--back" type="button"
               aria-label="Показать предыдущий отзыв">
@@ -177,28 +171,36 @@
           </div>
           <a class="reviews__link" href="#" aria-label="Пререйти на сайт с отзывами">Написать</a>
         </div>
+
       </section>
+
       <section class="сontacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <ul class="contacts__list reset-list">
-            <li class="contacts__item">
-              <h3 class="contacts__subtitle">e-mail:</h3>
-              <a class="contacts__address" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__subtitle">адрес:</h3>
-              <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
-            </li>
-          </ul>
-          <div class="contacts__map">
-            <div class="contacts__wrapper">
-              <img class="contacts__img" src="img/map-mobile@1x.jpg" width="322" height="457"
+        <div class="contacts__wrapper-flex">
+        <h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__list reset-list">
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle">e-mail:</h3>
+            <a class="contacts__address" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle">адрес:</h3>
+            <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+          </li>
+        </ul>
+      </div>
+        <div class="contacts__map">
+          <div class="contacts__wrapper">
+            <picture class="contacts__img">
+              <source srcset="img/map-desktop@1x.jpg" media="(min-width: 1150px)">
+              <source srcset="img/map-tablet@1x.jpg" media="(min-width: 770px)">
+              <source srcset="img/map-mobile@1x.jpg" media="(min-width: 320px)">
+              <img src="img/map-modile@1x.svg"
                 alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-            </div>
+            </picture>
           </div>
-          <!-- Здесь будет интерактивная карта -->
-          <a class="button contacts__link contacts__link--typing" href="#">Напишите нам</a>
+        </div>
+        <!-- Здесь будет интерактивная карта -->
+        <a class="button contacts__link contacts__link--typing" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="footer">

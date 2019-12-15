@@ -4,6 +4,7 @@
 
 .user-data__item {
   @include margin-reset;
+  margin-bottom: 24px;
 }
 
 .user-data__label {
@@ -11,4 +12,21 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+  margin-bottom: 20px;
+}
+.user-data__input {
+  display: block;
+}
+@media (min-width: $tablet-width) {
+  .user-data {
+   display: flex;
+  }
+  .user-data__list {
+    width: 252px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .user-data__item {
+    display: flex;
+  }
 }

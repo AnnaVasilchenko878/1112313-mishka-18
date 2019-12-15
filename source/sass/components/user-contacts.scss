@@ -1,9 +1,12 @@
 .user-contacts {
   @include fieldset-reset;
+  margin-bottom: 50px;
 }
 
 .user-contacts__item {
   @include margin-reset;
+  margin-bottom: 34px;
+
 }
 
 .user-contacts__label {
@@ -12,4 +15,23 @@
   line-height: 16px;
   color: $tiffany-color;
   text-transform: uppercase;
+  margin-bottom: 9px;
+}
+.user-contacts__input {
+  display: block;
+}
+@media (min-width: $tablet-width) {
+  .user-contacts__item {
+    display: flex;
+  }
+  .user-contacts__label {
+    width: 60px;
+    margin-right: 50px;
+  }
+  .user-contacts__input {
+    width: 501px;
+  }
+  .user-contacts__wrapper-item {
+    background-color: #f1f1f1;
+  }
 }

@@ -137,6 +137,10 @@
   }
 
   .top-week-product__image {
+    position: absolute;
+    top: -279px;
+    left: 345px;
+
     width: 333px;
     height: 404px;
     position: absolute;
@@ -147,11 +151,13 @@
 
 @media (min-width: $desktop-width) {
   .top-week-product {
-    margin-left: 227px;
-    margin-bottom: 300px;
+    margin-top: 159px;
+    margin-left: 159px;
   }
 
   .top-week-product__title {
+    z-index: 1;
+
     order: 2;
     width: 515px;
 
@@ -171,8 +177,9 @@
     max-width: 525px;
     max-height: 636px;
   }
+
   .top-week-product__image {
-    top: -286px;
+    top: -518px;
     left: 399px;
   }
 }

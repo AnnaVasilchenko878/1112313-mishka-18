@@ -1,6 +1,4 @@
 .production__title {
-  position: relative;
-
   width: 121px;
   margin-bottom: 26px;
   margin-left: 127px;
@@ -10,20 +8,6 @@
   line-height: 24px;
   text-align: left;
   color: #000000;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 11px;
-    left: -66px;
-
-    width: 32px;
-    height: 22px;
-
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 .production__video-wrapper {
@@ -32,29 +16,13 @@
 }
 
 .production__image {
+  margin-bottom: 34px;
   margin-left: 30px;
-}
-.production__video-wrapper {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    cursor: pointer;
-    top: 40px;
-    left: 108px;
-
-    width: 102px;
-    height: 78px;
-
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 .production__text {
   width: 183px;
-  margin-bottom: 57px;
+  margin-bottom: 29px;
   margin-left: 64px;
 }
 
@@ -70,49 +38,40 @@
 
   border: 2px solid $text-color;
 }
+
 @media (min-width: $tablet-width) {
+  .production {
+    margin-bottom: 109px;
+  }
+  .production__video-wrapper {
+    min-width: 668px;
+    min-height: 455px;
+    margin-bottom: 43px;
+  }
+  .production__title {
+    width: 250px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 150px;
+  }
   .production__wrapper-flex {
     display: flex;
     flex-direction: column-reverse;
   }
-  .production__image {
-    width: 668px;
-    height: 455px;
-  }
-  .production__video-wrapper {
-    margin-bottom: 43px;
-    &::before {
-      top: 200px;
-      left: 296px;
-    }
-  }
-  .production__title {
-    font-size: 20px;
-    margin-left: 112px;
-    width: 250px;
-    margin-bottom: 20px;
-    &::before {
-      top: -1px;
-      left: -47px;
-    }
-  }
   .production__text {
-    width: 581px;
-    margin-left: 111px;
+    width: 564px;
+    margin-left: 150px;
+    margin-bottom: 40px;
   }
   .production__link {
-    padding: 20px 250px;
-    // Сделать миксин для состояния кнопки и добавить сюда
+    padding: 15px 241px;
   }
 }
-@media (min-width: $tablet-width) {
-  .production__video-wrapper {
-    min-width: 668px;
-    min-height: 455px;
-  }
-}
-
 @media (min-width: $desktop-width) {
+  .production {
+    margin-right: 105px;
+
+  }
   .production__video-wrapper {
     min-width: 682px;
     min-height: 455px;

@@ -63,6 +63,14 @@ body {
   @include list-default;
 }
 
+.button {
+  @include button-default;
+}
+
+.reset-list {
+  @include list-default;
+}
+
 @media (min-width: $mobile-width) {
   .page-container {
     width: 320px;
