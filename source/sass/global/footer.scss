@@ -2,11 +2,21 @@
   margin-top: 39px;
 
   background-color: #f1f1f1;
+  width: 100%;
+  position: relative;
+}
+.footer__logo-link {
+  position: absolute;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
+  }
+  .footer__logo-link {
+    position: static;
+    display: block;
   }
 }
 

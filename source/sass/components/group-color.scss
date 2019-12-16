@@ -1,12 +1,23 @@
 .group-color {
   @include fieldset-reset;
 }
+
 .group-color__item {
   @include margin-reset;
+  margin-bottom: 25px;
 }
+
 .group-color__label {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+}
+@media (min-width: $tablet-width) {
+  .group-color {
+    background-color: f1f1f1;
+  }
+  .group-color__list {
+    width: 500px;
+  }
 }
