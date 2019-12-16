@@ -121,11 +121,13 @@
 
   border: none;
 }
+
 @mixin catalog-menu-state {
-    &:hover {
-      margin-top: -5px;
-    }
+  &:hover {
+    margin-top: -5px;
+  }
 }
+
 .social-item__link--icon {
   @include icon-state;
 }

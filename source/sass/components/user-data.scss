@@ -3,30 +3,47 @@
 }
 
 .user-data__item {
-  @include margin-reset;
   margin-bottom: 24px;
+
+  @include margin-reset;
 }
 
 .user-data__label {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
-  margin-bottom: 20px;
 }
+
 .user-data__input {
   display: block;
 }
+
 @media (min-width: $tablet-width) {
   .user-data {
-   display: flex;
+    display: flex;
   }
+
   .user-data__list {
     width: 252px;
   }
-}
-@media (min-width: $desktop-width) {
+
   .user-data__item {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-data__label {
+    margin-right: 27px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .user-data__input {
+    width: 626px;
   }
 }

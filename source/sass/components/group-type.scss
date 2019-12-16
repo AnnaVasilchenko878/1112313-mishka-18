@@ -1,6 +1,7 @@
 .group-type__item {
-  @include margin-reset;
   margin-bottom: 25px;
+
+  @include margin-reset;
 }
 
 .group-type__label {
@@ -8,4 +9,11 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+}
+
+@media (min-width: $desktop-width) {
+  .group-type__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }

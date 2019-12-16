@@ -71,10 +71,12 @@
 
     background-color: #444444;
   }
+
   &:active {
     // уточнить свойство rgba
     color: rgba(0, 0, 0, 0.3);
   }
+
   @include button-style;
 }
 
@@ -143,9 +145,6 @@
 
     width: 333px;
     height: 404px;
-    position: absolute;
-    top: -279px;
-    left: 345px;
   }
 }
 

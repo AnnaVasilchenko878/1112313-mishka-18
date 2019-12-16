@@ -43,37 +43,67 @@
   .production {
     margin-bottom: 109px;
   }
+
   .production__video-wrapper {
     min-width: 668px;
     min-height: 455px;
     margin-bottom: 43px;
   }
+
   .production__title {
     width: 250px;
+    margin-left: 150px;
+
     font-size: 20px;
     line-height: 24px;
-    margin-left: 150px;
   }
+
   .production__wrapper-flex {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .production__text {
     width: 564px;
-    margin-left: 150px;
     margin-bottom: 40px;
+    margin-left: 150px;
   }
+
   .production__link {
     padding: 15px 241px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .production {
-    margin-right: 105px;
+    position: relative;
 
+    margin-right: 105px;
   }
+
   .production__video-wrapper {
+    position: absolute;
+    top: -1px;
+    left: -12px;
+
     min-width: 682px;
     min-height: 455px;
+  }
+
+  .production__title {
+    margin-bottom: 42px;
+    margin-left: 852px;
+  }
+
+  .production__text {
+    width: 222px;
+    margin-bottom: 51px;
+    margin-left: 852px;
+  }
+
+  .production__link {
+    width: 100px;
+    margin-left: 835px;
+    padding: 20px 26px;
   }
 }
