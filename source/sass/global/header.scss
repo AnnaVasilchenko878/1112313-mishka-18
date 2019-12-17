@@ -1,7 +1,8 @@
 .header {
-  min-height: 80px;
+  // min-height: 80px;
 
   border-bottom: 1px solid $border-color;
+  position: relative;
 }
 
 .header__wrapper {
@@ -10,11 +11,12 @@
 
 .header__logo-link {
   width: 86px;
-  margin-right: 112px;
+  margin-right: 61px;
   margin-left: 30px;
 }
 
 .header__button {
+  margin-top: -6px;
   @include button-default;
 }
 
@@ -25,7 +27,11 @@
     border-bottom: none;
     background-color: #ffffff;
   }
-
+  .header__logo-link {
+    margin-right: 64px;
+    margin-left: -2px;
+    margin-top: 3px;
+  }
   .header-navigation-menu {
     width: auto;
   }
@@ -50,16 +56,5 @@
 
   .header__navigation-menu {
     width: auto;
-  }
-
-  .site-nav__item {
-    width: 25%;
-    padding-top: 26px;
-
-    border-right: 1px solid #ececec;
-
-    &--reset-border {
-      border-right: none;
-    }
   }
 }

@@ -1,5 +1,5 @@
 .site-nav__item {
-  padding: 15px 51px;
+  padding: 14px 51px;
 
   text-align: left;
 
@@ -78,7 +78,9 @@
     &--search {
       order: 2;
       width: 60px;
-      padding: 19px 29px;
+      padding-left: 46px;
+      padding-right: 6px;
+      padding-top: 29px;
     }
 
     &--basket {
@@ -127,9 +129,15 @@
   }
 
   .site-nav__item {
-    padding-top: 26px;
+    padding: 0;
+    margin-top: 33px;
+    margin-bottom: -53px;
 
     border-right: 1px solid #ececec;
+
+    &--reset-border {
+      border-right: none;
+    }
 
     &--promo {
       border-bottom: none;
