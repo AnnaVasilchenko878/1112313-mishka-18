@@ -116,8 +116,8 @@
   .product-card__description {
     margin-bottom: 48px;
 
-    &:last-child {
-      margin-bottom: 11px;
+    &--margin-reset {
+      margin-bottom: 17px;
     }
   }
 }

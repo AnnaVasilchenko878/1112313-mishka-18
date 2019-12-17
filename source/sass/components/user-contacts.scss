@@ -44,7 +44,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-contacts__list {
+    margin-left: -150px;
+  }
   .user-contacts__item {
+    padding-left: 150px;
     &:not(:last-child) {
       background-color: #f1f1f1;
     }

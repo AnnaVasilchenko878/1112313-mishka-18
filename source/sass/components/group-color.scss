@@ -38,6 +38,8 @@
 @media (min-width: $desktop-width) {
   .group-color {
     background-color: #f1f1f1;
+    margin-left: -150px;
+    padding-left: 150px;
   }
 
   .group-color__list {
