@@ -36,11 +36,11 @@
   width: 257px;
   margin-top: 36px;
   margin-bottom: 57px;
-  margin-left: 4px;
+  margin-left: 30px;
   padding: 13px 20px;
 }
 
-.reviews-card__button {
+.reviews__button {
   border: 1px solid $border-color;
 
   @include arrow-state;
@@ -49,7 +49,7 @@
   padding: 15px 27px;
 }
 
-.reviews-card__button-icon {
+.reviews__button-icon {
   @include arrow-state;
 }
 
@@ -70,7 +70,7 @@
     padding-left: 20px;
   }
 
-  .reviews__wrapper-flex {
+  .reviews__wrapper-content {
     width: 497px;
   }
 
@@ -93,7 +93,7 @@
     width: 260px;
   }
 
-  .reviews-card__button {
+  .reviews__button {
     border: none;
     margin-bottom: 0;
   }
@@ -110,7 +110,7 @@
     padding-left: 134px;
   }
 
-  .reviews__wrapper-flex {
+  .reviews__wrapper-content {
     margin-right: 151px;
   }
 
