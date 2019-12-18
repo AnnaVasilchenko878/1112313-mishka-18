@@ -1,3 +1,10 @@
+.site-nav__list {
+  position: relative;
+}
+.site-nav__wrapper-item {
+  position: absolute;
+  display: none;
+}
 .site-nav__item {
   padding: 14px 51px;
 
@@ -48,6 +55,8 @@
 
   .site-nav__item {
     border-right: 1px solid #ececec;
+    position: static;
+    display: block;
 
     &--logo {
       order: 1;

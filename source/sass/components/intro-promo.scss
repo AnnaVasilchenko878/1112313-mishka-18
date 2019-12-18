@@ -1,17 +1,18 @@
 .intro-promo {
   min-height: 280px;
   margin-bottom: 29px;
+  margin-top: -7px;
 
   background-color: $main-background;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -125px -18px;
 }
 
 .intro-promo__title {
-  width: 244px;
+  width: 249px;
   margin: 0 auto;
-  padding-top: 64px;
+  padding-top: 71px;
 
   font-weight: 700;
   font-size: 27px;
