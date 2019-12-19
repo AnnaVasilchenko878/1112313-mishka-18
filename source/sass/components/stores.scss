@@ -1,0 +1,33 @@
+.stores-promo {
+	display: none;
+}
+
+@media(min-width: $tablet-width) {
+  .stores-promo {
+    display: flex;
+    justify-content: flex-end;
+    order: 4;
+    width: 289px;
+  }
+  .stores-promo__item {
+    width: 304px;
+    margin-top: 16px;
+    margin-left: 9px;
+    &--new-product,
+    &--sale {
+      display: none;
+    }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .stores-promo {
+  order: 4;
+  }
+  .stores-promo__item {
+    &--new-product,
+    &--sale {
+      display: block;
+    }
+  }
+}

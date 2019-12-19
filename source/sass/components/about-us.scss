@@ -1,5 +1,8 @@
+.about-us {
+  margin-left: 2px;
+}
 .about-us__title {
-  margin-bottom: 88px;
+  margin-bottom: 86px;
   margin-left: -75px;
 
   font-weight: 700;
@@ -14,7 +17,7 @@
   position: relative;
 
   width: 251px;
-  margin-bottom: 85px;
+  margin-bottom: 81px;
   margin-left: 30px;
 
   font-weight: 700;
@@ -28,8 +31,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: -57px;
-    left: 7px;
+    top: -56px;
+    left: -4px;
 
     display: block;
     width: 55px;
@@ -41,32 +44,44 @@
   }
 
   &--saving {
+    margin-bottom: 83px;
     &::before {
       background-image: url("../img/icon-feature-money.svg");
+      top: -60px;
     }
   }
 
   &--like {
+    margin-bottom: 84px;
     &::before {
       background-image: url("../img/icon-feature-heart.svg");
+      top: -53px;
     }
   }
 
   &--knitting {
+    margin-bottom: 83px;
     &::before {
       background-image: url("../img/icon-feature-ball.svg");
+    top: -53px;
+    left: -6px;
     }
   }
 
   &--patriotism {
+    margin-bottom: 83px;
     &::before {
       background-image: url("../img/icon-feature-rocket.svg");
+    top: -58px;
+    left: -6px;
     }
   }
 
   &--present {
     &::before {
       background-image: url("../img/icon-feature-gift.svg");
+    top: -57px;
+    left: -8px;
     }
   }
 }
@@ -74,11 +89,12 @@
 @media (min-width: $tablet-width) {
   .about-us {
     margin-left: 50px;
+    margin-bottom: 63px;
   }
 
   .about-us__title {
     margin-bottom: 95px;
-    margin-left: -409px;
+    margin-left: -414px;
 
     font-size: 43px;
     line-height: 50px;

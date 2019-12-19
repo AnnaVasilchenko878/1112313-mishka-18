@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $border-color;
+  padding-top: 22px;
+  padding-bottom: 13px;
+}
+.logo__link {
+  width: 86px;
+  margin-left: 85px;
+  margin-right: 62px;
+}
+.logo__buttom {
+  width: 320px;
+  margin-top: -9px;
+}
+
+@media(min-width: $tablet-width) {
+  .logo {
+    width: 407px;
+    border-right: 1px solid $border-color;
+    order: 1;
+    margin-left: -36px;
+    padding-bottom: 11px;
+  }
+  .logo__button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    order: 2;
+    width: 168px;
+  }
+  .logo__link {
+    margin-top: -13px;
+    margin-left: 77px;
+  }
+}

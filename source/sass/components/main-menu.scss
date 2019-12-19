@@ -1,0 +1,47 @@
+.main-menu__item {
+  border-bottom: 1px solid $border-color;
+  padding: 13px 51px;
+
+  text-align: left;
+
+  border-bottom: 1px solid $border-color;
+
+  @include margin-reset;
+  &--search,
+  &--basket {
+    margin-left: -31px;
+  }
+}
+.main-menu__link {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  @include links-state;
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    width: 479px;
+    display: flex;
+    order: 3;
+  }
+  .main-menu__item {
+    width: 221px;
+    margin-left: 33px;
+    margin-right: -86px;
+    padding: 13px 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu {
+    order: 1;
+    width: 457px;
+  }
+  .main-menu__item {
+    padding: 29px 14px;
+    margin-right: -4px;
+  }
+}

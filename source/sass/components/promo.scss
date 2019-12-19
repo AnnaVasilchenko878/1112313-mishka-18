@@ -28,7 +28,7 @@
 
     &::before {
       background-image: url("../img/icon-toy.svg");
-      top: 5px;
+      top: 19px;
     }
   }
 }
@@ -36,7 +36,7 @@
 .promo-menu__link {
   display: block;
   width: 106px;
-  padding: 28px 33px;
+  padding: 27px 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -56,6 +56,7 @@
   }
 
   .promo-menu__link {
+    padding: 27px 34px;
     font-size: 20px;
     line-height: 30px;
   }

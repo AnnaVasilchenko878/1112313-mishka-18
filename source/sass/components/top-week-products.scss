@@ -1,5 +1,5 @@
 .top-week-product {
-  margin-bottom: 76px;
+  margin-bottom: 70px;
 }
 
 .top-week-product__title {
@@ -15,7 +15,7 @@
 
 .top-week-product__subtitle {
   margin-left: 30px;
-
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -24,8 +24,8 @@
 }
 
 .top-week-product__description {
-  width: 225px;
-  margin-bottom: 34px;
+  width: 237px;
+  margin-bottom: 20px;
   margin-left: 30px;
 
   line-height: 24px;
@@ -45,7 +45,8 @@
 
 .top-week-product__price {
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   font-weight: 700;
   font-size: 17px;
@@ -54,8 +55,8 @@
 }
 
 .top-week-product__button {
-  margin-left: 30px;
-  padding: 20px 85px;
+  margin-left: 31px;
+  padding: 14px 80px;
 
   font-weight: 700;
   font-size: 17px;
@@ -82,13 +83,14 @@
 
 .top-week-product__details {
   width: 350px;
-  margin-bottom: 28px;
+  margin-bottom: 41px;
   margin-left: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .top-week-product {
-    margin-left: 50px;
+    margin-left: 18px;
+    margin-bottom: -24px;
   }
 
   .top-week-product__wrapper {
@@ -122,11 +124,14 @@
   .top-week-product__description {
     font-size: 17px;
     line-height: 30px;
+    width: 269px;
   }
 
   .top-week-product__details {
     line-height: 20px;
+    width: 279px;
   }
+
 
   .top-week-product__price {
     font-size: 20px;
@@ -141,7 +146,7 @@
   .top-week-product__image {
     position: absolute;
     top: -279px;
-    left: 345px;
+    left: 336px;
 
     width: 333px;
     height: 404px;
