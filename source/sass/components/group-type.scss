@@ -33,8 +33,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .group-type {
+    margin-bottom: -17px;
+  }
   .group-type__label {
     font-size: 19px;
     line-height: 18px;
+  }
+  .group-type__item {
+    margin-bottom: 45px;
   }
 }
