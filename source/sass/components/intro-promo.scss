@@ -28,7 +28,7 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: -191px -59px;
-    margin-bottom: 158px;
+    margin-bottom: 14px;
   }
 
   .intro-promo__title {
@@ -49,7 +49,7 @@
     background-color: #f9f9f9;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 2px -63px;
   }
 
   .intro-promo__title {
@@ -58,5 +58,6 @@
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
+    padding-top: 95px;
   }
 }

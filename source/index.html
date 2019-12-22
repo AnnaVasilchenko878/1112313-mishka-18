@@ -11,9 +11,9 @@
   <div class="page-container">
     <header class="header header__toggle">
       <nav class="header__navigaton-menu site-nav">
-        <div class="site-nav logo">
+        <div class="site-nav__logo logo reset-list">
           <a class="logo__link" aria-label="Логотип компании">
-            <picture class="logo__image">
+            <picture class="logo__image logo__image--header">
               <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
               <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
               <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
@@ -30,13 +30,15 @@
             </svg>
           </button>
         </div>
+        <ul class="site-nav__list main-menu reset-list">
+          <li class="main-menu__item main-menu__item--catalog">
+            <a class="main-menu__link" href="catalog.html" aria-label="Перейти в каталог товаров">Каталог товаров</a>
+          </li>
+          <li class="main-menu__item main-menu__item--knitting">
+            <a class="main-menu__link" href="form.html" aria-label="Перейти к оформлению заказа">Вязание на заказ</a>
+          </li>
+        </ul>
         <ul class="site-nav__list nav-controls reset-list">
-          <li class="nav-controls__item nav-controls__item--catalog">
-            <a class="site-nav__link" href="catalog.html" aria-label="Перейти в каталог товаров">Каталог товаров</a>
-          </li>
-          <li class="nav-controls__item nav-controls__item--knitting">
-            <a class="site-nav__link" href="form.html" aria-label="Перейти к оформлению заказа">Вязание на заказ</a>
-          </li>
           <li class="nav-controls__item nav-controls__item--search">
             <button class="button nav-controls__button nav-controls__button--search" type="button" aria-label="Найти">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +48,7 @@
                   d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
               </svg>
             </button>
-            <a class="site-nav__link site-nav__link--hidden" href="#">Поиск по сайту</a>
+            <a class="nav-controls__link nav-controls__link--hidden" href="#">Поиск по сайту</a>
           </li>
           <li class="nav-controls__item nav-controls__item--basket">
             <button class="button nav-controls__button nav-controls__button--basket" type="button"
@@ -81,7 +83,7 @@
             <a class="promo-menu__link" href="catalog.html" aria-label="Перейти в каталог предметов интерьера">Предметы
               интерьера</a>
           </li>
-          <li class="promo-menu__item catalog-menu__item--background-dark">
+          <li class="promo-menu__item promo-menu__item--background-dark">
             <a class="promo-menu__link" href="catalog.html" aria-label="Перейти в каталог детских игрушек">Детские
               игрушки</a>
           </li>
@@ -169,7 +171,8 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__subtitle">адрес:</h3>
-              <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+              <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101
+              </address>
             </li>
           </ul>
         </div>
@@ -182,7 +185,6 @@
               alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
         </div>
-  </div>
   <!-- Здесь будет интерактивная карта -->
   <a class="button contacts__link contacts__link--typing" href="#">Напишите нам</a>
   </section>
@@ -190,8 +192,8 @@
   <footer class="footer">
     <a class="footer__logo-link" aria-label="Логотип компании">
       <picture>
-        <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
         <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+        <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
         <img class="footer__logo-image" src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
       </picture>
     </a>

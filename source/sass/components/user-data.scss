@@ -1,9 +1,10 @@
 .user-data {
   @include fieldset-reset;
+  margin-bottom: 5px;
 }
 
 .user-data__item {
-  margin-bottom: 24px;
+  margin-bottom: 38px;
 
   @include margin-reset;
 }
@@ -19,19 +20,29 @@
 
 .user-data__input {
   display: block;
+  border: none;
+  margin-top: 6px;
 }
 
 @media (min-width: $tablet-width) {
   .user-data {
     display: flex;
+    margin-bottom: 77px;
   }
 
   .user-data__list {
     width: 252px;
+    margin-top: 12px;
   }
 
   .user-data__item {
     display: flex;
+  }
+  .user-data__label {
+    margin-right: 48px;
+  }
+  .user-data__input {
+    margin-top: -22px;
   }
 }
 

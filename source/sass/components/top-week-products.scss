@@ -164,6 +164,7 @@
   .top-week-product {
     margin-top: 159px;
     margin-left: 159px;
+    margin-bottom: 155px;
   }
 
   .top-week-product__title {
@@ -171,26 +172,33 @@
 
     order: 2;
     width: 515px;
-
+    margin-bottom: 21px;
     font-size: 53px;
     line-height: 57px;
   }
-
+  .top-week-product__wrapper-flex {
+    margin-left: 35px;
+  }
+  .top-week-product__description {
+    margin-bottom: 51px;
+  }
   .top-week-product__subtitle {
     order: 1;
-    margin-right: 44px;
-    margin-left: -133px;
-
+    margin-right: 24px;
+    margin-left: -60px;
+    margin-top: 59px;
     line-height: 17px;
   }
-
+  .top-week-product__details {
+    margin-bottom: 119px;
+  }
   .top-week-product__wrapper-image {
     max-width: 525px;
     max-height: 636px;
   }
 
   .top-week-product__image {
-    top: -518px;
-    left: 399px;
+    top: -529px;
+    left: 349px;
   }
 }

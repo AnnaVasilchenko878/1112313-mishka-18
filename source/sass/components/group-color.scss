@@ -1,10 +1,12 @@
 .group-color {
   @include fieldset-reset;
+  margin-bottom: -11px;
 }
 
 .group-color__item {
   @include margin-reset;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+  margin-left: 64px;
 }
 
 .group-color__label {
@@ -17,17 +19,20 @@
 @media (min-width: $tablet-width) {
   .group-color {
     background-color: f9f9f9;
+    margin-bottom: 70px;
   }
 
   .group-color__list {
-    width: 178px;
+    width: 470px;
     display: flex;
     flex-wrap: wrap;
+    margin-left: -15px;
   }
 
   .group-color__item {
     width: 63px;
-    margin-right: 52px;
+    margin-right: 137px;
+    margin-bottom: 46px;
 
     &:nth-child(2n) {
       margin-right: 0;

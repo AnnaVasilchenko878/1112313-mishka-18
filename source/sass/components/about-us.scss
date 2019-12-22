@@ -146,12 +146,13 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-left: 196px;
+    margin-left: 222px;
+    margin-bottom: 32px;
   }
 
   .about-us__title {
-    margin-bottom: 131px;
-    margin-left: -572px;
+    margin-bottom: 100px;
+    margin-left: -547px;
 
     font-weight: 700;
     font-size: 53px;
@@ -164,7 +165,7 @@
 
   .about-us__item {
     width: 290px;
-    margin-right: 148px;
+    margin-right: 31px;
     line-height: 22px;
   }
 }

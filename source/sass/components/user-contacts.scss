@@ -5,7 +5,7 @@
 }
 
 .user-contacts__item {
-  margin-bottom: 34px;
+  margin-bottom: 43px;
 
   @include margin-reset;
 }
@@ -22,20 +22,29 @@
 
 .user-contacts__input {
   display: block;
+  border: none;
+  margin-top: 12px;
 }
 
 @media (min-width: $tablet-width) {
   .user-contacts__item {
     display: flex;
+    margin-bottom: 51px;
+
+    &--additionally {
+      margin-top: 128px;
+    }
   }
 
   .user-contacts__label {
     width: 60px;
-    margin-right: 50px;
+    margin-right: 123px;
+    margin-left: -34px;
   }
 
   .user-contacts__input {
     width: 501px;
+    margin-top: -12px;
   }
 
   .user-contacts__wrapper-item {

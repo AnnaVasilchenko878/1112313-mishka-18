@@ -1,7 +1,15 @@
+.group-type {
+  margin-bottom: 14px;
+}
+
 .group-type__item {
-  margin-bottom: 25px;
+  margin-left: 49px;
 
   @include margin-reset;
+
+  &:first-child {
+    width: 150px;
+  }
 }
 
 .group-type__label {
@@ -9,6 +17,19 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .group-type {
+    margin-bottom: 68px;
+  }
+
+  .group-type__item {
+    margin-bottom: 45px;
+    &:first-child {
+      width: 300px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

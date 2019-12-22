@@ -48,7 +48,7 @@
 @media (min-width: $tablet-width) {
   .promo-menu {
     display: flex;
-    margin-top: 329px;
+    margin-top: 372px;
     margin-left: 50px;
   }
 
@@ -65,7 +65,9 @@
 
 @media (min-width: $desktop-width) {
   .promo-menu {
-    margin-left: 60px;
+    margin-left: 51px;
+    margin-top: 355px;
+    margin-bottom: -74px;
   }
 
   .promo-menu__item {
@@ -73,6 +75,11 @@
 
     &::before {
       left: 437px;
+    }
+    &--background-dark {
+      &::before {
+        left: 428px;
+      }
     }
   }
 }
