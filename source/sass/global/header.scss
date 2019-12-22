@@ -1,40 +1,6 @@
 .header {
   border-bottom: 1px solid $border-color;
 }
-/*@media (min-width: $tablet-width) {
-  .header {
-    display: flex;
-
-    border-bottom: none;
-    background-color: #ffffff;
-  }
-
-  .header-promo {
-    display: flex;
-
-  }
- /* .header__logo-link {
-    margin-right: 64px;
-    margin-left: -2px;
-    margin-top: 3px;
-  }
-  .header-navigation-menu {
-    width: auto;
-  }
-
-  .header__wrapper {
-    width: 50%;
-
-    border-right: 1px solid #ececec;
-  }
-
-  .header__button {
-    position: absolute;
-
-    display: none;
-  }
-}*/
-
 @media (min-width: $desktop-width) {
   .header {
     background-color: #ffffff;

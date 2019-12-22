@@ -10,8 +10,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 25px;
-    left: 233px;
+    top: 30px;
+    left: 250px;
 
     display: block;
     width: 61px;
@@ -28,7 +28,8 @@
 
     &::before {
       background-image: url("../img/icon-toy.svg");
-      top: 19px;
+      top: 32px;
+      left: 239px;
     }
   }
 }
