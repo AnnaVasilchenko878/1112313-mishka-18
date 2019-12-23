@@ -47,8 +47,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-data {
+    margin-bottom: -41px;
+  }
   .user-data__label {
-    margin-right: 27px;
+    margin-right: 45px;
 
     font-size: 19px;
     line-height: 18px;

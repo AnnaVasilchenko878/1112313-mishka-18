@@ -53,12 +53,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .user-contacts__item {
-    &:not(:last-child) {
+  .user-contacts__wrapper {
       background-color: #f1f1f1;
+      margin-left: -142px;
+      padding-left: 142px;
+      padding-top: 67px;
+      padding-bottom: 8px;
+      margin-bottom: -60px;
     }
-  }
-
   .user-contacts__label {
     margin-right: 82px;
   }

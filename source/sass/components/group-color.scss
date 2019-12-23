@@ -43,18 +43,28 @@
 @media (min-width: $desktop-width) {
   .group-color {
     background-color: #f1f1f1;
+    margin-left: -142px;
+    padding-left: 144px;
+    padding-top: 53px;
+    margin-bottom: 54px;
   }
 
   .group-color__list {
     width: 800px;
+    padding-top: 5px;
   }
 
   .group-color__item {
     width: 119px;
-    margin-right: 145px;
+    margin-right: 77px;
 
     &:nth-child(2n) {
-      margin-right: 145px;
+      margin-right: 77px;
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:last-child {
+      margin-bottom: 11px;
     }
   }
 }

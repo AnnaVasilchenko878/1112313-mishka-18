@@ -34,7 +34,10 @@
 
 @media (min-width: $desktop-width) {
   .group-type {
-    margin-bottom: -17px;
+    margin-bottom: -44px;
+  }
+  .group-type__list {
+    margin-left: -48px;
   }
   .group-type__label {
     font-size: 19px;

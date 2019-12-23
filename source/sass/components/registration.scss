@@ -111,6 +111,7 @@
 @media (min-width: $desktop-width) {
   .registration {
     padding-left: 112px;
+    margin-bottom: -36px;
   }
 
   .registration__wrapper-group {
@@ -127,13 +128,24 @@
   }
 
   .registration__title {
-    margin-right: 161px;
+    margin-right: 113px;
     &--type {
       margin-left: -48px;
+      margin-right: 161px;
+    }
+    &--user-data {
+      margin-right: 84px;
     }
   }
 
   .registration__wrapper {
     margin-right: 188px;
+    margin-top: -41px;
+  }
+  .registration__button {
+    width: 228px;
+    margin-right: 210px;
+    margin-left: -24px;
+    padding: 11px 10px;
   }
 }
