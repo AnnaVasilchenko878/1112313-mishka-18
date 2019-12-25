@@ -20,8 +20,8 @@ body {
   background-color: $main-background;
 
   a {
-    text-decoration: none;
     color: #000000;
+    text-decoration: none;
   }
 
   .visually-hidden:not(:focus):not(:active),
@@ -54,8 +54,13 @@ body {
 }
 
 .button {
-  @include button-default;
   cursor: pointer;
+
+  @include button-default;
+
+  &--style {
+    @include button-style;
+  }
 }
 
 @media (min-width: $mobile-width) {

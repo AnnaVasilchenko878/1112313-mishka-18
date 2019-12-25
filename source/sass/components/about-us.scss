@@ -1,6 +1,7 @@
 .about-us {
   margin-left: 2px;
 }
+
 .about-us__title {
   margin-bottom: 86px;
   margin-left: -75px;
@@ -13,7 +14,6 @@
 }
 
 .about-us__item {
-  @include margin-reset;
   position: relative;
 
   width: 251px;
@@ -25,6 +25,7 @@
   line-height: 20px;
   color: #000000;
 
+  @include margin-reset;
   @include margin-reset;
 
 
@@ -45,51 +46,60 @@
 
   &--saving {
     margin-bottom: 83px;
+
     &::before {
-      background-image: url("../img/icon-feature-money.svg");
       top: -60px;
+
+      background-image: url("../img/icon-feature-money.svg");
     }
   }
 
   &--like {
     margin-bottom: 84px;
+
     &::before {
-      background-image: url("../img/icon-feature-heart.svg");
       top: -53px;
+
+      background-image: url("../img/icon-feature-heart.svg");
     }
   }
 
   &--knitting {
     margin-bottom: 83px;
+
     &::before {
+      top: -53px;
+      left: -6px;
+
       background-image: url("../img/icon-feature-ball.svg");
-    top: -53px;
-    left: -6px;
     }
   }
 
   &--patriotism {
     margin-bottom: 83px;
+
     &::before {
+      top: -58px;
+      left: -6px;
+
       background-image: url("../img/icon-feature-rocket.svg");
-    top: -58px;
-    left: -6px;
     }
   }
 
   &--present {
     &::before {
+      top: -57px;
+      left: -8px;
+
       background-image: url("../img/icon-feature-gift.svg");
-    top: -57px;
-    left: -8px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin-left: 50px;
     margin-bottom: 23px;
+    margin-left: 50px;
   }
 
   .about-us__title {
@@ -115,14 +125,14 @@
 
     &--eco {
       order: 1;
-      margin-bottom: 110px;
       margin-right: 10px;
+      margin-bottom: 110px;
     }
 
     &--saving {
       order: 3;
-      margin-bottom: 112px;
       margin-right: 10px;
+      margin-bottom: 112px;
     }
 
     &--like {
@@ -146,8 +156,8 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-left: 222px;
     margin-bottom: 32px;
+    margin-left: 222px;
   }
 
   .about-us__title {
@@ -166,6 +176,7 @@
   .about-us__item {
     width: 290px;
     margin-right: 31px;
+
     line-height: 22px;
   }
 }

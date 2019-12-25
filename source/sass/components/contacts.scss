@@ -24,6 +24,7 @@
 .contacts__subtitle {
   width: 70px;
   margin-right: 10px;
+
   font-weight: 400;
 }
 
@@ -33,6 +34,24 @@
 
   font-style: normal;
   color: $text-color;
+
+  &--mail {
+    width: 170px;
+    margin-bottom: 58px;
+
+    border-bottom: 1px solid $tiffany-color;
+
+    &:hover,
+    &:focus {
+      color: $tiffany-color;
+
+      border-color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__map {
@@ -46,7 +65,7 @@
 }
 
 .contacts__link {
-  margin-left: 112px;
+  margin-left: 33px;
   padding: 15px 51px;
 
   @include button-style;
@@ -54,15 +73,15 @@
 
 @media (min-width: $tablet-width) {
   .сontacts {
-    margin-bottom: 67px;
     margin-top: -12px;
+    margin-bottom: 67px;
   }
 
   .contacts__title {
+    margin-bottom: 28px;
+    margin-left: 45px;
     padding-top: 71px;
     padding-right: 49px;
-    margin-left: 45px;
-    margin-bottom: 28px;
 
     font-size: 43px;
     line-height: 50px;
@@ -71,8 +90,8 @@
   .contacts__list {
     display: flex;
     width: 666px;
-    margin-left: 49px;
     margin-bottom: 63px;
+    margin-left: 49px;
   }
 
   .contacts__item {
@@ -82,12 +101,15 @@
     font-size: 17px;
     line-height: 30px;
   }
+
   .contacts__address {
-   width: 193px;
+    width: 193px;
   }
+
   .contacts__wrapper {
     margin-bottom: 57px;
   }
+
   .contacts__link {
     margin-left: 268px;
     padding: 15px 37px;
@@ -100,9 +122,10 @@
 
 @media (min-width: $desktop-width) {
   .сontacts {
+    position: relative;
+
     margin-bottom: 116px;
     padding-left: 176px;
-    position: relative;
   }
 
   .contacts__map {
@@ -115,14 +138,17 @@
     font-size: 54px;
     line-height: 57px;
   }
+
   .contacts__subtitle {
     font-size: 17px;
   }
+
   .contacts__wrapper {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 574px;
   }
+
   .contacts__list {
     display: block;
     margin-bottom: 95px;

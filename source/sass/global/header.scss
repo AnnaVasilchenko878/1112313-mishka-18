@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid $border-color;
 }
+
 @media (min-width: $desktop-width) {
   .header {
     background-color: #ffffff;

@@ -35,18 +35,18 @@
 
   &:active {
     color: #c7c7c7;
+
+    background-color: #444444;
   }
 }
 
 @mixin arrow-state {
   &:hover,
   &:focus {
-
     opacity: 0.6;
   }
 
   &:active {
-
     opacity: 0.3;
   }
 }
@@ -61,7 +61,10 @@
 @mixin icon-state {
   &:hover,
   &:focus {
+    opacity: 1;
+
     transition: 0.2;
+
     fill: #46c1ae;
   }
 
@@ -75,12 +78,21 @@
 @mixin links-state {
   &:hover,
   &:focus {
-
     opacity: 0.6;
   }
 
   &:active {
+    opacity: 0.3;
+  }
+}
 
+@mixin logo-state {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
     opacity: 0.3;
   }
 }
@@ -88,23 +100,21 @@
 @mixin product-state {
   &:hover,
   &:focus {
-    box-shadow: 0 6px 10px;
+    box-shadow: 0 6px 10px -5px;
   }
 
   &:active {
-    box-shadow: 0 3px 5px;
+    box-shadow: 0 3px 5px -5px;
   }
 }
 
 @mixin copyright-state {
   &:hover,
   &:focus {
-
     fill: #46c1ae;
   }
 
   &:active {
-
     opacity: 0.3;
   }
 }

@@ -1,27 +1,35 @@
 .logo {
   display: flex;
-  border-bottom: 1px solid $border-color;
   padding-top: 22px;
   padding-bottom: 13px;
+  border-bottom: 1px solid $border-color;
 }
+
+.logo-image__icon {
+  @include logo-state;
+}
+
 .logo__link {
   width: 86px;
-  margin-left: 85px;
   margin-right: 62px;
+  margin-left: 85px;
 }
+
 .logo__button {
   width: 320px;
   margin-top: -9px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .logo {
-    width: 407px;
-    border-right: 1px solid $border-color;
     order: 1;
+    width: 407px;
     margin-left: -36px;
     padding-bottom: 11px;
+
+    border-right: 1px solid $border-color;
   }
+
   .logo__button {
     display: none;
   }
@@ -31,7 +39,10 @@
   .logo {
     order: 2;
     width: 168px;
+
+    border: none;
   }
+
   .logo__link {
     margin-top: -13px;
     margin-left: 77px;

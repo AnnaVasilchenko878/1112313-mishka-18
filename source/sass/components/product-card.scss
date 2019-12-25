@@ -9,8 +9,6 @@
   padding-bottom: 11px;
 
   border: 1px solid $border-color;
-
-  @include product-state;
 }
 
 .product-card__wrapper-image {
@@ -28,11 +26,13 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+
+  @include links-state;
 }
 
 .product-card__description {
-  margin-bottom: 43px;
   margin-top: 3px;
+  margin-bottom: 43px;
 
   font-size: 13px;
   line-height: 30px;
@@ -59,6 +59,7 @@
   margin-top: -3px;
 
   @include button-default;
+  @include icon-state;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,8 +108,8 @@
   .product-card__wrapper {
     width: 316px;
     padding-top: 22px;
-    padding-left: 28px;
     padding-bottom: 10px;
+    padding-left: 28px;
   }
 
   .product-card__description {
@@ -118,6 +119,7 @@
       margin-bottom: 31px;
     }
   }
+
   .product-card__price {
     margin-right: 140px;
   }

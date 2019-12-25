@@ -2,12 +2,24 @@
   display: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .stores-promo {
     display: flex;
-    justify-content: flex-end;
     order: 4;
     width: 289px;
+
+    background-color: #f1f1f1;
+    border-bottom: none;
+
+    &--main-page {
+      background-color: #f9f9f9;
+    }
+  }
+
+  @media (max-width: $tablet-width-only) {
+    .stores-promo {
+      justify-content: flex-end;
+    }
   }
 
   .stores-promo__item {
@@ -22,24 +34,45 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .stores-promo {
-    order: 4;
     display: flex;
-    min-width: 1149px;
+    order: 4;
+    width: 1149px;
+    margin-top: -14px;
+    padding-top: 15px;
+
+    background-color: #f1f1f1;
+
+    &--main-page {
+      background-color: #f9f9f9;
+    }
   }
 
   .stores-promo__item {
-    display: inline-block;
+    display: block;
+    margin-top: 2px;
+    margin-left: 101px;
 
     &--new-product {
-     order:1;
+      order: 1;
+      margin-right: -152px;
+      margin-left: 51px;
     }
+
     &--sale {
-      order:2;
+      order: 2;
+      margin-right: 240px;
     }
+
     &--free-delivery {
       order: 3;
     }
+  }
+
+  .stores-promo__link {
+    font-weight: 700;
+
+    @include links-state;
   }
 }

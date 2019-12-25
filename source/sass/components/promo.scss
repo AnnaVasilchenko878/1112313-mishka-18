@@ -27,9 +27,10 @@
     background-color: #56c3b2;
 
     &::before {
-      background-image: url("../img/icon-toy.svg");
       top: 32px;
       left: 239px;
+
+      background-image: url("../img/icon-toy.svg");
     }
   }
 }
@@ -58,6 +59,7 @@
 
   .promo-menu__link {
     padding: 27px 34px;
+
     font-size: 20px;
     line-height: 30px;
   }
@@ -65,9 +67,9 @@
 
 @media (min-width: $desktop-width) {
   .promo-menu {
-    margin-left: 51px;
     margin-top: 355px;
     margin-bottom: -74px;
+    margin-left: 51px;
   }
 
   .promo-menu__item {
@@ -76,6 +78,7 @@
     &::before {
       left: 437px;
     }
+
     &--background-dark {
       &::before {
         left: 428px;

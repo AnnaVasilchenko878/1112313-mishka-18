@@ -14,8 +14,9 @@
 }
 
 .top-week-product__subtitle {
-  margin-left: 30px;
   margin-bottom: 23px;
+  margin-left: 30px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -67,6 +68,8 @@
   background-color: $main-background;
   border: 2px solid $text-color;
 
+  @include button-style;
+
   &:hover {
     color: #ececec;
 
@@ -77,8 +80,6 @@
     // уточнить свойство rgba
     color: rgba(0, 0, 0, 0.3);
   }
-
-  @include button-style;
 }
 
 .top-week-product__details {
@@ -89,8 +90,8 @@
 
 @media (min-width: $tablet-width) {
   .top-week-product {
-    margin-left: 18px;
     margin-bottom: 118px;
+    margin-left: 18px;
   }
 
   .top-week-product__wrapper {
@@ -122,29 +123,33 @@
   }
 
   .top-week-product__description {
-    font-size: 17px;
-    line-height: 30px;
     width: 269px;
     margin-bottom: 44px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .top-week-product__details {
-    line-height: 32px;
     width: 279px;
     margin-bottom: 59px;
+
+    line-height: 32px;
   }
 
 
   .top-week-product__price {
-    font-size: 20px;
-    margin-left: 20px;
     margin-bottom: 34px;
+    margin-left: 20px;
+
+    font-size: 20px;
   }
 
   .top-week-product__wrapper-image {
+    position: relative;
+
     max-width: 333px;
     max-height: 404px;
-    position: relative;
   }
 
   .top-week-product__image {
@@ -155,6 +160,7 @@
     width: 333px;
     height: 404px;
   }
+
   .top-week-product__button {
     padding: 14px 97px;
   }
@@ -163,8 +169,8 @@
 @media (min-width: $desktop-width) {
   .top-week-product {
     margin-top: 159px;
-    margin-left: 159px;
     margin-bottom: 155px;
+    margin-left: 159px;
   }
 
   .top-week-product__title {
@@ -173,25 +179,32 @@
     order: 2;
     width: 515px;
     margin-bottom: 21px;
+
     font-size: 53px;
     line-height: 57px;
   }
+
   .top-week-product__wrapper-flex {
     margin-left: 35px;
   }
+
   .top-week-product__description {
     margin-bottom: 51px;
   }
+
   .top-week-product__subtitle {
     order: 1;
+    margin-top: 59px;
     margin-right: 24px;
     margin-left: -60px;
-    margin-top: 59px;
+
     line-height: 17px;
   }
+
   .top-week-product__details {
     margin-bottom: 119px;
   }
+
   .top-week-product__wrapper-image {
     max-width: 525px;
     max-height: 636px;

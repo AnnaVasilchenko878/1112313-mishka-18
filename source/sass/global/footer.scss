@@ -12,6 +12,20 @@
 
   display: none;
 }
+
+.footer__logo-image {
+  &:hover,
+  &:focus {
+    fill: $tiffany-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    fill: $tiffany-color;
+  }
+}
+
 .footer-form {
   margin-top: 54px;
 }
@@ -24,9 +38,9 @@
 
   .footer__logo-link {
     position: static;
-    margin-right: 113px;
 
     display: block;
+    margin-right: 185px;
   }
 }
 

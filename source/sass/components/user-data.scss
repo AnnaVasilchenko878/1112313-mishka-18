@@ -1,10 +1,11 @@
 .user-data {
-  @include fieldset-reset;
   margin-bottom: 5px;
+
+  @include fieldset-reset;
 }
 
 .user-data__item {
-  margin-bottom: 38px;
+  margin-bottom: 23px;
 
   @include margin-reset;
 }
@@ -20,14 +21,18 @@
 
 .user-data__input {
   display: block;
-  border: none;
+  width: 265px;
   margin-top: 6px;
+  padding-bottom: 15px;
+
+  border: none;
+  border-bottom: 2px solid #000000;
 }
 
 @media (min-width: $tablet-width) {
   .user-data {
     display: flex;
-    margin-bottom: 77px;
+    margin-bottom: 11px;
   }
 
   .user-data__list {
@@ -37,10 +42,14 @@
 
   .user-data__item {
     display: flex;
+    width: 496px;
+    margin-bottom: 39px;
   }
+
   .user-data__label {
-    margin-right: 48px;
+    margin-right: 30px;
   }
+
   .user-data__input {
     margin-top: -22px;
   }
@@ -50,6 +59,11 @@
   .user-data {
     margin-bottom: -41px;
   }
+
+  .user-data__item {
+    width: 696px;
+  }
+
   .user-data__label {
     margin-right: 45px;
 

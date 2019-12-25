@@ -1,15 +1,23 @@
 .site-nav {
   margin-bottom: 6px;
 }
+
 .site-nav__list {
+  display: none;
+
   border-bottom: 1px solid $border-color;
 }
 
 @media (min-width: $tablet-width) {
   .site-nav {
-  display: flex;
-  flex-wrap: wrap;
-  width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin-bottom: -2px;
+  }
+
+  .site-nav__list {
+    display: block;
   }
 }
 
@@ -17,17 +25,17 @@
   .site-nav {
     width: 1149px;
   }
-}
 
-@media (min-width: $desktop-width) {
   .site-nav__list {
     display: flex;
+
+    border-bottom: none;
   }
 
   .site-nav__item {
-    padding: 0;
     margin-top: 33px;
     margin-bottom: -53px;
+    padding: 0;
 
     border-right: 1px solid #ececec;
 
@@ -37,10 +45,6 @@
 
     &--promo {
       border-bottom: none;
-    }
-
-    &--reset-border {
-      border-right: none;
     }
 
     &--logo {
