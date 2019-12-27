@@ -41,6 +41,7 @@
 }
 
 @mixin arrow-state {
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -59,23 +60,27 @@
 }
 
 @mixin icon-state {
-  &:hover,
-  &:focus {
-    opacity: 1;
+  .icon-style {
 
-    transition: 0.2;
+    &:hover,
+    &:focus {
+      opacity: 1;
 
-    fill: #46c1ae;
-  }
+      transition: 0.2;
 
-  &:active {
-    opacity: 0.3;
+      fill: #46c1ae;
+    }
 
-    transition: 0.2;
+    &:active {
+      opacity: 0.3;
+
+      transition: 0.2;
+    }
   }
 }
 
 @mixin links-state {
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -87,6 +92,7 @@
 }
 
 @mixin logo-state {
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -98,6 +104,7 @@
 }
 
 @mixin product-state {
+
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px -5px;
@@ -109,6 +116,7 @@
 }
 
 @mixin copyright-state {
+
   &:hover,
   &:focus {
     fill: #46c1ae;

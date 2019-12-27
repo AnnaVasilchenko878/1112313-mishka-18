@@ -13,14 +13,12 @@
   @include margin-reset;
 }
 
-.social-item__link--icon {
-  &:hover {
-    fill: #46c1ae;
-  }
+/*.social__link {
+  @include icon-state;
 
-  &:active {
-    opacity: 0.3;
-  }
+}*/
+.social__link {
+
 }
 
 @media (min-width: $tablet-width) {

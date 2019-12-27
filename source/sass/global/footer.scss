@@ -1,7 +1,7 @@
 .footer {
   position: relative;
 
-  width: 100%;
+  width: auto;
   margin-top: 48px;
 
   background-color: #f1f1f1;
@@ -11,6 +11,7 @@
   position: absolute;
 
   display: none;
+  @include icon-state;
 }
 
 .footer__logo-image {

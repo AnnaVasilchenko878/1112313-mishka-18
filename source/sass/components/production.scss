@@ -23,6 +23,17 @@
 
 .production__image {
   margin-left: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 99px;
+    height: 76px;
+    background-image: url("../img/icon-play.svg");
+    position: absolute;
+    top: -102px;
+    left: 81px;
+  }
 }
 
 .production__text {
@@ -57,7 +68,12 @@
     min-height: 455px;
     margin-bottom: 12px;
   }
-
+  .production__image {
+    &:before {
+      top: -240px;
+      left: 284px;
+    }
+  }
   .production__title {
     width: 250px;
     margin-bottom: 21px;
@@ -102,7 +118,12 @@
     min-width: 682px;
     min-height: 455px;
   }
-
+  .production__image {
+    &:before {
+      top: -253px;
+      left: 290px;
+    }
+  }
   .production__title {
     width: 150px;
     margin-top: 96px;

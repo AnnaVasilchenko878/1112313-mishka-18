@@ -7,6 +7,14 @@
 
 .logo-image__icon {
   @include logo-state;
+
+  &--main-page {
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .logo__link {
@@ -23,8 +31,7 @@
 @media (min-width: $tablet-width) {
   .logo {
     order: 1;
-    width: 407px;
-    margin-left: -36px;
+    width: 371px;
     padding-bottom: 11px;
 
     border-right: 1px solid $border-color;

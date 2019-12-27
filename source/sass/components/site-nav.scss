@@ -1,10 +1,12 @@
 .site-nav {
-  margin-bottom: 6px;
+  margin-bottom: 0px;
+
+  &--main-page {
+    margin-bottom: 6px;
+  }
 }
 
 .site-nav__list {
-  display: none;
-
   border-bottom: 1px solid $border-color;
 }
 
@@ -14,10 +16,6 @@
     flex-wrap: wrap;
     width: 768px;
     margin-bottom: -2px;
-  }
-
-  .site-nav__list {
-    display: block;
   }
 }
 
