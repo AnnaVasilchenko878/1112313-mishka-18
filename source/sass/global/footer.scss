@@ -11,20 +11,23 @@
   position: absolute;
 
   display: none;
-  @include icon-state;
 }
 
 .footer__logo-image {
-  &:hover,
-  &:focus {
-    fill: $tiffany-color;
-  }
+    &:hover,
+    &:focus {
+      opacity: 1;
 
-  &:active {
-    opacity: 0.3;
+      transition: 0.2;
 
-    fill: $tiffany-color;
-  }
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      transition: 0.2;
+    }
 }
 
 .footer-form {
