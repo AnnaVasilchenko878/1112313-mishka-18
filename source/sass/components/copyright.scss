@@ -29,8 +29,13 @@
   }
 }
 
-.copyright__link-icon {
-  fill: $tiffany-color;
+.copyright__icon {
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
 
-  @include copyright-state;
+  &:active {
+    opacity: 0.3;
+  }
 }

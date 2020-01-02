@@ -51,7 +51,22 @@
   line-height: 24px;
   color: #000000;
 }
+.product-card__icon {
+  &:hover,
+  &:focus {
+    opacity: 1;
 
+    transition: 0.2;
+
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    transition: 0.2;
+  }
+}
 .product-card__button {
   width: 20px;
   height: 19px;

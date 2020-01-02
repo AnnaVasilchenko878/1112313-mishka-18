@@ -115,18 +115,6 @@
   }
 }
 
-@mixin copyright-state {
-
-  &:hover,
-  &:focus {
-    fill: #46c1ae;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 @mixin margin-reset {
   &:last-child {
     margin-right: 0;
