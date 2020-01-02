@@ -28,6 +28,16 @@
   margin-top: -9px;
 }
 
+.logo__icon {
+  &:hover,
+  &:focus {
+    fill: $tiffany-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .logo {
     order: 1;

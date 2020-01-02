@@ -22,11 +22,18 @@
   @include links-state;
 }
 
-.nav-controls__button {
+/*.nav-controls__button {
   opacity: 0.2;
 
   @include icon-state;
+}*/
+
+.btn-icon {
+  &:hover {
+ fill: red;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .nav-controls {
@@ -64,7 +71,7 @@
   .nav-controls {
     order: 3;
     margin-bottom: 14px;
-    margin-left: 162px;
+    margin-left: 126px;
   }
 
   .nav-controls__item {
