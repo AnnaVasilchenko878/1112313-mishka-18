@@ -1,15 +1,107 @@
 .user-contacts {
+  margin-bottom: 50px;
+
   @include fieldset-reset;
 }
 
 .user-contacts__item {
+  margin-bottom: 29px;
+
   @include margin-reset;
 }
 
 .user-contacts__label {
+  margin-bottom: 9px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $tiffany-color;
   text-transform: uppercase;
+}
+
+.user-contacts__input {
+  display: block;
+  border: none;
+  margin-top: 12px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 269px;
+
+  &--additionally {
+    border: 2px solid #000000;
+    padding: 18px 15px 106px 23px;
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-contacts__item {
+    display: flex;
+    margin-bottom: 51px;
+
+    &--additionally {
+      margin-top: 128px;
+    }
+
+    &--tel {
+      background-color: #f1f1f1;
+      margin-left: -142px;
+      padding-left: 142px;
+      padding-top: 67px;
+      padding-bottom: 123px;
+      margin-bottom: -72px;
+    }
+  }
+
+  .user-contacts__label {
+    width: 60px;
+    margin-right: 105px;
+    margin-left: -34px;
+  }
+
+  .user-contacts__input {
+    width: 501px;
+    margin-top: -12px;
+
+    &--icon-phone {
+      padding-top: 15px;
+      background-color: #f1f1f1;
+    }
+
+    &--icon-envelop {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .user-contacts__wrapper-item {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-contacts__item {
+    &--tel,
+    &--e-mail {
+      background-color: #f1f1f1;
+      margin-left: -142px;
+      padding-left: 142px;
+      padding-top: 87px;
+      padding-bottom: 48px;
+      margin-bottom: -87px;
+    }
+
+    &-mail {
+      margin-bottom: -74px;
+    }
+  }
+
+  .user-contacts__label {
+    margin-right: 57px;
+  }
+
+  .user-contacts__input {
+    width: 699px;
+  }
 }

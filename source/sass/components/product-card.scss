@@ -1,21 +1,19 @@
-.product-card__image {
-  margin-bottom: -10px;
-
-  background-color: #dcdcdc;
-}
-
 .product-card__wrapper {
   padding: 30px 27px;
+  padding-bottom: 11px;
 
   border: 1px solid $border-color;
-
-  @include product-state;
 }
 
 .product-card__wrapper-image {
   min-width: 260px;
   min-height: 195px;
-  margin-bottom: -7px;
+  margin-bottom: -15px;
+}
+.product-card__image {
+  margin-bottom: -10px;
+
+  background-color: #dcdcdc;
 }
 
 .product-card__link-name {
@@ -27,10 +25,13 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+
+  @include links-state;
 }
 
 .product-card__description {
-  margin-bottom: 55px;
+  margin-top: 3px;
+  margin-bottom: 43px;
 
   font-size: 13px;
   line-height: 30px;
@@ -43,25 +44,42 @@
 .product-card__price {
   width: 74px;
   margin-top: -2px;
-  margin-right: 111px;
+  margin-right: 104px;
 
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: #000000;
 }
+.product-card__icon {
+  &:hover,
+  &:focus {
+    opacity: 1;
 
+    transition: 0.2;
+
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    transition: 0.2;
+  }
+}
 .product-card__button {
   width: 20px;
   height: 19px;
+  margin-top: -3px;
 
   @include button-default;
+  @include icon-state;
 }
 
 @media (min-width: $tablet-width) {
   .product-card__wrapper-image {
     min-width: 334px;
-    min-height: 334px;
+    min-height: 252px;
   }
 
   .product-card__image {
@@ -71,6 +89,7 @@
 
   .product-card__wrapper {
     width: 350px;
+    padding-top: 23px;
   }
 
   .product-card__link-name {
@@ -78,13 +97,18 @@
   }
 
   .product-card__description {
-    margin-bottom: 135px;
+    margin-bottom: 199px;
 
-    .product-card__price {
-      width: 90px;
-
-      font-size: 17px;
+    &--margin-reset {
+      margin-bottom: 169px;
     }
+  }
+
+  .product-card__price {
+    width: 90px;
+    margin-right: 156px;
+
+    font-size: 17px;
   }
 }
 
@@ -97,10 +121,20 @@
 
   .product-card__wrapper {
     width: 316px;
-    padding: 0 18px;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    padding-left: 28px;
   }
 
   .product-card__description {
-    margin-bottom: 48px;
+    margin-bottom: 60px;
+
+    &--margin-reset {
+      margin-bottom: 31px;
+    }
+  }
+
+  .product-card__price {
+    margin-right: 140px;
   }
 }

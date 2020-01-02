@@ -20,6 +20,7 @@ body {
   background-color: $main-background;
 
   a {
+    color: #000000;
     text-decoration: none;
   }
 
@@ -43,12 +44,23 @@ body {
   }
 }
 
-.button {
-  @include button-default;
+.reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @include list-default;
 }
 
-.reset-list {
-  @include list-default;
+.button {
+  cursor: pointer;
+
+  @include button-default;
+
+  &--style {
+    @include button-style;
+  }
 }
 
 @media (min-width: $mobile-width) {

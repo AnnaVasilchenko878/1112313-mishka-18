@@ -1,142 +1,48 @@
-.site-nav__item {
-  padding: 15px 51px;
+.site-nav {
+  margin-bottom: 0px;
 
-  text-align: left;
-
-  border-bottom: 1px solid $border-color;
-
-  @include margin-reset;
-
-  &--sale,
-  &--new-product,
-  &--free-delivery {
-    position: absolute;
-
-    display: none;
+  &--main-page {
+    margin-bottom: 6px;
   }
 }
 
-.site-nav__link {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
-
-  @include links-state;
-}
-
-.site-nav__button {
-  margin-right: 14px;
-  margin-left: -50px;
-}
-
-.button__icon {
-  fill: #d3d2d2;
-
-  @include icon-state;
+.site-nav__list {
+  border-bottom: 1px solid $border-color;
 }
 
 @media (min-width: $tablet-width) {
-  .site-nav__list {
+  .site-nav {
     display: flex;
     flex-wrap: wrap;
-
-    &--promo {
-      border-bottom: none;
-    }
-  }
-
-  .site-nav__item {
-    border-right: 1px solid #ececec;
-
-    &--logo {
-      order: 1;
-      width: 370px;
-      padding-top: 14px;
-    }
-
-    &--catalog {
-      order: 4;
-      width: 192px;
-      padding: 20px 24px;
-
-      background-color: #f1f1f1;
-      border-right: none;
-      border-bottom: none;
-    }
-
-    &--knitting {
-      order: 4;
-      width: 192px;
-      padding: 20px 24px;
-
-      background-color: #f1f1f1;
-      border-right: none;
-      border-bottom: none;
-    }
-
-    &--search {
-      order: 2;
-      width: 60px;
-      padding: 19px 29px;
-    }
-
-    &--basket {
-      order: 3;
-      width: 340px;
-      padding: 19px 65px;
-    }
-
-    &--free-delivery {
-      position: static;
-
-      display: block;
-      order: 5;
-      width: 386px;
-      padding-top: 20px;
-      padding-left: 106px;
-
-      background-color: #f1f1f1;
-      border-right: none;
-      border-bottom: none;
-    }
-
-    &--new-product,
-    &--sale {
-      position: absolute;
-
-      display: none;
-    }
-  }
-
-  .site-nav__button {
-    margin-right: 19px;
-    margin-left: -17px;
-  }
-
-  .site-nav__link--hidden {
-    position: absolute;
-
-    display: none;
+    width: 768px;
+    margin-bottom: -2px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .site-nav {
+    width: 1149px;
+  }
+
   .site-nav__list {
     display: flex;
+
+    border-bottom: none;
   }
 
   .site-nav__item {
-    padding-top: 26px;
+    margin-top: 33px;
+    margin-bottom: -53px;
+    padding: 0;
 
     border-right: 1px solid #ececec;
 
-    &--promo {
-      border-bottom: none;
-    }
-
     &--reset-border {
       border-right: none;
+    }
+
+    &--promo {
+      border-bottom: none;
     }
 
     &--logo {

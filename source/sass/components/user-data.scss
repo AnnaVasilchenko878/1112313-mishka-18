@@ -1,14 +1,78 @@
 .user-data {
+  margin-bottom: 5px;
+
   @include fieldset-reset;
 }
 
 .user-data__item {
+  margin-bottom: 23px;
+
   @include margin-reset;
 }
 
 .user-data__label {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+}
+
+.user-data__input {
+  display: block;
+  width: 265px;
+  margin-top: 6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .user-data {
+    display: flex;
+    margin-bottom: 11px;
+  }
+
+  .user-data__list {
+    width: 252px;
+    margin-top: 12px;
+  }
+
+  .user-data__item {
+    display: flex;
+    width: 496px;
+    margin-bottom: 39px;
+  }
+
+  .user-data__label {
+    margin-right: 30px;
+  }
+
+  .user-data__input {
+    margin-top: -22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-data {
+    margin-bottom: -41px;
+  }
+
+  .user-data__item {
+    width: 696px;
+  }
+
+  .user-data__label {
+    margin-right: 45px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .user-data__input {
+    width: 626px;
+  }
 }

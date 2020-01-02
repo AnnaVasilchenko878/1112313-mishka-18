@@ -18,6 +18,7 @@
                 <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
                 <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
                 <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
+                  <!-- Узнать размеры с фотошопа и добавить в img-->
                 <img class="logo-image__icon logo-image__icon--main-page" src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
               </picture>
             </a>
@@ -115,10 +116,11 @@
             </table>
             <div class="top-week-product__wrapper-image">
               <picture class="top-week-product__image">
-                <source srcset="img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)">
-                <source srcset="img/triple-set-tablet@1x.jpg" media="(min-width: 770px)">
-                <source srcset="img/triple-set-mobile@1x.jpg" media="(min-width: 320px)">
-                <img src="img/triple-set-mobile@1x.jpg" alt="Продукт недели вязанная корзинка">
+                <source srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg" media="(min-width: 1150px)">
+                <source srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg" media="(min-width: 770px)">
+                <source srcset="img/triple-set-mobile@1x.jpg, img/triple-set-mobile@2x.jpg" media="(min-width: 320px)">
+                  <!-- Добавть ширину и высоту с фотошопа -->
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Продукт недели вязанная корзинка">
               </picture>
             </div>
             <p class="top-week-product__price">Цена: 990 руб.</p>
@@ -181,14 +183,14 @@
         </div>
         <div class="contacts__wrapper">
           <picture class="contacts__img">
-            <source srcset="img/map-desktop@1x.jpg" media="(min-width: 1150px)">
-            <source srcset="img/map-tablet@1x.jpg" media="(min-width: 770px)">
-            <source srcset="img/map-mobile@1x.jpg" media="(min-width: 320px)">
-            <img src="img/map-modile@1x.svg"
-              alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            <source srcset="img/map-desktop@1x.jpg img/map-desktop@2x.jpg" media="(min-width: 1150px)">
+            <source srcset="img/map-tablet@1x.jpg img/map-tabletp@2x.jpg" media="(min-width: 770px)">
+            <source srcset="img/map-mobile@1x.jpg img/map-mobile@2x.jpg" media="(min-width: 320px)">
+<!-- Добавить размеры с фотошопа -->
+            <img src="img/map-modile@1x.svg" srcset="img/map-mobile@2x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
         </div>
-        <!-- Здесь будет интерактивная карта -->
+<!-- Здесь будет интерактивная карта -->
         <a class="button button-style contacts__link contacts__link--typing" href="#">Напишите нам</a>
       </section>
     </main>

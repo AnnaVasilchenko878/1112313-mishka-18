@@ -1,8 +1,8 @@
 .footer {
   position: relative;
 
-  width: 100%;
-  margin-top: 39px;
+  width: auto;
+  margin-top: 48px;
 
   background-color: #f1f1f1;
 }
@@ -13,22 +13,44 @@
   display: none;
 }
 
+.footer__logo-image {
+    &:hover,
+    &:focus {
+      opacity: 1;
+
+      transition: 0.2;
+
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      transition: 0.2;
+    }
+}
+
+.footer-form {
+  margin-top: 54px;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
-    padding: 26px 36px;
+    padding: 47px 50px;
   }
 
   .footer__logo-link {
     position: static;
 
     display: block;
+    margin-right: 185px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
     min-height: 90px;
-    padding: 26px 43px;
+    margin-top: 81px;
   }
 }

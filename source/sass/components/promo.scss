@@ -1,15 +1,5 @@
-@media (min-width: $tablet-width) {
-  .promo-menu {
-    display: flex;
-    margin-top: 329px;
-    margin-left: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo-menu {
-    margin-left: 60px;
-  }
+.promo-menu {
+  margin-top: 123px;
 }
 
 .promo-menu__item {
@@ -20,8 +10,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 25px;
-    left: 245px;
+    top: 30px;
+    left: 250px;
 
     display: block;
     width: 61px;
@@ -37,6 +27,9 @@
     background-color: #56c3b2;
 
     &::before {
+      top: 32px;
+      left: 239px;
+
       background-image: url("../img/icon-toy.svg");
     }
   }
@@ -45,7 +38,7 @@
 .promo-menu__link {
   display: block;
   width: 106px;
-  padding: 30px 29px;
+  padding: 27px 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -54,22 +47,42 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo-menu {
+    display: flex;
+    margin-top: 372px;
+    margin-left: 50px;
+  }
+
   .promo-menu__item {
     width: 334px;
   }
 
   .promo-menu__link {
+    padding: 27px 34px;
+
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo-menu {
+    margin-top: 355px;
+    margin-bottom: -74px;
+    margin-left: 51px;
+  }
+
   .promo-menu__item {
     width: 525px;
 
     &::before {
       left: 437px;
+    }
+
+    &--background-dark {
+      &::before {
+        left: 428px;
+      }
     }
   }
 }

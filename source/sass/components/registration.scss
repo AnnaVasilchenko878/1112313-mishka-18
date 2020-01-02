@@ -8,8 +8,8 @@
 
 .registration__text {
   width: 242px;
-  margin-bottom: 30px;
-  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-left: 2px;
 
   font-weight: 400;
   font-size: 13px;
@@ -17,20 +17,37 @@
 }
 
 .registration__title {
+  margin-bottom: 27px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $tiffany-color;
   text-transform: uppercase;
+
+  &--type {
+    margin-left: -14px;
+  }
+
+  &--user-data {
+    margin-bottom: 22px;
+  }
+}
+
+.registration__wrapper {
+  margin-top: -61px;
 }
 
 .registration__explanation {
+  margin-bottom: 29px;
+
   font-size: 14px;
   line-height: 16px;
 }
 
 .registration__button {
-  padding: 20px 26px;
+  margin-left: -2px;
+  padding: 17px 46px;
 
   font-weight: 700;
   font-size: 17px;
@@ -39,4 +56,108 @@
   text-transform: uppercase;
 
   border: 2px solid $text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .registration {
+    padding-left: 56px;
+  }
+
+  .registration-group {
+    margin-left: 51px;
+  }
+
+  .registration__text {
+    width: 612px;
+    margin-bottom: 62px;
+    margin-left: -35px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .registration__wrapper-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .registration__title {
+    width: 36px;
+    margin-right: 161px;
+    margin-left: -34px;
+
+    &--type {
+      margin-left: -48px;
+    }
+
+    &--user-data {
+      margin-right: 133px;
+    }
+  }
+
+  .group-type__list {
+    width: 500px;
+  }
+
+  .registration__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -75px;
+  }
+
+  .registration__explanation {
+    width: 300px;
+  }
+
+  .registration__button {
+    width: 265px;
+    margin-right: 240px;
+    margin-left: -38px;
+    padding: 15px 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .registration {
+    margin-bottom: -36px;
+    padding-left: 112px;
+  }
+
+  .registration__wrapper-group {
+    margin-bottom: 52px;
+  }
+
+  .registration__group {
+    margin-bottom: 25px;
+  }
+
+  .registration__text {
+    width: 672px;
+    margin-left: 89px;
+  }
+
+  .registration__title {
+    margin-right: 113px;
+
+    &--type {
+      margin-right: 161px;
+      margin-left: -48px;
+    }
+
+    &--user-data {
+      margin-right: 84px;
+    }
+  }
+
+  .registration__wrapper {
+    margin-top: -76px;
+    margin-right: 188px;
+  }
+
+  .registration__button {
+    width: 228px;
+    margin-right: 210px;
+    margin-left: -24px;
+    padding: 11px 10px;
+  }
 }

@@ -1,7 +1,7 @@
 .intro {
-  width: 100%;
-  min-height: 150px;
-  margin-bottom: 30px;
+  width: auto;
+  min-height: 174px;
+  margin-bottom: 25px;
 
   color: #010000;
 
@@ -11,8 +11,8 @@
 .intro__title {
   display: block;
   margin: 0 auto;
-  margin-bottom: 17px;
-  padding-top: 47px;
+  margin-bottom: -25px;
+  padding-top: 70px;
 
   font-weight: 700;
   font-size: 27px;
@@ -22,14 +22,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro {
+    margin-bottom: 64px;
+
+    &--form {
+      margin-bottom: 58px;
+    }
+  }
+
   .intro__title {
+    margin-left: -19px;
+    padding-top: 30px;
+
     font-size: 43px;
     line-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    margin-bottom: 147px;
+  }
+
   .intro__title {
+    padding-top: 43px;
+
     font-size: 53px;
     line-height: 57px;
   }

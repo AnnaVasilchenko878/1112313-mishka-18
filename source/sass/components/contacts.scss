@@ -1,6 +1,6 @@
 .contacts__title {
   margin-top: 95px;
-  margin-bottom: 42px;
+  margin-bottom: 8px;
   margin-left: 30px;
 
   font-weight: 700;
@@ -10,39 +10,151 @@
 }
 
 .contacts__list {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   margin-left: 30px;
 }
 
 .contacts__item {
   display: flex;
+  margin-bottom: -4px;
 
-  @include margin-reset;
   @include margin-reset;
 }
 
 .contacts__subtitle {
   width: 70px;
-  margin-right: 22px;
+  margin-right: 10px;
+
+  font-weight: 400;
 }
 
 .contacts__address {
-  width: 175px;
+  width: 147px;
   margin-top: 17px;
 
   font-style: normal;
   color: $text-color;
+
+  &--mail {
+    width: 170px;
+    margin-bottom: 58px;
+
+    border-bottom: 1px solid $tiffany-color;
+
+    &:hover,
+    &:focus {
+      color: $tiffany-color;
+
+      border-color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__map {
   max-width: 322px;
   max-height: 457px;
-  margin-bottom: 39px;
+  margin-bottom: 51px;
+}
+
+.contacts__wrapper {
+  margin-bottom: 42px;
 }
 
 .contacts__link {
-  margin-left: 30px;
-  padding: 19px 52px;
+  margin-left: 33px;
+  padding: 15px 51px;
 
   @include button-style;
+}
+
+@media (min-width: $tablet-width) {
+  .сontacts {
+    margin-top: -12px;
+    margin-bottom: 67px;
+  }
+
+  .contacts__title {
+    margin-bottom: 28px;
+    margin-left: 45px;
+    padding-top: 71px;
+    padding-right: 49px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__list {
+    display: flex;
+    width: 666px;
+    margin-bottom: 63px;
+    margin-left: 49px;
+  }
+
+  .contacts__item {
+    width: 300px;
+    margin-right: 32px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__address {
+    width: 193px;
+  }
+
+  .contacts__wrapper {
+    margin-bottom: 57px;
+  }
+
+  .contacts__link {
+    margin-left: 268px;
+    padding: 15px 37px;
+  }
+
+  .contacts__map {
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .сontacts {
+    position: relative;
+
+    margin-bottom: 116px;
+    padding-left: 176px;
+  }
+
+  .contacts__map {
+    position: relative;
+  }
+
+  .contacts__title {
+    margin-bottom: 31px;
+
+    font-size: 54px;
+    line-height: 57px;
+  }
+
+  .contacts__subtitle {
+    font-size: 17px;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    top: 0;
+    left: 574px;
+  }
+
+  .contacts__list {
+    display: block;
+    margin-bottom: 95px;
+  }
+
+  .contacts__link {
+    margin-left: 49px;
+  }
 }

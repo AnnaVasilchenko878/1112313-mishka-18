@@ -1,5 +1,9 @@
+.about-us {
+  margin-left: 2px;
+}
+
 .about-us__title {
-  margin-bottom: 88px;
+  margin-bottom: 86px;
   margin-left: -75px;
 
   font-weight: 700;
@@ -13,7 +17,7 @@
   position: relative;
 
   width: 251px;
-  margin-bottom: 85px;
+  margin-bottom: 81px;
   margin-left: 30px;
 
   font-weight: 700;
@@ -22,13 +26,14 @@
   color: #000000;
 
   @include margin-reset;
+  @include margin-reset;
 
 
   &::before {
     content: "";
     position: absolute;
-    top: -57px;
-    left: 7px;
+    top: -56px;
+    left: -4px;
 
     display: block;
     width: 55px;
@@ -40,31 +45,52 @@
   }
 
   &--saving {
+    margin-bottom: 83px;
+
     &::before {
+      top: -60px;
+
       background-image: url("../img/icon-feature-money.svg");
     }
   }
 
   &--like {
+    margin-bottom: 84px;
+
     &::before {
+      top: -53px;
+
       background-image: url("../img/icon-feature-heart.svg");
     }
   }
 
   &--knitting {
+    margin-bottom: 83px;
+
     &::before {
+      top: -53px;
+      left: -6px;
+
       background-image: url("../img/icon-feature-ball.svg");
     }
   }
 
   &--patriotism {
+    margin-bottom: 83px;
+
     &::before {
+      top: -58px;
+      left: -6px;
+
       background-image: url("../img/icon-feature-rocket.svg");
     }
   }
 
   &--present {
     &::before {
+      top: -57px;
+      left: -8px;
+
       background-image: url("../img/icon-feature-gift.svg");
     }
   }
@@ -72,12 +98,13 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
+    margin-bottom: 23px;
     margin-left: 50px;
   }
 
   .about-us__title {
-    margin-bottom: 95px;
-    margin-left: -409px;
+    margin-bottom: 103px;
+    margin-left: -414px;
 
     font-size: 43px;
     line-height: 50px;
@@ -87,6 +114,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 737px;
+    margin-left: -27px;
   }
 
   .about-us__item {
@@ -97,14 +125,19 @@
 
     &--eco {
       order: 1;
+      margin-right: 10px;
+      margin-bottom: 110px;
     }
 
     &--saving {
       order: 3;
+      margin-right: 10px;
+      margin-bottom: 112px;
     }
 
     &--like {
       order: 5;
+      margin-right: 10px;
     }
 
     &--knitting {
@@ -123,12 +156,13 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-left: 196px;
+    margin-bottom: 32px;
+    margin-left: 222px;
   }
 
   .about-us__title {
-    margin-bottom: 131px;
-    margin-left: -572px;
+    margin-bottom: 100px;
+    margin-left: -547px;
 
     font-weight: 700;
     font-size: 53px;
@@ -136,12 +170,12 @@
   }
 
   .about-us__list {
-    width: 937px;
+    width: 950px;
   }
 
   .about-us__item {
     width: 290px;
-    margin-right: 148px;
+    margin-right: 31px;
 
     line-height: 22px;
   }
