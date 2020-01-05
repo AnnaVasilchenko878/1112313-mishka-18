@@ -52,6 +52,7 @@
   color: #000000;
 }
 .product-card__icon {
+  opacity: 0.2;
   &:hover,
   &:focus {
     opacity: 1;
@@ -89,7 +90,7 @@
 
   .product-card__wrapper {
     width: 350px;
-    padding-top: 23px;
+    padding-top: 20px;
   }
 
   .product-card__link-name {
@@ -115,12 +116,12 @@
 @media (min-width: $desktop-width) {
   .product-card__wrapper-image {
     min-width: 362px;
-    min-height: 462px;
+    min-height: 341px;
     margin-bottom: -7px;
   }
 
   .product-card__wrapper {
-    width: 316px;
+    width: 334px;
     padding-top: 22px;
     padding-bottom: 10px;
     padding-left: 28px;

@@ -56,6 +56,7 @@
   text-transform: uppercase;
 
   border: 2px solid $text-color;
+  @include button-style;
 }
 
 @media (min-width: $tablet-width) {

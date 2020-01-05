@@ -34,6 +34,14 @@
     padding: 18px 15px 106px 23px;
     margin-bottom: 64px;
   }
+    &:hover,
+    &:focus {
+      border-color: $tiffany-color;
+    }
+
+    &:active {
+      border-color: $tiffany-color;
+    }
 }
 
 @media (min-width: $tablet-width) {

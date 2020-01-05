@@ -11,21 +11,20 @@
   margin-right: 62px;
   margin-left: 85px;
 }
-
-.logo__icon {
+.logo__image {
   &:hover,
   &:focus {
-    opacity: 1;
-
-    transition: 0.2;
-
-    fill: #46c1ae;
+    opacity: 0.6;
   }
-
   &:active {
     opacity: 0.3;
-
-    transition: 0.2;
+  }
+  &--main {
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
   }
 }
 .logo__button {
@@ -34,9 +33,11 @@
 }
 
 .logo__icon {
+  opacity: 0.2;
   &:hover,
   &:focus {
     fill: $tiffany-color;
+    opacity: 1;
   }
   &:active {
     opacity: 0.3;

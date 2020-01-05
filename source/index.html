@@ -14,16 +14,16 @@
       <nav class="header__navigaton-menu site-nav site-nav--main-page">
           <div class="site-nav__logo logo reset-list">
             <a class="logo__link" aria-label="Логотип компании">
-              <picture class="logo__image logo__image--header">
+              <picture class="logo__image logo__image--main">
+                <!-- Добавить контентное размеры остальным девайсам width="88" height="38" -->
                 <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
                 <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
                 <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
-                  <!-- Узнать размеры с фотошопа и добавить в img-->
                 <img class="logo-image__icon logo-image__icon--main-page" src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
               </picture>
             </a>
             <button class="button logo__button logo__button--menu-site" type="button" aria-label="Открыть меню сайта">
-              <svg class="logo__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px"
                 viewBox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
                 <rect fill="#231F20" width="19.958" height="2" />
@@ -116,11 +116,11 @@
             </table>
             <div class="top-week-product__wrapper-image">
               <picture class="top-week-product__image">
-                <source srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg" media="(min-width: 1150px)">
-                <source srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg" media="(min-width: 770px)">
-                <source srcset="img/triple-set-mobile@1x.jpg, img/triple-set-mobile@2x.jpg" media="(min-width: 320px)">
-                  <!-- Добавть ширину и высоту с фотошопа -->
-                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Продукт недели вязанная корзинка">
+                <!-- Добавить ширины остальным картинкам width="260" height="320"-->
+                <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 770px)">
+                <source srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Продукт недели вязанная корзинка">
               </picture>
             </div>
             <p class="top-week-product__price">Цена: 990 руб.</p>
@@ -183,11 +183,11 @@
         </div>
         <div class="contacts__wrapper">
           <picture class="contacts__img">
-            <source srcset="img/map-desktop@1x.jpg img/map-desktop@2x.jpg" media="(min-width: 1150px)">
-            <source srcset="img/map-tablet@1x.jpg img/map-tabletp@2x.jpg" media="(min-width: 770px)">
-            <source srcset="img/map-mobile@1x.jpg img/map-mobile@2x.jpg" media="(min-width: 320px)">
-<!-- Добавить размеры с фотошопа -->
-            <img src="img/map-modile@1x.svg" srcset="img/map-mobile@2x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            <!-- Добавить размеры изображениям width="320" height="457"-->
+            <source srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 770px)">
+            <source srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" media="(min-width: 320px)">
+            <img src="img/map-modile@1x.svg" srcset="img/map-mobile@2x.jpg 2x" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
         </div>
 <!-- Здесь будет интерактивная карта -->

@@ -15,10 +15,11 @@
         <div class="site-nav__logo logo reset-list">
           <a class="logo__link" href="index.html" aria-label="Логотип компании">
             <picture class="logo__image logo__image--header">
+              <!-- Добавить размеры другим изображениям width="88"
+                height="38"-->
               <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
               <source srcset="img/logo-tablet.svg" media="(min-width: 770px)">
               <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
-<!-- Добавить размеры с фотошопа -->
               <img class="logo-image__icon logo-image__icon--main-page" src="img/logo-desktop.svg" alt="Логотип магазина Мишка">
             </picture>
           </a>
@@ -87,11 +88,13 @@
           <li class="catalog__item product-card">
             <a class="product-card__link" href="#" aria-label="Перейти к подробному описанию товара">
               <div class="product-card__wrapper-image">
-                <picture class="product-card__image product-card__image--bunny">
-                  <source srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg" media="(min-width: 1150px)">
-                  <source srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg" media="(min-width: 770px)">
-                  <source srcset="img/photo-hare-mobile@1x.jpg, img/photo-hare-mobilep@2x.jpg" media="(min-width: 320px)">
-                  <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-desktop@2x.jpg" alt="Игрушка зайчик-попрыгайчик">
+                <picture>
+                  <!-- Добавить размеры под остальные девайсы width="260" height="197"-->
+                  <source srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                  <source srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x" media="(min-width: 770px)">
+                  <source srcset="img/photo-hare-mobile@1x.jpg 1x, img/photo-hare-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                  <img class="product-card__image product-card__image--bunny" src="img/photo-hare-mobile@1x.jpg"
+                    srcset="img/photo-hare-modile@2x.jpg 2x" alt="Игрушка зайчик-попрыгайчик">
                 </picture>
               </div>
             </a>
@@ -117,11 +120,13 @@
           <li class="catalog__item product-card">
             <a class="product-card__link" href="#" aria-label="Перейти к подробному описанию товара">
               <div class="product-card__wrapper-image">
-                <picture class="product-card__image product-card__image--basket">
-                  <source srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg" media="(min-width: 1150px)">
-                  <source srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg" media="(min-width: 770px)">
-                  <source srcset="img/photo-bowl-mobile@1x.jpg, img/photo-bowl-mobile@2x.jpg" media="(min-width: 320px)">
-                  <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg" alt="Корзина для белья">
+                <picture>
+                  <!-- Добавить размеры под остальные девайсы width="260" height="197"-->
+                  <source srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                  <source srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x" media="(min-width: 770px)">
+                  <source srcset="img/photo-bowl-mobile@1x.jpg 1x, img/photo-bowl-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                  <img class="product-card__image product-card__image--basket" src="img/photo-bowl-mobile@1x.jpg"
+                    srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзина для белья">
                 </picture>
               </div>
             </a>
@@ -147,11 +152,14 @@
           <li class="catalog__item catalog__item--margin-reset product-card">
             <a class="product-card__link" href="#" aria-label="Перейти к подробному описанию товара">
               <div class="product-card__wrapper-image">
-                <picture class="product-card__image product-card__image--basket-toys">
-                  <source srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg" media="(min-width: 1150px)">
-                  <source srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg" media="(min-width: 770px)">
-                  <source srcset="img/photo-toys-mobile@1x.jpg, img/photo-toys-mobile@2x.jpg" media="(min-width: 320px)">
-                  <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg" alt="Большая корзина для игрушек">
+                <picture>
+                  <!-- Добавить размеры под остальные девайсы width="260" height="197"-->
+                  <source srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                  <source srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x" media="(min-width: 770px)">
+                  <source srcset="img/photo-toys-mobile@1x.jpg 1x, img/photo-toys-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                  <img class="product-card__image product-card__image--basket-toys" src="img/photo-toys-mobile@1x.jpg"
+                    srcset="img/photo-toys-mobile@2x.jpg 2x"
+                    alt="Большая корзина для игрушек">
                 </picture>
               </div>
             </a>
@@ -182,11 +190,15 @@
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video-wrapper">
             <picture class="production__image">
-              <source srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg" media="(min-width: 1150px)">
-              <source srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg" media="(min-width: 770px)">
-              <source srcset="img/video-mobile@1x.jpg, img/video-mobile@2x.jpg" media="(min-width: 320px)">
-              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео процесса производства">
+              <!-- Добавить размеры под остальные девайсы width="260" height="151"-->
+              <source srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+              <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 770px)">
+              <source srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" media="(min-width: 320px)">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
             </picture>
+            <button class="button production__button" type="button">
+              <img src="img/icon-play.svg" width="99" height="76" alt="Воспроизвести видео">
+            </button>
           </div>
         </div>
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
