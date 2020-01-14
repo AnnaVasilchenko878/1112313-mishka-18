@@ -17,7 +17,8 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   color: $text-color;
 
-  background-color: $main-background;
+  // background-color: $main-background;
+  background-image: url(../img/sprite.svg);
 
   a {
     color: #000000;
