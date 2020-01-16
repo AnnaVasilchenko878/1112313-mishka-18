@@ -1,3 +1,9 @@
+.сontacts {
+    padding-top: 22px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 5px 79px;
+}
 .contacts__title {
   margin-top: 95px;
   margin-bottom: 8px;
@@ -59,7 +65,21 @@
   max-height: 457px;
   margin-bottom: 51px;
 }
+.contacts__img {
+  position: relative;
 
+  &::before {
+    content: " ";
+    width: 90px;
+    height: 68px;
+    position: absolute;
+    top: 182px;
+    left: 130px;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 .contacts__wrapper {
   margin-bottom: 42px;
 }

@@ -1,0 +1,27 @@
+.size-list {
+  display: flex;
+  width: 260px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-left: 38px;
+}
+
+.size-list__item {
+  width: 60px;
+  position: relative;
+  margin-right: 26px;
+}
+
+.size-list__label {
+  color: #000000;
+
+   &::before {
+  content: " ";
+  position: absolute;
+  top: -9px;
+  left: -35px;
+  width: 82px;
+  height: 52px;
+  border: 1px solid #ececec;
+  }
+}

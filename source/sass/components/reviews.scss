@@ -45,10 +45,14 @@
   margin-top: 25px;
   margin-bottom: 53px;
   margin-left: 11px;
-  padding: 0 41px;
+  padding: 15px 56px;
+  border: 1px solid #ececec;
 }
 
 .reviews-card__button {
+  &--back {
+    margin-right: 40px;
+  }
   margin-right: -5px;
   padding: 15px 27px;
 

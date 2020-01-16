@@ -13,6 +13,10 @@
 }
 
 .logo-image__icon {
+  &--desktop,
+  &--tablet {
+    display: none;
+  }
   &:hover,
   &:focus {
     opacity: 0.6;

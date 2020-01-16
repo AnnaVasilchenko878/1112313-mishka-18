@@ -33,9 +33,14 @@
   .nav-controls__item {
     width: 200px;
 
-    &--search,
-    &--basket {
+    &--search {
       margin-left: 0;
+      border-right: 1px solid #ececec;
+      width: 0;
+
+    }
+    &--basket {
+      margin-left: 109px;
     }
   }
 

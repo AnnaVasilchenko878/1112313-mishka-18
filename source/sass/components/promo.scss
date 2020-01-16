@@ -25,10 +25,10 @@
     display: block;
     width: 61px;
     height: 62px;
-
-    background-image: url("../img/sprite.svg");
+    background-image: url("../img/icon-interior.svg");
+    // background-image: url("../img/sprite.svg#icon-interror");
     background-repeat: no-repeat;
-    background-position: 168px 98px;
+    background-position: center;
     opacity: 0.5;
   }
 
@@ -38,9 +38,13 @@
     &::before {
       top: 32px;
       left: 239px;
-
-      background-image: url("../img/sprite.svg");
+      background-image: url("../img/icon-toy.svg");
+      // background-image: url("../img/sprite.svg#icon-toy");
     }
+  }
+  &:hover,
+  &:focus {
+    margin-top: -5px;
   }
 }
 
