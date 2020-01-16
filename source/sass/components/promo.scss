@@ -31,8 +31,18 @@
     background-position: center;
     opacity: 0.5;
   }
-
-  &--bg-dark {
+  &--interrior {
+    &:hover,
+    &:focus {
+      box-shadow: 0 5px 0 0 $tiffany-color;
+      margin-top: -5px;
+      margin-bottom: 5px;
+    }
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  &--toys {
     background-color: #56c3b2;
 
     &::before {
@@ -41,10 +51,10 @@
       background-image: url("../img/icon-toy.svg");
       // background-image: url("../img/sprite.svg#icon-toy");
     }
-  }
-  &:hover,
-  &:focus {
-    margin-top: -5px;
+    &:hover {
+      box-shadow: 0 -5px 0 0 #56c3b2;
+      margin-top: -5px;
+    }
   }
 }
 

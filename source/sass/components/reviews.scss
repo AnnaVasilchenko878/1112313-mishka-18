@@ -49,19 +49,26 @@
   border: 1px solid #ececec;
 }
 
-.reviews-card__button {
+.reviews__button {
+  width: 75px;
+  height: 25px;
   &--back {
     margin-right: 40px;
+    background-image: url("../img/icon-left-arrow.svg");
+    // background-image: url("../img/sprite.svg#arrow-left");
+    background-repeat: no-repeat;
+    background-position: 0px;
+  }
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    // background-image: url("../img/sprite.svg#arrow-right");
+    background-repeat: no-repeat;
+    background-position: 15px;
   }
   margin-right: -5px;
   padding: 15px 27px;
 
-  border: 1px solid $border-color;
 
-  @include arrow-state;
-}
-
-.reviews__button-icon {
   @include arrow-state;
 }
 

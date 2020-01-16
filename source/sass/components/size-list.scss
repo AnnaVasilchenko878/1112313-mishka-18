@@ -22,6 +22,25 @@
   left: -35px;
   width: 82px;
   height: 52px;
-  border: 1px solid #ececec;
+  border: 2px solid #444444;
+  opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #444444;
+      opacity: 0.3;
+    }
+    &:active {
+    border: 2px solid #62d1ba;
+   }
   }
+}
+.size-list__input:hover+.size-list__label::before,
+.size-list__input:focus+.size-list__label::before {
+  border: 1px solid #444444;
+  opacity: 0.3;
+}
+.size-list__input:active+.size-list__label::before {
+border-color: #62d1ba;
+opacity: 1;
 }

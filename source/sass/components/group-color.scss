@@ -31,19 +31,28 @@
 
     border: 2px solid #000000;
   }
-  &::after {
+}
+.group-color__input:checked +.group-color__label::after {
     content: " ";
     position: absolute;
     width: 35px;
     height: 24px;
     background-image: url("../img/icon-tick.svg");
+ // background-image: url("..img/sprite.svg#icon-check");
     background-repeat: no-repeat;
     background-position: center;
     top: -2px;
     left: -52px;
-  }
 }
-
+.group-color__input:hover+.group-color__label::before,
+.group-color__input:focus+.group-color__label::before {
+  border-color: #62d1ba;
+  opacity: 1;
+}
+.group-color__input:active+.group-color__label::before {
+  border-color: #444444;
+  opacity: 0.3;
+}
 @media (min-width: $tablet-width) {
   .group-color {
     margin-bottom: 70px;
@@ -79,9 +88,10 @@
       width: 54px;
       height: 52px;
     }
-    &::after {
+  }
+  .group-color__input:checked +.group-color__label::after {
       left: -71px;
-    }
+
   }
 }
 

@@ -22,7 +22,7 @@
   </symbol>
 
   <!-- Зиг-заг линия -->
-  <symbol id="zig-zag" viewBox="0 0 1150 23">
+  <symbol id="zig-zag-line" viewBox="0 0 1150 23">
     <svg version="1.1" id="Layer_2" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       style="enable-background:new 0 0 1150 23;" xml:space="preserve">
       <style type="text/css">
@@ -124,7 +124,7 @@
   <symbol id="icon-basket" viewBox="264.205 370.961 20.294 18.849">
     <svg version="1.1" id="Layer_1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px"
       height="18.849px" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-      <path fill="#231F20"
+      <path
         d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
     </svg>
   </symbol>
@@ -384,7 +384,7 @@
     </svg>
   </symbol>
   <!-- Отзывы стрелка правая -->
-  <symbol id="arroe-right" viewBox="0 0 50 26.003">
+  <symbol id="arrow-right" viewBox="0 0 50 26.003">
     <svg version="1.1" id="Layer_1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
       height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
       <polygon
@@ -397,7 +397,7 @@
   <symbol id="icon-envelope" viewBox="0 0 32 32">
     <svg version="1.1" id="Layer_1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
       height="32px" enable-background="new 0 0 32 32" xml:space="preserve">
-      <path id="mail" fill="#333333"
+      <path id="mail"
         d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z" />
     </svg>
   </symbol>
@@ -449,16 +449,6 @@
   <symbol id="icon-play" viewBox="0 0 100.7 76.9">
     <svg version="1.1" id="Laag_1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       style="enable-background:new 0 0 100.7 76.9;" xml:space="preserve">
-      <style type="text/css">
-        .st0 {
-          fill: #63D1BB;
-        }
-
-        .st1 {
-          fill: #FFFFFF;
-        }
-
-      </style>
       <g>
         <g>
           <path class="st0"

@@ -3,6 +3,7 @@
   padding-top: 6px;
 
   background-image: url("../img/bg-zigzag-line.svg");
+  // background-image: url("../img/sprrite.svg#zig-zag-line");
   background-repeat: repeat-x;
   background-position: 5px 10px;
 }
@@ -45,6 +46,7 @@
     height: 38px;
 
     background-image: url("../img/icon-feature-flower.svg");
+    // background-image: url("..img/sprite.svg#icon-flower");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -56,6 +58,7 @@
       top: -60px;
 
       background-image: url("../img/icon-feature-money.svg");
+  // background-image: url("..img/sprite.svg#icon-money");
     }
   }
 
@@ -66,6 +69,7 @@
       top: -53px;
 
       background-image: url("../img/icon-feature-heart.svg");
+          // background-image: url("..img/sprite.svg#icon-heart");
     }
   }
 
@@ -77,6 +81,7 @@
       left: -6px;
 
       background-image: url("../img/icon-feature-ball.svg");
+          // background-image: url("..img/sprite.svg#icon-ball");
     }
   }
 
@@ -88,6 +93,7 @@
       left: -6px;
 
       background-image: url("../img/icon-feature-rocket.svg");
+          // background-image: url("..img/sprite.svg#icon-rocket");
     }
   }
 
@@ -97,6 +103,7 @@
       left: -8px;
 
       background-image: url("../img/icon-feature-gift.svg");
+          // background-image: url("..img/sprite.svg#icon-gift");
     }
   }
 }

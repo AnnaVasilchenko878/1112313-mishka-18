@@ -11,6 +11,19 @@
   &--basket {
     margin-left: -31px;
   }
+  &:hover>.logo__icon,
+  &:focus>.logo__icon {
+  opacity: 1;
+
+  transition: 0.2;
+
+  fill: #46c1ae;
+  }
+&:active>.logo__icon {
+  opacity: 0.3;
+
+  transition: 0.2;
+  }
 }
 
 .nav-controls__link {
@@ -18,10 +31,14 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-
-  @include links-state;
 }
-
+.nav-controls__item:hover>.nav-controls__link,
+.nav-controls__item:focus>.nav-controls__link {
+  opacity: 0.6;
+}
+.nav-controls__item:focus>.nav-controls__link {
+  opacity: 0.3;
+}
 
 @media (min-width: $tablet-width) {
   .nav-controls {

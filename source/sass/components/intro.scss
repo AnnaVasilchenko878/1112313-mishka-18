@@ -29,7 +29,13 @@
       margin-bottom: 58px;
     }
   }
-
+  .intro-catalog,
+  .intro-form {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    // background-image: url("../img/sprite#zig-zag");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
   .intro__title {
     margin-left: -19px;
     padding-top: 30px;

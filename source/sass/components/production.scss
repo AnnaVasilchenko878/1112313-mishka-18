@@ -1,6 +1,8 @@
 .production {
   margin-bottom: 101px;
   margin-left: 5px;
+  padding-bottom: 39px;
+  @include product-state;
 }
 
 .production__title {
@@ -13,6 +15,19 @@
   line-height: 24px;
   text-align: left;
   color: #000000;
+  position: relative;
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    left: -61px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
 }
 
 .production__video-wrapper {
@@ -79,6 +94,10 @@
 
     font-size: 20px;
     line-height: 24px;
+    &::before {
+      top: -7px;
+      left: -65px;
+    }
   }
 
   .production__wrapper-flex {
@@ -131,6 +150,10 @@
     margin-top: 96px;
     margin-bottom: 22px;
     margin-left: 777px;
+    &::before {
+      top: -3px;
+      left: -52px;
+    }
   }
 
   .production__text {

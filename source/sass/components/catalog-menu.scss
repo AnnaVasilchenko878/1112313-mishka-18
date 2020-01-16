@@ -14,6 +14,7 @@
     height: 62px;
 
     background-image: url("../img/icon-interior.svg");
+        // background-image: url("..img/sprite.svg#icon-interror");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5;
@@ -24,6 +25,7 @@
 
     &::before {
       background-image: url("../img/icon-toy.svg");
+          // background-image: url("..img/sprite.svg#icon-toy");
     }
   }
 }
