@@ -1,6 +1,6 @@
 .about-us {
-  margin-left: 2px;
   padding-top: 6px;
+  padding-left: 2px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   // background-image: url("../img/sprrite.svg#zig-zag-line");
@@ -58,7 +58,7 @@
       top: -60px;
 
       background-image: url("../img/icon-feature-money.svg");
-  // background-image: url("..img/sprite.svg#icon-money");
+      // background-image: url("..img/sprite.svg#icon-money");
     }
   }
 
@@ -69,7 +69,7 @@
       top: -53px;
 
       background-image: url("../img/icon-feature-heart.svg");
-          // background-image: url("..img/sprite.svg#icon-heart");
+      // background-image: url("..img/sprite.svg#icon-heart");
     }
   }
 
@@ -81,7 +81,7 @@
       left: -6px;
 
       background-image: url("../img/icon-feature-ball.svg");
-          // background-image: url("..img/sprite.svg#icon-ball");
+      // background-image: url("..img/sprite.svg#icon-ball");
     }
   }
 
@@ -93,7 +93,7 @@
       left: -6px;
 
       background-image: url("../img/icon-feature-rocket.svg");
-          // background-image: url("..img/sprite.svg#icon-rocket");
+      // background-image: url("..img/sprite.svg#icon-rocket");
     }
   }
 
@@ -103,7 +103,7 @@
       left: -8px;
 
       background-image: url("../img/icon-feature-gift.svg");
-          // background-image: url("..img/sprite.svg#icon-gift");
+      // background-image: url("..img/sprite.svg#icon-gift");
     }
   }
 }
@@ -111,7 +111,7 @@
 @media (min-width: $tablet-width) {
   .about-us {
     margin-bottom: 23px;
-    margin-left: 50px;
+    padding-left: 50px;
   }
 
   .about-us__title {
@@ -169,7 +169,7 @@
 @media (min-width: $desktop-width) {
   .about-us {
     margin-bottom: 32px;
-    margin-left: 222px;
+    padding-left: 222px;
   }
 
   .about-us__title {

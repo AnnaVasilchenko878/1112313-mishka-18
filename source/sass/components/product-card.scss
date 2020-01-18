@@ -10,6 +10,7 @@
   min-height: 195px;
   margin-bottom: -15px;
 }
+
 .product-card__image {
   margin-bottom: -10px;
 
@@ -51,8 +52,10 @@
   line-height: 24px;
   color: #000000;
 }
+
 .product-card__icon {
   opacity: 0.2;
+
   &:hover,
   &:focus {
     opacity: 1;
@@ -68,6 +71,7 @@
     transition: 0.2;
   }
 }
+
 .product-card__button {
   width: 20px;
   height: 19px;
@@ -115,13 +119,18 @@
 
 @media (min-width: $desktop-width) {
   .product-card__wrapper-image {
-    min-width: 362px;
-    min-height: 341px;
+    width: 315px;
+    height: 464px;
     margin-bottom: -7px;
   }
 
+  .product-card__image {
+    width: 315px;
+    height: 464px;
+  }
+
   .product-card__wrapper {
-    width: 334px;
+    width: 315px;
     padding-top: 22px;
     padding-bottom: 10px;
     padding-left: 28px;

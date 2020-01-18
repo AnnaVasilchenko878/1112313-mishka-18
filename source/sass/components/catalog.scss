@@ -1,6 +1,6 @@
 .catalog {
-  margin-left: 6px;
   margin-bottom: 45px;
+  margin-left: 6px;
 }
 
 .catalog__list {
@@ -23,8 +23,8 @@
 
   .catalog__item {
     display: flex;
-    margin-bottom: 51px;
     width: 668px;
+    margin-bottom: 51px;
 
     &:hover {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -34,8 +34,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin-left: 19px;
     margin-bottom: -26px;
+    margin-left: 19px;
   }
 
   .catalog__list {

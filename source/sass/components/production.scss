@@ -2,10 +2,13 @@
   margin-bottom: 101px;
   margin-left: 5px;
   padding-bottom: 39px;
+
   @include product-state;
 }
 
 .production__title {
+  position: relative;
+
   width: 121px;
   margin-bottom: 25px;
   margin-left: 122px;
@@ -15,26 +18,28 @@
   line-height: 24px;
   text-align: left;
   color: #000000;
-  position: relative;
+
   &::before {
     content: "";
-    width: 32px;
-    height: 32px;
     position: absolute;
     top: 5px;
     left: -61px;
+
+    width: 32px;
+    height: 32px;
+
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: center;
-
   }
 }
 
 .production__video-wrapper {
+  position: relative;
+
   min-width: 260px;
   min-height: 150px;
   margin-bottom: -4px;
-    position: relative;
 }
 
 .production__image {
@@ -42,18 +47,20 @@
 }
 
 .production__button {
-    position: absolute;
-    top: 43px;
-    left: 98px;
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
-    &:active {
-      opacity: 0.3;
-      transform: scale(0.8);
-    }
+  position: absolute;
+  top: 43px;
+  left: 98px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
   }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
 
 .production__text {
   width: 183px;
@@ -87,6 +94,7 @@
     min-height: 455px;
     margin-bottom: 12px;
   }
+
   .production__title {
     width: 250px;
     margin-bottom: 21px;
@@ -94,6 +102,7 @@
 
     font-size: 20px;
     line-height: 24px;
+
     &::before {
       top: -7px;
       left: -65px;
@@ -104,10 +113,12 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
   .production__button {
     top: 205px;
     left: 304px;
   }
+
   .production__text {
     width: 564px;
     margin-bottom: 46px;
@@ -138,6 +149,7 @@
     min-width: 682px;
     min-height: 455px;
   }
+
   .production__image {
     &:before {
       top: -253px;
@@ -150,6 +162,7 @@
     margin-top: 96px;
     margin-bottom: 22px;
     margin-left: 777px;
+
     &::before {
       top: -3px;
       left: -52px;

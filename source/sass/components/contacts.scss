@@ -1,10 +1,12 @@
 .сontacts {
-    padding-top: 22px;
-    background-image: url("../img/bg-zigzag-line.svg");
-        // background-image: url("..img/sprite.svg#zig-zag-line");
-    background-repeat: repeat-x;
-    background-position: 5px 79px;
+  padding-top: 22px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  // background-image: url("..img/sprite.svg#zig-zag-line");
+  background-repeat: repeat-x;
+  background-position: 5px 79px;
 }
+
 .contacts__title {
   margin-top: 95px;
   margin-bottom: 8px;
@@ -66,22 +68,26 @@
   max-height: 457px;
   margin-bottom: 51px;
 }
+
 .contacts__img {
   position: relative;
 
   &::before {
     content: " ";
-    width: 90px;
-    height: 68px;
     position: absolute;
     top: 182px;
     left: 130px;
+
+    width: 90px;
+    height: 68px;
+
     background-image: url("../img/icon-map-pin.svg");
-        // background-image: url("..img/sprite.svg#map-mark");
+    // background-image: url("..img/sprite.svg#map-mark");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
+
 .contacts__wrapper {
   margin-bottom: 42px;
 }
@@ -100,6 +106,8 @@
   }
 
   .contacts__title {
+    position: relative;
+
     margin-bottom: 28px;
     margin-left: 45px;
     padding-top: 71px;
@@ -107,15 +115,16 @@
 
     font-size: 43px;
     line-height: 50px;
-    position: relative;
 
-    &::before{
+    &::before {
       content: "";
-      width: 47px;
-      height: 82px;
       position: absolute;
       top: 52px;
       left: 600px;
+
+      width: 47px;
+      height: 82px;
+
       background-image: url("../img/icon-flag.svg");
       // background-image: url("../img/sprite.svg#icon-flag");
       background-repeat: no-repeat;
@@ -151,6 +160,13 @@
     padding: 15px 37px;
   }
 
+  .contacts__img {
+    &:before {
+      top: -268px;
+      left: 344px;
+    }
+  }
+
   .contacts__map {
     margin-bottom: 61px;
   }
@@ -173,6 +189,7 @@
 
     font-size: 54px;
     line-height: 57px;
+
     &::before {
       left: -83px;
     }
@@ -184,7 +201,7 @@
 
   .contacts__wrapper {
     position: absolute;
-    top: 90px;
+    top: 199px;
     left: 574px;
   }
 
@@ -195,5 +212,12 @@
 
   .contacts__link {
     margin-left: 49px;
+  }
+
+  .contacts__img {
+    &:before {
+      top: -270px;
+      left: 227px;
+    }
   }
 }

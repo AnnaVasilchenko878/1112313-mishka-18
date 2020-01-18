@@ -11,14 +11,13 @@
   &--basket {
     margin-left: -31px;
   }
-  &:hover>.main-menu__link,
-  &:focus>.main-menu__link {
+  &:hover > .main-menu__link,
+  &:focus > .main-menu__link {
     opacity: 0.6;
   }
-  &:active>.main-menu__link {
+  &:active > .main-menu__link {
     opacity: 0.3;
   }
-
 }
 
 .main-menu__link {

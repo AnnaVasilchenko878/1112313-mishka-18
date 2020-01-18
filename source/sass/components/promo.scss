@@ -4,6 +4,7 @@
 
 .promo-menu__link {
   position: relative;
+
   display: block;
   width: 106px;
   padding: 27px 30px;
@@ -25,35 +26,44 @@
     display: block;
     width: 61px;
     height: 62px;
+
     background-image: url("../img/icon-interior.svg");
     // background-image: url("../img/sprite.svg#icon-interror");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5;
   }
+
   &--interrior {
+
     &:hover,
     &:focus {
-      box-shadow: 0 5px 0 0 $tiffany-color;
       margin-top: -5px;
       margin-bottom: 5px;
+
+      box-shadow: 0 5px 0 0 $tiffany-color;
     }
+
     &:active {
       opacity: 0.7;
     }
   }
+
   &--toys {
     background-color: #56c3b2;
 
     &::before {
       top: 32px;
       left: 239px;
+
       background-image: url("../img/icon-toy.svg");
       // background-image: url("../img/sprite.svg#icon-toy");
     }
+
     &:hover {
-      box-shadow: 0 -5px 0 0 #56c3b2;
       margin-top: -5px;
+
+      box-shadow: 0 -5px 0 0 #56c3b2;
     }
   }
 }
@@ -64,6 +74,7 @@
     margin-top: 372px;
     margin-left: 50px;
   }
+
   .promo-menu__link {
     padding: 27px 34px;
     padding-right: 299px;

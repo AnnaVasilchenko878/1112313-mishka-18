@@ -5,8 +5,9 @@
 }
 
 .user-contacts__item {
-  margin-bottom: 29px;
   position: relative;
+
+  margin-bottom: 29px;
 
   @include margin-reset;
 }
@@ -23,16 +24,19 @@
 
 .user-contacts__input {
   display: block;
-  border: none;
-  margin-top: 12px;
-  border-bottom: 2px solid #000000;
-  padding-bottom: 15px;
-  padding-top: 15px;
   width: 269px;
+  margin-top: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+
   &--additionally {
-    border: 2px solid #000000;
-    padding: 18px 15px 106px 23px;
     margin-bottom: 64px;
+    padding: 18px 15px 106px 23px;
+
+    border: 2px solid #000000;
   }
 
   &:hover,
@@ -44,17 +48,21 @@
     border-color: $tiffany-color;
   }
 }
+
 .user-contacts__icon {
- fill: #cccccc;
- position: absolute;
- top: 49px;
- left: 240px;
+  position: absolute;
+  top: 49px;
+  left: 240px;
+
+  fill: #cccccc;
 }
+
 .user-contacts__input:hover+.user-contacts__icon,
 .user-contacts__input:focus+.user-contacts__icon,
 .user-contacts__input:active+.user-contacts__icon {
   fill: #62d1ba;
 }
+
 @media (min-width: $tablet-width) {
   .user-contacts__item {
     display: flex;
@@ -65,12 +73,13 @@
     }
 
     &--tel {
-      background-color: #f1f1f1;
+      margin-bottom: -72px;
       margin-left: -142px;
-      padding-left: 142px;
       padding-top: 67px;
       padding-bottom: 123px;
-      margin-bottom: -72px;
+      padding-left: 142px;
+
+      background-color: #f1f1f1;
     }
   }
 
@@ -86,6 +95,7 @@
 
     &--icon-phone {
       padding-top: 15px;
+
       background-color: #f1f1f1;
     }
 
@@ -97,13 +107,15 @@
   .user-contacts__wrapper-item {
     background-color: #f1f1f1;
   }
+
   .user-contacts__icon {
+    top: 68px;
+    left: 743px;
+
     &--envelope {
       top: -5px;
       left: 589px;
     }
-    top: 68px;
-    left: 743px;
   }
 }
 
@@ -112,12 +124,13 @@
 
     &--tel,
     &--e-mail {
-      background-color: #f1f1f1;
+      margin-bottom: -87px;
       margin-left: -142px;
-      padding-left: 142px;
       padding-top: 87px;
       padding-bottom: 48px;
-      margin-bottom: -87px;
+      padding-left: 142px;
+
+      background-color: #f1f1f1;
     }
 
     &-mail {

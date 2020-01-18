@@ -1,5 +1,5 @@
 .site-nav {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   &--main-page {
     margin-bottom: 6px;
@@ -10,6 +10,7 @@
 .close {
   display: none;
 }
+
 .open {
   display: block;
 }
