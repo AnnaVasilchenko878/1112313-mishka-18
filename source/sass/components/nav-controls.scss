@@ -11,21 +11,21 @@
   &--basket {
     margin-left: -31px;
   }
+}
 
-  &:hover>.logo__icon,
-  &:focus>.logo__icon {
-    opacity: 1;
+.nav-controls__item:hover>.logo__icon,
+.nav-controls__item:focus>.logo__icon {
+  opacity: 1;
 
-    transition: 0.2;
+  transition: 0.2;
 
-    fill: #46c1ae;
-  }
+  fill: #46c1ae;
+}
 
-  &:active>.logo__icon {
-    opacity: 0.3;
+.nav-controls__item:active>.logo__icon {
+  opacity: 0.3;
 
-    transition: 0.2;
-  }
+  transition: 0.2;
 }
 
 .nav-controls__link {
