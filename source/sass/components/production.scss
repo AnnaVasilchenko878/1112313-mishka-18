@@ -1,9 +1,14 @@
 .production {
   margin-bottom: 101px;
   margin-left: 5px;
+  padding-bottom: 39px;
+
+  @include product-state;
 }
 
 .production__title {
+  position: relative;
+
   width: 121px;
   margin-bottom: 25px;
   margin-left: 122px;
@@ -13,9 +18,25 @@
   line-height: 24px;
   text-align: left;
   color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -61px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .production__video-wrapper {
+  position: relative;
+
   min-width: 260px;
   min-height: 150px;
   margin-bottom: -4px;
@@ -33,6 +54,22 @@
     position: absolute;
     top: -102px;
     left: 81px;
+  }
+}
+
+.production__button {
+  position: absolute;
+  top: 43px;
+  left: 98px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
 
@@ -68,12 +105,6 @@
     min-height: 455px;
     margin-bottom: 12px;
   }
-  .production__image {
-    &:before {
-      top: -240px;
-      left: 284px;
-    }
-  }
   .production__title {
     width: 250px;
     margin-bottom: 21px;
@@ -81,11 +112,21 @@
 
     font-size: 20px;
     line-height: 24px;
+
+    &::before {
+      top: -7px;
+      left: -65px;
+    }
   }
 
   .production__wrapper-flex {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .production__button {
+    top: 205px;
+    left: 304px;
   }
 
   .production__text {
@@ -129,6 +170,11 @@
     margin-top: 96px;
     margin-bottom: 22px;
     margin-left: 777px;
+
+    &::before {
+      top: -3px;
+      left: -52px;
+    }
   }
 
   .production__text {

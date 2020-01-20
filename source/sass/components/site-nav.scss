@@ -1,13 +1,18 @@
 .site-nav {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   &--main-page {
     margin-bottom: 6px;
   }
 }
 
-.site-nav__list {
-  border-bottom: 1px solid $border-color;
+//Классы для меню открыть/закрыть доб к .site-nav__menu
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {

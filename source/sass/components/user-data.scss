@@ -28,6 +28,15 @@
 
   border: none;
   border-bottom: 2px solid #000000;
+
+  &:hover,
+  &:focus {
+    border-color: $tiffany-color;
+  }
+
+  &:active {
+    border-color: $tiffany-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

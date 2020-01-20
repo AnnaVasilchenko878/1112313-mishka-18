@@ -11,6 +11,13 @@
   &--basket {
     margin-left: -31px;
   }
+  &:hover > .main-menu__link,
+  &:focus > .main-menu__link {
+    opacity: 0.6;
+  }
+  &:active > .main-menu__link {
+    opacity: 0.3;
+  }
 }
 
 .main-menu__link {
@@ -18,8 +25,6 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-
-  @include links-state;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,7 +62,7 @@
 
   .main-menu__item {
     margin-right: -10px;
-    padding: 29px 15px;
+    padding: 29px 4px;
 
     &--catalog {
       border-right: 1px solid $border-color;

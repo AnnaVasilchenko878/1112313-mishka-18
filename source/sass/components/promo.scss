@@ -1,9 +1,19 @@
-.promo-menu {
+.intro-promo__wrapper {
   margin-top: 123px;
 }
 
-.promo-menu__item {
+.promo-menu__link {
   position: relative;
+
+  display: block;
+  width: 106px;
+  padding: 27px 30px;
+  padding-right: 290px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
 
   background-color: $tiffany-color;
 
@@ -17,13 +27,28 @@
     width: 61px;
     height: 62px;
 
-    background-image: url("../img/icon-interior.svg");
+    background-image: url("../img/sprite.svg#icon-interior");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5;
   }
 
-  &--background-dark {
+  &--interrior {
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      margin-bottom: 5px;
+
+      box-shadow: 0 5px 0 0 $tiffany-color;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &--toys {
     background-color: #56c3b2;
 
     &::before {
@@ -31,34 +56,27 @@
       left: 239px;
 
       background-image: url("../img/icon-toy.svg");
+      // background-image: url("../img/sprite.svg#icon-toy");
+    }
+
+    &:hover {
+      margin-top: -5px;
+
+      box-shadow: 0 -5px 0 0 #56c3b2;
     }
   }
 }
 
-.promo-menu__link {
-  display: block;
-  width: 106px;
-  padding: 27px 30px;
-
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-  color: #ffffff;
-}
-
 @media (min-width: $tablet-width) {
-  .promo-menu {
+  .intro-promo__wrapper {
     display: flex;
     margin-top: 372px;
     margin-left: 50px;
   }
 
-  .promo-menu__item {
-    width: 334px;
-  }
-
   .promo-menu__link {
     padding: 27px 34px;
+    padding-right: 299px;
 
     font-size: 20px;
     line-height: 30px;
@@ -66,13 +84,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo-menu {
+  .promo-menu__wrapper {
     margin-top: 355px;
     margin-bottom: -74px;
     margin-left: 51px;
   }
 
-  .promo-menu__item {
+  .promo-menu__link {
     width: 525px;
 
     &::before {

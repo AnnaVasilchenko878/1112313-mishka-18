@@ -1,7 +1,6 @@
 .top-week-product {
   margin-bottom: 70px;
 }
-
 .top-week-product__title {
   width: 246px;
   margin-bottom: -13px;
@@ -77,7 +76,6 @@
   }
 
   &:active {
-    // уточнить свойство rgba
     color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -89,6 +87,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .top-week-product {
     margin-bottom: 118px;
     margin-left: 18px;
@@ -100,7 +99,7 @@
   }
 
   .top-week-product__title {
-    width: 420px;
+    width: 428px;
     margin-right: 124px;
 
     font-size: 43px;
@@ -146,10 +145,10 @@
   }
 
   .top-week-product__wrapper-image {
-    position: relative;
+    position: absolute;
 
-    max-width: 333px;
-    max-height: 404px;
+    width: 333px;
+    height: 404px;
   }
 
   .top-week-product__image {
@@ -177,7 +176,7 @@
     z-index: 1;
 
     order: 2;
-    width: 515px;
+    width: 539px;
     margin-bottom: 21px;
 
     font-size: 53px;
@@ -206,8 +205,8 @@
   }
 
   .top-week-product__wrapper-image {
-    max-width: 525px;
-    max-height: 636px;
+    width: 525px;
+    height: 636px;
   }
 
   .top-week-product__image {
