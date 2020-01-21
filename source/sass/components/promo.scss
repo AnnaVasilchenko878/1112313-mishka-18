@@ -26,15 +26,17 @@
     display: block;
     width: 61px;
     height: 62px;
-
-    background-image: url("../img/sprite.svg#icon-interior");
+    // background-image: url("../img/sprite.svg#icon-interior");
     background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-  }
+    background-position: center center;
+    background-size: contain;
+    // opacity: 0.5;
+    }
 
   &--interrior {
-
+    &::before {
+      background-image: url("../img/sprite.svg#icon-interior");
+    }
     &:hover,
     &:focus {
       margin-top: -5px;

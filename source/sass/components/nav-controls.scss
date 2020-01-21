@@ -13,8 +13,8 @@
   }
 }
 
-.nav-controls__item:hover>.logo__icon,
-.nav-controls__item:focus>.logo__icon {
+.nav-controls__item:hover .logo__icon,
+.nav-controls__item:focus .logo__icon {
   opacity: 1;
 
   transition: 0.2;
@@ -22,7 +22,7 @@
   fill: #46c1ae;
 }
 
-.nav-controls__item:active>.logo__icon {
+.nav-controls__item:active .logo__icon {
   opacity: 0.3;
 
   transition: 0.2;

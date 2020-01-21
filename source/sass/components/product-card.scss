@@ -10,6 +10,7 @@
   min-height: 195px;
   margin-bottom: -15px;
 }
+
 .product-card__image {
   margin-bottom: -10px;
 
@@ -51,12 +52,15 @@
   line-height: 24px;
   color: #000000;
 }
+
 .product-card__icon {
   &:hover,
   &:focus {
     opacity: 1;
 
     transition: 0.2;
+  }
+}
 
 .product-card__icon {
   opacity: 0.2;
@@ -76,6 +80,7 @@
     transition: 0.2;
   }
 }
+
 .product-card__button {
   width: 20px;
   height: 19px;
