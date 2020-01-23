@@ -13,7 +13,7 @@
     width: 61px;
     height: 62px;
 
-    background-image: url("../img/sprite.svg#icon-interror");
+    background-image: url("../img/icon-interror.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5;
@@ -23,7 +23,7 @@
     background-color: #56c3b2;
 
     &::before {
-      background-image: url("../img/sprite.svg#icon-toy");
+      background-image: url("../img/icon-toy.svg");
     }
   }
 }

@@ -13,7 +13,8 @@
 
 .product-card__image {
   margin-bottom: -10px;
-
+  width: 261px;
+  height: 196px;
   background-color: #dcdcdc;
 }
 
@@ -40,6 +41,8 @@
 
 .product-card__wrapper-flex {
   display: flex;
+  border-top: 1px solid #ececec;
+  padding-top: 31px;
 }
 
 .product-card__price {
@@ -51,15 +54,6 @@
   font-size: 15px;
   line-height: 24px;
   color: #000000;
-}
-
-.product-card__icon {
-  &:hover,
-  &:focus {
-    opacity: 1;
-
-    transition: 0.2;
-  }
 }
 
 .product-card__icon {
@@ -111,10 +105,10 @@
   }
 
   .product-card__description {
-    margin-bottom: 199px;
+    margin-bottom: 167px;
 
     &--margin-reset {
-      margin-bottom: 169px;
+      margin-bottom: 137px;
     }
   }
 

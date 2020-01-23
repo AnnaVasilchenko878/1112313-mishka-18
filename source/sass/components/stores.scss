@@ -21,8 +21,8 @@
       width: calc((100vw - 289px)/2);
       height: 55px;
       top: -1px;
-      left: 11px;
-      background-color: #f1f1f1;
+      right: 289px;
+      background-color: #f9f9f9;
     }
     &::after {
       content: "";
@@ -30,14 +30,21 @@
       width: calc((100vw - 289px)/2);
       height: 55px;
       top: -1px;
-      left: 772px;
-      background-color: #f1f1f1;
+      left: 289px;
+      background-color: #f9f9f9;
     }
+    &--catalog {
+      &::before {
+        background-color: #f1f1f1;
+      }
+      &::after {
+        background-color: #f1f1f1;
+      }
   }
 
   @media (max-width: $tablet-width-only) {
     .stores-promo {
-      justify-content: flex-end;
+      justify-content: flex-endж
     }
   }
 
@@ -68,6 +75,14 @@
     &--main-page {
       background-color: #f9f9f9;
     }
+    &::before {
+      width: calc((100vw - 1150px)/2);
+      right: 1150px;
+      }
+
+      &::after {
+        left: 1150px;
+      }
   }
 
   .stores-promo__item {

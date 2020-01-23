@@ -26,27 +26,15 @@
     display: block;
     width: 61px;
     height: 62px;
-    // background-image: url("../img/sprite.svg#icon-interior");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    // opacity: 0.5;
+    opacity: 0.5;
     }
 
   &--interrior {
     &::before {
-      background-image: url("../img/sprite.svg#icon-interior");
-    }
-    &:hover,
-    &:focus {
-      margin-top: -5px;
-      margin-bottom: 5px;
-
-      box-shadow: 0 5px 0 0 $tiffany-color;
-    }
-
-    &:active {
-      opacity: 0.7;
+      background-image: url("../img/icon-interior.svg");
     }
   }
 
@@ -58,15 +46,36 @@
       left: 239px;
 
       background-image: url("../img/icon-toy.svg");
-      // background-image: url("../img/sprite.svg#icon-toy");
-    }
-
-    &:hover {
-      margin-top: -5px;
-
-      box-shadow: 0 -5px 0 0 #56c3b2;
     }
   }
+}
+
+.promo-menu__link {
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 0 0 $tiffany-color;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.promo-menu__link:hover>.promo-menu__content,
+.promo-menu__link:focus>.promo-menu__content {
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.promo-menu__link:active>.promo-menu__content {
+    opacity: 0.7;
+}
+.promo-menu__link:hover::before,
+.promo-menu__link:focus::before{
+      margin-top: -5px;
+}
+.promo-menu__link:active::before {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

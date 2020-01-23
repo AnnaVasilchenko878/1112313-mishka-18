@@ -2,7 +2,6 @@
   padding-top: 22px;
 
   background-image: url("../img/bg-zigzag-line.svg");
-  // background-image: url("../img/sprite.svg#zig-zag-line");
   background-repeat: repeat-x;
   background-position: 5px 79px;
 }
@@ -81,7 +80,7 @@
     width: 90px;
     height: 68px;
 
-    background-image: url("../img/sprite.svg#map-mark");
+    background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -124,7 +123,7 @@
       width: 47px;
       height: 82px;
 
-      background-image: url("../img/sprite.svg#icon-flag");
+      background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: center;
     }

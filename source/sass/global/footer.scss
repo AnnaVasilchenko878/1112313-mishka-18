@@ -14,20 +14,20 @@
 }
 
 .footer__logo-image {
-    &:hover,
-    &:focus {
-      opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 1;
 
-      transition: 0.2;
+    transition: 0.2;
 
-      fill: #46c1ae;
-    }
+    fill: #46c1ae;
+  }
 
-    &:active {
-      opacity: 0.3;
+  &:active {
+    opacity: 0.3;
 
-      transition: 0.2;
-    }
+    transition: 0.2;
+  }
 }
 
 .footer-form {

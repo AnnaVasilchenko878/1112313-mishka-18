@@ -123,7 +123,7 @@
 
     &--tel,
     &--e-mail {
-      margin-bottom: -87px;
+      margin-bottom: -46px;
       margin-left: -142px;
       padding-top: 87px;
       padding-bottom: 48px;
@@ -143,5 +143,9 @@
 
   .user-contacts__input {
     width: 699px;
+  }
+  .user-contacts__icon {
+    top: 87px;
+    left: 884px;
   }
 }

@@ -1,6 +1,7 @@
 .top-week-product {
   margin-bottom: 70px;
 }
+
 .top-week-product__title {
   width: 246px;
   margin-bottom: -13px;
@@ -29,6 +30,22 @@
   margin-left: 30px;
 
   line-height: 24px;
+}
+
+.top-week-product__details {
+  position: relative;
+}
+
+.top-week-product-details__details-row {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #ececec;
+    width: 260px;
+    height: 1px;
+    top: 5px;
+    left: 15px;
+  }
 }
 
 .top-week-product__wrapper-image {
