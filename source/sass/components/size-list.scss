@@ -51,7 +51,7 @@
   opacity: 1;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .size-list {
     width: 390px;
     margin-bottom: 56px;
@@ -62,7 +62,7 @@
   }
 
   .size-list__label {
-    &:before {
+    &::before {
       width: 113px;
     }
   }

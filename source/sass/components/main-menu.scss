@@ -11,10 +11,12 @@
   &--basket {
     margin-left: -31px;
   }
+
   &:hover > .main-menu__link,
   &:focus > .main-menu__link {
     opacity: 0.6;
   }
+
   &:active > .main-menu__link {
     opacity: 0.3;
   }
@@ -56,7 +58,7 @@
     order: 1;
     width: 420px;
     margin-bottom: 14px;
-
+    border-bottom: 1px solid #ececec;
     background-color: #ffffff;
   }
 

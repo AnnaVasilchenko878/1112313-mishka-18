@@ -13,7 +13,6 @@
 }
 
 .logo-image__icon {
-
   &--desktop,
   &--tablet {
     display: none;
@@ -29,7 +28,6 @@
   }
 
   &--main {
-
     &:hover,
     &:focus,
     &:active {
@@ -39,7 +37,6 @@
 }
 
 .logo-image__icon {
-
   &--desktop,
   &--tablet {
     display: none;
@@ -78,14 +75,14 @@
   }
 }
 
-
-
 @media (min-width: $desktop-width) {
   .logo {
     order: 2;
-    width: 168px;
+    width: 283px;
 
     border: none;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #ececec;
   }
 
   .logo-image__icon {

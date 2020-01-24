@@ -146,6 +146,10 @@
 
   .contacts__address {
     width: 193px;
+
+    &--mail {
+      margin-bottom: 89px;
+    }
   }
 
   .contacts__wrapper {
@@ -158,7 +162,7 @@
   }
 
   .contacts__img {
-    &:before {
+    &::before {
       top: -268px;
       left: 344px;
     }
@@ -172,9 +176,10 @@
 @media (min-width: $desktop-width) {
   .сontacts {
     position: relative;
-
+    margin: 0 auto;
     margin-bottom: 116px;
     padding-left: 176px;
+    width: 1121px;
   }
 
   .contacts__map {
@@ -212,7 +217,7 @@
   }
 
   .contacts__img {
-    &:before {
+    &::before {
       top: -270px;
       left: 227px;
     }

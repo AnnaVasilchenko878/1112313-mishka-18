@@ -57,9 +57,9 @@
   fill: #cccccc;
 }
 
-.user-contacts__input:hover+.user-contacts__icon,
-.user-contacts__input:focus+.user-contacts__icon,
-.user-contacts__input:active+.user-contacts__icon {
+.user-contacts__input:hover + .user-contacts__icon,
+.user-contacts__input:focus + .user-contacts__icon,
+.user-contacts__input:active + .user-contacts__icon {
   fill: #62d1ba;
 }
 
@@ -120,7 +120,6 @@
 
 @media (min-width: $desktop-width) {
   .user-contacts__item {
-
     &--tel,
     &--e-mail {
       margin-bottom: -46px;
@@ -144,6 +143,7 @@
   .user-contacts__input {
     width: 699px;
   }
+
   .user-contacts__icon {
     top: 87px;
     left: 884px;

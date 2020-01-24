@@ -90,7 +90,8 @@
     background-repeat: no-repeat;
     background-position: left;
 
-    @media(min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx) {
+
       background-image: url("../img/review@2x.jpg");
       background-size: 415px auto;
     }
@@ -157,8 +158,9 @@
 @media (min-width: $desktop-width) {
   .reviews {
     margin-bottom: 172px;
-    margin-left: 50px;
     padding-top: 80px;
+
+    @include page-center;
   }
 
   .reviews__wrapper-flex {

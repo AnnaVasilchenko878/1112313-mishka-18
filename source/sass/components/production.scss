@@ -1,7 +1,9 @@
 .production {
   margin-bottom: 101px;
-  margin-left: 5px;
   padding-bottom: 39px;
+  border: 1px solid #ececec;
+  margin-left: 34px;
+  width: 263px;
 
   @include product-state;
 }
@@ -37,12 +39,16 @@
 .production__video-wrapper {
   position: relative;
 
-  min-width: 260px;
-  min-height: 150px;
+  width: 260px;
+  height: 150px;
   margin-bottom: -4px;
 }
 
 .production__button {
+  position: absolute;
+  top: 43px;
+  left: 98px;
+
   &::before {
     content: "";
     width: 101px;
@@ -51,40 +57,34 @@
     position: absolute;
     top: -7px;
     left: 14px;
-    }
+  }
 }
+
 .production__button:hover::before,
 .production__button:focus::before {
   transform: scale(1.2);
 }
+
 .production__button :active::before {
   transform: scale(0.8);
   opacity: 0.3;
 }
 
 .production__image {
-  margin-left: 30px;
   width: 261px;
   height: 150px;
-
-}
-
-.production__button {
-  position: absolute;
-  top: 43px;
-  left: 98px;
 }
 
 .production__text {
   width: 183px;
   margin-bottom: 36px;
-  margin-left: 64px;
+  margin-left: 38px;
 
   line-height: 25px;
 }
 
 .production__link {
-  margin-left: 64px;
+  margin-left: 38px;
   padding: 14px 23px;
 
   font-weight: 700;
@@ -99,7 +99,8 @@
 @media (min-width: $tablet-width) {
   .production {
     margin-bottom: 121px;
-    margin-left: 20px;
+    margin-left: 50px;
+    width: 671px;
   }
 
   .production__video-wrapper {
@@ -119,6 +120,7 @@
     width: 668px;
     height: 454px;
   }
+
   .production__title {
     width: 250px;
     margin-bottom: 21px;
@@ -158,6 +160,7 @@
 
     margin-bottom: 177px;
     margin-left: 32px;
+    width: 1099px;
   }
 
   .production__video-wrapper {
@@ -167,16 +170,18 @@
 
     min-width: 682px;
     min-height: 455px;
-      &::before {
-        top: 163px;
-        left: 312px;
-      }
+
+    &::before {
+      top: 163px;
+      left: 312px;
+    }
   }
+
   .production__image {
     width: 683px;
-    height: 454px;
-
+    height: 453px;
   }
+
   .production__title {
     width: 150px;
     margin-top: 96px;

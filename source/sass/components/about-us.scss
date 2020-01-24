@@ -6,6 +6,8 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: 5px 10px;
+
+  @include page-center;
 }
 
 .about-us__title {

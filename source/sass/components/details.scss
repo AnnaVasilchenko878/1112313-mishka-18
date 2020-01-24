@@ -1,0 +1,25 @@
+.details-product {
+  width: 350px;
+  margin-bottom: 41px;
+  margin-left: 30px;
+}
+
+.details-product__name,
+.details-product__value {
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .details-product {
+    width: 279px;
+    margin-bottom: 59px;
+
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details-product {
+    margin-bottom: 119px;
+  }
+}

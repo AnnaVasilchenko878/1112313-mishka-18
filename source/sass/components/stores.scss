@@ -15,29 +15,33 @@
     &--main-page {
       background-color: #f9f9f9;
     }
+
     &::before {
       content: "";
       position: absolute;
-      width: calc((100vw - 770px)/2);
+      width: calc((100vw - 768px) / 2);
       height: 55px;
       top: -1px;
-      right: 289px;
-      background-color: #f9f9f9;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: calc((100vw - 770px)/2);
-      height: 55px;
-      top: -1px;
-      left: 289px;
+      right: 768px;
       background-color: #f9f9f9;
     }
 
-    &--catalog {
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc((100vw - 768px) / 2);
+      height: 55px;
+      top: -1px;
+      left: 768px;
+      background-color: #f9f9f9;
+    }
+
+    &--catalog,
+    &--form {
       &::before {
         background-color: #f1f1f1;
       }
+
       &::after {
         background-color: #f1f1f1;
       }
@@ -46,7 +50,7 @@
 
   @media (max-width: $tablet-width-only) {
     .stores-promo {
-      justify-content: flex-endж
+      justify-content: flex-end;
     }
   }
 
@@ -63,9 +67,7 @@
     &--sale {
       display: none;
     }
-
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -81,15 +83,16 @@
     &--main-page {
       background-color: #f9f9f9;
     }
-    &::before {
-      width: calc((100vw - 1167px)/2);
-      right: 1150px;
-      }
 
-      &::after {
-        width: calc((100vw - 1167px)/2);
-        left: 1150px;
-      }
+    &::before {
+      width: calc((100vw - 1167px) / 2);
+      right: 1147px;
+    }
+
+    &::after {
+      width: calc((100vw - 1167px) / 2);
+      left: 1144px;
+    }
   }
 
   .stores-promo__item {
