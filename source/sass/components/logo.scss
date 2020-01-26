@@ -56,11 +56,13 @@
   .logo {
     order: 1;
     width: 371px;
-    padding-bottom: 11px;
+    padding-bottom: 20px;
 
     border-right: 1px solid $border-color;
   }
-
+  .logo__link {
+    margin-left: 49px;
+  }
   .logo-image__icon {
     display: block;
 
@@ -78,7 +80,7 @@
 @media (min-width: $desktop-width) {
   .logo {
     order: 2;
-    width: 283px;
+    width: 318px;
 
     border: none;
     margin-bottom: 14px;
@@ -95,6 +97,6 @@
 
   .logo__link {
     margin-top: -13px;
-    margin-left: 77px;
+    margin-left: 66px;
   }
 }

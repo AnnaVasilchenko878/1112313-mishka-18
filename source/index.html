@@ -165,7 +165,7 @@
     </header>
     <main>
       <section class="intro intro-promo page-container">
-        <h1 class="intro-promo__title">Милые штучки ручной<br> работы для дома</h1>
+        <h1 class="intro-promo__title">Милые штучки ручной работы для дома</h1>
         <div class="intro-promo__wrapper">
           <a class="promo-menu__link promo-menu__link--interrior" href="catalog.html" aria-label="Перейти в каталог предметов интерьера">
             <span class="promo-menu__content">Предметы интерьера</span>
@@ -199,7 +199,7 @@
               </tr>
             </table>
             <div class="top-week-product__wrapper-image">
-              <picture class="top-week-product__image">
+              <picture>
                 <source type="image/webp" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x"
                   media="(min-width: 1150px)">
                 <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x"
@@ -214,7 +214,7 @@
                   media="(min-width: 320px)">
                 <source srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x"
                   media="(min-width: 320px)">
-                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+                <img class="top-week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
                   alt="Продукт недели вязанная корзинка">
               </picture>
             </div>
@@ -260,10 +260,7 @@
         <div class="reviews__wrapper-content">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__wrapper">
-            <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
-              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
-              мои
-              фотографии сразу стали более стильными, а также набирают больше лайков!
+            <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </blockquote>
             <cite class="reviews__autor-name">Анастасия Красильникова</cite>
             <a class="reviews__autor-link" href="#">@misssssiskras</a>
@@ -292,25 +289,25 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__subtitle">адрес:</h3>
-              <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101
+              <address class="contacts__address">г. Санкт-Петербург, <br/> ул. Большая Конюшенная,<br> д. 19/8, офис 101
               </address>
             </li>
           </ul>
         </div>
         <div class="contacts__wrapper">
-          <picture class="contacts__img">
+          <picture>
             <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"
               media="(min-width: 1150px)">
             <source srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)">
 
             <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x"
               media="(min-width: 770px)">
-            <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 770px)">
+            <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
 
             <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x"
               media="(min-width: 770px)">
             <source srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" media="(min-width: 320px)">
-            <img src="img/map-modile@1x.svg" srcset="img/map-mobile@2x.jpg 2x"
+            <img class="contacts__img" src="img/map-modile@1x.svg" srcset="img/map-mobile@2x.jpg 2x"
               alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
         </div>
@@ -352,7 +349,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--fb">
             <a class="social__link social__link--facebook" href="#" aria-label="Перейти на Мишку в фэйсбук">
               <span class="visually-hidden">Фэйсбук</span>
               <svg class="social__icon" width="15" height="27">
@@ -360,7 +357,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item">
+          <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="Перейти на Мишку в твитере">
               <span class="visually-hidden">Твиттер</span>
               <svg class="social__icon" width="23" height="20">
@@ -374,7 +371,7 @@
         <h2 class="copyright__title">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на сайт разработчиков">
-          <svg class="copyright__icon" width="60" height="60">
+          <svg class="copyright__icon" width="40" height="40">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>

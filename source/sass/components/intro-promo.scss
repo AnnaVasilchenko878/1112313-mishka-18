@@ -21,11 +21,15 @@
   width: 249px;
   margin: 0 auto;
   padding-top: 71px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+}
+.intro-promo__wrapper {
+  padding-top: 124px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,8 +48,8 @@
       height: 22px;
       position: absolute;
       background-image: url("../img/bg-zigzag-fill.svg");
-      top: 838px;
-      left: -3px;
+      top: 822px;
+      left: 10px;
       z-index: 1;
     }
 
@@ -59,14 +63,14 @@
 
   .intro-promo__wrapper {
     display: flex;
-    margin-top: 372px;
+    margin-top: 248px;
     margin-left: 50px;
   }
 
   .intro-promo__title {
-    width: 494px;
+    width: 530px;
     margin: 0 auto;
-    padding-top: 95px;
+    padding-top: 101px;
 
     font-weight: 700;
     font-size: 43px;
@@ -76,9 +80,9 @@
 
 @media (min-width: $desktop-width) {
   .intro-promo__wrapper {
-    width: 1070px;
+    width: 1044px;
     margin: 0 auto;
-    margin-top: 372px;
+    margin-top: 235px;
   }
 
   .intro-promo {
@@ -90,7 +94,7 @@
     background-position: 1px -50px;
 
     &::before {
-      top: 876px;
+      top: 819px;
     }
 
     @media (min-resolution: $retina-dppx) {
@@ -100,8 +104,8 @@
   }
 
   .intro-promo__title {
-    width: 621px;
-    padding-top: 107px;
+    width: 648px;
+    padding-top: 117px;
 
     font-weight: 700;
     font-size: 53px;

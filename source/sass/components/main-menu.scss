@@ -46,7 +46,7 @@
     width: 221px;
     margin-right: -86px;
     margin-left: 33px;
-    padding: 13px 14px;
+    padding: 16px 14px;
 
     border-bottom: none;
   }
@@ -55,17 +55,19 @@
 @media (min-width: $desktop-width) {
   .main-menu {
     order: 1;
-    width: 420px;
+    width: 433px;
     margin-bottom: 14px;
     background-color: #ffffff;
   }
 
   .main-menu__item {
-    margin-right: -10px;
+    margin-right: 28px;
     padding: 29px 4px;
 
     &--catalog {
-      border-right: 1px solid $border-color;
+      margin-left: 46px;
+      padding-top: 29px;
+      padding-left: 2px;
     }
   }
 }

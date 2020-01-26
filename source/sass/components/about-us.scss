@@ -13,6 +13,7 @@
 .about-us__title {
   margin-bottom: 86px;
   margin-left: -75px;
+  padding-top: 15px;
 
   font-weight: 700;
   font-size: 25px;
@@ -24,8 +25,8 @@
 .about-us__item {
   position: relative;
 
-  width: 251px;
-  margin-bottom: 81px;
+  width: 174px;
+  margin-bottom: 85px;
   margin-left: 30px;
 
   font-weight: 700;
@@ -55,6 +56,7 @@
 
   &--saving {
     margin-bottom: 83px;
+    width: 200px;
 
     &::before {
       top: -60px;
@@ -63,6 +65,7 @@
   }
 
   &--like {
+    width: 180px;
     margin-bottom: 84px;
 
     &::before {
@@ -72,11 +75,12 @@
   }
 
   &--knitting {
+    width: 211px;
     margin-bottom: 83px;
 
     &::before {
-      top: -53px;
-      left: -6px;
+      top: -55px;
+      left: -9px;
 
 
       background-image: url("../img/icon-feature-ball.svg");
@@ -84,6 +88,7 @@
   }
 
   &--patriotism {
+    width: 253px;
     margin-bottom: 83px;
 
     &::before {
@@ -94,7 +99,10 @@
   }
 
   &--present {
+    width: 201px;
     &::before {
+      width: 53px;
+      height: 34px;
       top: -57px;
       left: -8px;
       background-image: url("../img/icon-feature-gift.svg");
@@ -104,13 +112,14 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
     padding-left: 50px;
   }
 
   .about-us__title {
-    margin-bottom: 103px;
-    margin-left: -414px;
+    margin-bottom: 105px;
+    margin-left: -405px;
+    padding-top: 33px;
 
     font-size: 43px;
     line-height: 50px;
@@ -124,37 +133,43 @@
   }
 
   .about-us__item {
-    width: 295px;
+    width: 210px;
 
     font-size: 20px;
     line-height: 22px;
 
     &--eco {
       order: 1;
-      margin-right: 10px;
+      margin-right: 92px;
       margin-bottom: 110px;
     }
 
     &--saving {
+      width: 239px;
       order: 3;
-      margin-right: 10px;
+      margin-right: 60px;
       margin-bottom: 112px;
+
     }
 
     &--like {
+      width: 224px;
       order: 5;
-      margin-right: 10px;
+      margin-right: 80px;
     }
 
     &--knitting {
+      width: 272px;
       order: 2;
     }
 
     &--patriotism {
+      width: 309px;
       order: 4;
     }
 
     &--present {
+      width: 235px;
       order: 6;
     }
   }
@@ -162,13 +177,13 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-bottom: 32px;
     padding-left: 222px;
   }
 
   .about-us__title {
-    margin-bottom: 100px;
-    margin-left: -547px;
+    padding-top: 42px;
+    margin-bottom: 102px;
+    margin-left: -534px;
 
     font-weight: 700;
     font-size: 53px;
@@ -180,9 +195,23 @@
   }
 
   .about-us__item {
-    width: 290px;
-    margin-right: 31px;
+    width: 216px;
+    margin-right: 106px;
 
     line-height: 22px;
+
+    &--knitting {
+    width: 247px;
+   }
+    &--saving {
+      width: 241px;
+      margin-right: 80px;
+    }
+    &--patriotism {
+    width: 305px;
+    }
+    &--present {
+      width: 244px;
+    }
   }
 }

@@ -1,10 +1,11 @@
 .top-week-product {
-  margin-bottom: 70px;
   margin: 0 auto;
 }
-
+.top-week-product__wrapper-flex {
+  margin-bottom: 26px;
+}
 .top-week-product__title {
-  width: 246px;
+  width: 269px;
   margin-bottom: -13px;
   margin-left: 30px;
 
@@ -84,18 +85,18 @@
 
 @media (min-width: $tablet-width) {
   .top-week-product {
-    margin-bottom: 118px;
+    margin-bottom: 42px;
     margin-left: 18px;
   }
 
   .top-week-product__wrapper {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   .top-week-product__title {
     width: 428px;
-    margin-right: 124px;
+    margin-right: 113px;
 
     font-size: 43px;
     line-height: 50px;
@@ -103,13 +104,15 @@
 
   .top-week-product__subtitle {
     width: 70px;
-    margin-top: 50px;
+    margin-top: 48px;
 
     line-height: 17px;
+    text-align: center;
   }
 
   .top-week-product__wrapper-flex {
     display: flex;
+    margin-bottom: 0;
   }
 
   .top-week-product__wrapper-description {
@@ -117,8 +120,8 @@
   }
 
   .top-week-product__description {
-    width: 269px;
-    margin-bottom: 44px;
+    width: 287px;
+    margin-bottom: 34px;
 
     font-size: 17px;
     line-height: 30px;
@@ -154,8 +157,11 @@
 
 @media (min-width: $desktop-width) {
   .top-week-product {
-    margin-top: 159px;
-    margin-bottom: 155px;
+    margin: 0 auto;
+    width: 834px;
+    margin-top: 85px;
+    margin-bottom: 62px;
+
   }
 
   .top-week-product__title {
@@ -163,7 +169,7 @@
 
     order: 2;
     width: 539px;
-    margin-bottom: 21px;
+    margin-bottom: 18px;
 
     font-size: 53px;
     line-height: 57px;
@@ -174,7 +180,7 @@
   }
 
   .top-week-product__description {
-    margin-bottom: 51px;
+    margin-bottom: 46px;
   }
 
   .top-week-product__subtitle {
@@ -192,7 +198,9 @@
   }
 
   .top-week-product__image {
-    top: -529px;
-    left: 349px;
+    width: 526px;
+    height: 634px;
+    top: -525px;
+    left: 351px;
   }
 }

@@ -16,8 +16,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
-    left: 250px;
+    top: 31px;
+    left: 247px;
 
     display: block;
     width: 61px;
@@ -38,7 +38,7 @@
     background-color: #56c3b2;
 
     &::before {
-      top: 32px;
+      top: 31px;
       left: 239px;
 
       background-image: url("../img/icon-toy.svg");
@@ -114,7 +114,8 @@
       left: 437px;
     }
 
-    &--background-dark {
+    &--toys {
+      width: 518px;
       &::before {
         left: 428px;
       }

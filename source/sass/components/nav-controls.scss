@@ -55,6 +55,7 @@
   .nav-controls__item {
     width: 200px;
     border: none;
+    padding: 13px 41px;
 
     &--search {
       width: 0;
@@ -64,17 +65,18 @@
     }
 
     &--basket {
-      margin-left: 109px;
+      margin-left: 126px;
     }
   }
 
   .nav-controls__button {
     margin-top: 22px;
-    margin-left: -25px;
+    margin-left: -14px;
 
     &--basket {
-      margin-top: 20px;
+      margin-top: 19px;
       margin-left: -142px;
+      margin-right: 21px;
     }
   }
 

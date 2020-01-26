@@ -1,5 +1,5 @@
 .reviews {
-  margin-top: -25px;
+  margin-top: -31px;
 }
 
 .reviews__title {
@@ -19,11 +19,11 @@
 .reviews__text {
   margin-bottom: 24px;
   margin-left: 28px;
+  width: 270px;
 }
 
 .reviews__autor-name {
   margin-top: 40px;
-  margin-bottom: 10px;
   margin-left: 28px;
 
   font-style: normal;
@@ -41,13 +41,23 @@
 }
 
 .reviews__wrapper-button {
-  width: 303px;
-  margin-top: 25px;
-  margin-bottom: 53px;
-  margin-left: 11px;
-  padding: 15px 56px;
+  width: 258px;
+  margin-top: -13px;
+  margin-bottom: 52px;
+  margin-left: 31px;
+  padding: 7px 35px;
+  position: relative;
 
   border: 1px solid #ececec;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 52px;
+    top: -1px;
+    left: 128px;
+    background-color: #ececec;
+  }
 }
 
 .reviews__button {
@@ -59,7 +69,7 @@
   @include arrow-state;
 
   &--back {
-    margin-right: 40px;
+    margin-right: 37px;
     background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
     background-position: 0;
@@ -74,13 +84,14 @@
 
 .reviews__link {
   margin-left: 30px;
-  padding: 14px 77px;
+  padding: 12px 78px;
 
   @include button-style;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
+    margin-bottom: -18px;
     display: flex;
     padding-top: 32px;
     padding-left: 20px;
@@ -98,7 +109,7 @@
   }
 
   .reviews__wrapper-content {
-    margin-right: -89px;
+    margin-right: -232px;
   }
 
   .reviews__wrapper-flex {
@@ -106,17 +117,22 @@
   }
 
   .reviews__title {
-    margin-top: 56px;
+    padding-top: 15px;
     margin-bottom: 58px;
     margin-left: 26px;
 
     font-size: 46px;
   }
 
+  .reviews__wrapper {
+    margin-bottom: 48px;
+  }
+
   .reviews__text {
     z-index: 1;
+    font-size: 16px;
 
-    width: 511px;
+    width: 658px;
     margin-bottom: 54px;
   }
 
@@ -131,8 +147,8 @@
   }
 
   .reviews__wrapper-button {
-    margin-bottom: 43px;
-    margin-left: 5px;
+    margin-bottom: 52px;
+    margin-left: 12px;
 
     border: none;
   }
@@ -145,12 +161,12 @@
 
   .reviews__button {
     &--back {
-      margin-right: 0;
+      margin-right: -7px;
     }
   }
 
   .reviews__link {
-    margin-bottom: 163px;
+    margin-bottom: 235px;
     padding: 15px 32px;
   }
 }
