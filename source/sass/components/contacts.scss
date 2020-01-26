@@ -4,6 +4,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: 5px 79px;
+  margin: 0 auto;
 }
 
 .contacts__title {
@@ -176,7 +177,6 @@
 @media (min-width: $desktop-width) {
   .сontacts {
     position: relative;
-    margin: 0 auto;
     margin-bottom: 116px;
     padding-left: 176px;
     width: 1121px;

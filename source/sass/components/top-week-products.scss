@@ -1,5 +1,6 @@
 .top-week-product {
   margin-bottom: 70px;
+  margin: 0 auto;
 }
 
 .top-week-product__title {
@@ -155,8 +156,6 @@
   .top-week-product {
     margin-top: 159px;
     margin-bottom: 155px;
-
-    @include page-center;
   }
 
   .top-week-product__title {

@@ -10,7 +10,6 @@
     position: relative;
 
     background-color: #f1f1f1;
-    border-bottom: none;
 
     &--main-page {
       background-color: #f9f9f9;
@@ -24,6 +23,7 @@
       top: -1px;
       right: 768px;
       background-color: #f9f9f9;
+      border-top: 1px solid #ececec;
     }
 
     &::after {
@@ -34,6 +34,7 @@
       top: -1px;
       left: 768px;
       background-color: #f9f9f9;
+      border-top: 1px solid #ececec;
     }
 
     &--catalog,
@@ -74,10 +75,10 @@
   .stores-promo {
     display: flex;
     order: 4;
-    width: 1149px;
+    width: 1150px;
     margin-top: -14px;
     padding-top: 15px;
-
+    border-top: 1px solid #ececec;
     background-color: #f1f1f1;
 
     &--main-page {
@@ -85,13 +86,13 @@
     }
 
     &::before {
-      width: calc((100vw - 1167px) / 2);
-      right: 1147px;
+      width: calc((100vw - 1150px) / 2);
+      right: 1150px;
     }
 
     &::after {
       width: calc((100vw - 1167px) / 2);
-      left: 1144px;
+      left: 1150px;
     }
   }
 
