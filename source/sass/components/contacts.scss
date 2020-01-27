@@ -175,7 +175,7 @@
   .сontacts {
     position: relative;
     margin-bottom: 116px;
-    padding-left: 176px;
+    padding-left: 159px;
     width: 1121px;
   }
 
@@ -184,13 +184,15 @@
   }
 
   .contacts__title {
+    padding-top: 158px;
     margin-bottom: 31px;
 
     font-size: 54px;
     line-height: 57px;
 
     &::before {
-      left: -83px;
+      top: 151px;
+      left: -106px;
     }
   }
 
@@ -200,13 +202,31 @@
 
   .contacts__wrapper {
     position: absolute;
-    top: 199px;
-    left: 574px;
+    top: 182px;
+    left: 559px;
+    &::before {
+      top: 144px;
+      left:195px;
+    }
   }
 
   .contacts__list {
     display: block;
-    margin-bottom: 95px;
+    margin-bottom: 165px;
+  }
+
+  .contacts__item {
+    width: 332px;
+    margin-bottom: -75px;
+  }
+
+  .contacts__subtitle {
+    width: 79px;
+    margin-right: 16px;
+  }
+
+  .contacts__adress {
+    width: 205px;
   }
 
   .contacts__link {

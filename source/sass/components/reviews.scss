@@ -173,10 +173,9 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    margin-bottom: 172px;
+    margin-bottom: -24px;
     padding-top: 80px;
-
-    @include page-center;
+    margin-left: 51px;
   }
 
   .reviews__wrapper-flex {
@@ -184,12 +183,12 @@
   }
 
   .reviews__wrapper-content {
-    margin-right: -18px;
+    margin-right: -115px;
     margin-left: 127px;
   }
 
   .reviews__title {
-    margin-top: -9px;
+    margin-top: -16px;
     margin-bottom: 47px;
 
     font-size: 53px;
@@ -197,7 +196,7 @@
   }
 
   .reviews__text {
-    width: 650px;
+    width: 743px;
     margin-bottom: 38px;
   }
 
@@ -206,10 +205,13 @@
   }
 
   .reviews__wrapper-button {
-    margin-bottom: 98px;
+    margin-bottom: 104px;
+    &::before {
+      display: none;
+    }
   }
 
   .reviews__link {
-    margin-bottom: 118px;
+    margin-bottom: 184px;
   }
 }
