@@ -49,6 +49,7 @@
   position: relative;
 
   border: 1px solid #ececec;
+
   &::before {
     content: "";
     position: absolute;
@@ -173,9 +174,10 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    margin: 0 auto;
     margin-bottom: -24px;
     padding-top: 80px;
-    margin-left: 51px;
+    width: 1050px;
   }
 
   .reviews__wrapper-flex {
@@ -206,6 +208,7 @@
 
   .reviews__wrapper-button {
     margin-bottom: 104px;
+
     &::before {
       display: none;
     }

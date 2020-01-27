@@ -13,6 +13,15 @@
 
   background-color: $tiffany-color;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 -5px 0 0 $tiffany-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -37,28 +46,6 @@
   &--toys {
     background-color: #56c3b2;
 
-    &::before {
-      top: 31px;
-      left: 239px;
-
-      background-image: url("../img/icon-toy.svg");
-    }
-  }
-}
-
-.promo-menu__link {
-
-  &:hover,
-  &:focus {
-    box-shadow: 0 -5px 0 0 $tiffany-color;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
-  &--toys {
-
     &:hover,
     &:focus {
       box-shadow: 0 -5px 0 0 #56c3b2;
@@ -66,6 +53,13 @@
 
     &:active {
       opacity: 0.5;
+    }
+
+    &::before {
+      top: 31px;
+      left: 239px;
+
+      background-image: url("../img/icon-toy.svg");
     }
   }
 }
@@ -116,6 +110,7 @@
 
     &--toys {
       width: 518px;
+
       &::before {
         left: 428px;
       }

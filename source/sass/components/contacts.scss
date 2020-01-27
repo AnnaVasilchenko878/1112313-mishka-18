@@ -145,6 +145,7 @@
   .contacts__subtitle {
     margin-right: 25px;
   }
+
   .contacts__address {
     width: 292px;
 
@@ -155,6 +156,7 @@
 
   .contacts__wrapper {
     margin-bottom: 57px;
+
     &::before {
       top: 138px;
       left: 319px;
@@ -198,15 +200,18 @@
 
   .contacts__subtitle {
     font-size: 17px;
+    width: 79px;
+    margin-right: 16px;
   }
 
   .contacts__wrapper {
     position: absolute;
     top: 182px;
     left: 559px;
+
     &::before {
       top: 144px;
-      left:195px;
+      left: 195px;
     }
   }
 
@@ -218,11 +223,6 @@
   .contacts__item {
     width: 332px;
     margin-bottom: -75px;
-  }
-
-  .contacts__subtitle {
-    width: 79px;
-    margin-right: 16px;
   }
 
   .contacts__adress {

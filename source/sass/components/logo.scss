@@ -16,6 +16,7 @@
 .logo-image__icon {
   &--desktop,
   &--tablet {
+
     display: none;
   }
 
@@ -37,13 +38,6 @@
   }
 }
 
-.logo-image__icon {
-  &--desktop,
-  &--tablet {
-    display: none;
-  }
-}
-
 .btn-hide {
   display: none;
 }
@@ -61,10 +55,13 @@
 
     border-right: 1px solid $border-color;
   }
+
   .logo__link {
     margin-left: 49px;
   }
+
   .logo-image__icon {
+
     display: block;
 
     &--desktop,
@@ -81,7 +78,7 @@
 @media (min-width: $desktop-width) {
   .logo {
     order: 2;
-    width: 318px;
+    width: 282px;
 
     border: none;
     margin-bottom: 14px;

@@ -1,8 +1,6 @@
 .about-us {
   padding-top: 6px;
   padding-left: 2px;
-
-
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: 5px 10px;
@@ -100,6 +98,7 @@
 
   &--present {
     width: 201px;
+
     &::before {
       width: 53px;
       height: 34px;
@@ -149,7 +148,6 @@
       order: 3;
       margin-right: 60px;
       margin-bottom: 112px;
-
     }
 
     &--like {
@@ -179,6 +177,7 @@
   .about-us {
     padding-left: 222px;
     margin-bottom: 31px;
+    width: 1183px;
   }
 
   .about-us__title {
@@ -202,15 +201,18 @@
     line-height: 22px;
 
     &--knitting {
-    width: 247px;
-   }
+      width: 247px;
+    }
+
     &--saving {
       width: 241px;
       margin-right: 80px;
     }
+
     &--patriotism {
-    width: 305px;
+      width: 305px;
     }
+
     &--present {
       width: 244px;
     }
