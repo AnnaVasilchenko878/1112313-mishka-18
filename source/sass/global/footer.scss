@@ -5,6 +5,9 @@
   margin-top: 48px;
 
   background-color: #f1f1f1;
+  &--form {
+    margin-top: 55px;
+  }
 }
 
 .footer__logo-link {
@@ -14,6 +17,7 @@
 }
 
 .footer__logo-image {
+
   &:hover,
   &:focus {
     opacity: 1;
@@ -38,6 +42,16 @@
   .footer {
     display: flex;
     padding: 47px 50px;
+
+    &--form {
+      padding: 50px;
+    }
+  }
+
+  .footer__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 668px;
   }
 
   .footer__logo-link {

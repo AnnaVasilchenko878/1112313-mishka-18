@@ -5,7 +5,7 @@
 }
 
 .user-data__item {
-  margin-bottom: 23px;
+  margin-bottom: 17px;
 
   @include margin-reset;
 }
@@ -22,12 +22,14 @@
 .user-data__input {
   display: block;
   width: 265px;
-  margin-top: 6;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 16px;
 
   border: none;
   border-bottom: 2px solid #000000;
+  &--patronymic {
+    padding-top: 7px;
+  }
 
   &:hover,
   &:focus {
@@ -42,40 +44,56 @@
 @media (min-width: $tablet-width) {
   .user-data {
     display: flex;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
   }
 
   .user-data__list {
     width: 252px;
-    margin-top: 12px;
+    margin-top: 0;
+    margin-left: -2px;
   }
 
   .user-data__item {
     display: flex;
     width: 496px;
     margin-bottom: 39px;
+    &--patronymic {
+      margin-top: -3px;
+    }
   }
 
   .user-data__label {
-    margin-right: 30px;
+    margin-right: 29px;
+    &--surename {
+      margin-right: 35px;
+    }
   }
 
   .user-data__input {
-    margin-top: -22px;
+    margin-top: -13px;
+    width: 453px;
+    padding-left: 17px;
+
+    &::placeholder {
+      font-size: 17px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-data {
     margin-bottom: -41px;
+    margin-left: -40px;
   }
-
+  .user-data__list {
+    margin-left: -2px;
+  }
   .user-data__item {
     width: 696px;
   }
 
   .user-data__label {
-    margin-right: 45px;
+    margin-right: 21px;
 
     font-size: 19px;
     line-height: 18px;

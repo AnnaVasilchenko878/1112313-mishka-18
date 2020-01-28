@@ -5,7 +5,7 @@
 }
 
 .group-color__item {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   margin-left: 64px;
 
   @include margin-reset;
@@ -24,8 +24,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: -9px;
-    left: -55px;
+    top: -8px;
+    left: -64px;
 
     width: 39px;
     height: 38px;
@@ -38,10 +38,10 @@
   content: " ";
   position: absolute;
   top: -2px;
-  left: -52px;
+  left: -56px;
 
-  width: 35px;
-  height: 24px;
+  width: 24px;
+  height: 22px;
 
 
   background-image: url("../img/icon-tick.svg");
@@ -62,12 +62,11 @@
 
 @media (min-width: $tablet-width) {
   .group-color {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     margin-left: -85px;
-    padding-top: 59px;
+    padding-top: 52px;
     padding-left: 85px;
-
-    background-color: #f1f1f1;
+    padding-bottom: 15px;
   }
 
   .group-color__list {
@@ -75,6 +74,7 @@
     flex-wrap: wrap;
     width: 470px;
     margin-left: -15px;
+    margin-top: 7px;
   }
 
   .group-color__item {
@@ -98,31 +98,33 @@
   }
 
   .group-color__input:checked + .group-color__label::after {
-    left: -71px;
+    left: -70px;
+    top: 2px;
+    width: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .group-color {
-    margin-bottom: 54px;
-    margin-left: -142px;
-    padding-top: 53px;
-    padding-left: 144px;
+    padding-top: 49px;
+    padding-left: 109px;
+    padding-bottom: 0;
+    margin-left: -150px;
 
     background-color: #f1f1f1;
   }
 
   .group-color__list {
     width: 800px;
-    padding-top: 5px;
+    padding-top: 2px;
   }
 
   .group-color__item {
     width: 119px;
-    margin-right: 77px;
+    margin-right: 79px;
 
     &:nth-child(2n) {
-      margin-right: 77px;
+      margin-right: 79px;
     }
 
     &:nth-child(4),

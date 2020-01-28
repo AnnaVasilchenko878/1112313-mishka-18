@@ -6,13 +6,15 @@
 
 .user-contacts__item {
   position: relative;
+  margin-top: 9px;
 
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 
   @include margin-reset;
 }
 
 .user-contacts__label {
+  position: relative;
   margin-bottom: 9px;
 
   font-weight: 700;
@@ -20,21 +22,52 @@
   line-height: 16px;
   color: $tiffany-color;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 62px;
+    width: 178px;
+    height: 1px;
+    background-color: $tiffany-color;
+  }
+
+  &--e-mail {
+    &::before {
+      left: 78px;
+    }
+  }
+  &--additionally {
+
+    &::before {
+      left: 63px;
+      width: 196px;
+    }
+  }
 }
 
 .user-contacts__input {
   display: block;
-  width: 269px;
-  margin-top: 12px;
+  width: 260px;
+  margin-top: -1px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 
   border: none;
   border-bottom: 2px solid #000000;
 
+  &::placeholder {
+    font-size: 17px;
+
+  }
+
   &--additionally {
+    margin-top: 18px;
     margin-bottom: 64px;
-    padding: 18px 15px 106px 23px;
+    padding: 12px 15px 85px 15px;
+    font-size: 17px;
+    line-height: 20px;
 
     border: 2px solid #000000;
   }
@@ -51,10 +84,13 @@
 
 .user-contacts__icon {
   position: absolute;
-  top: 49px;
-  left: 240px;
+  top: 39px;
+  left: 229px;
 
   fill: #cccccc;
+  &--envelope {
+    left: 225px;
+  }
 }
 
 .user-contacts__input:hover + .user-contacts__icon,
@@ -64,80 +100,91 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-contacts__item {
-    display: flex;
-    margin-bottom: 51px;
+  .user-contacts__list {
+    background-color: #f1f1f1;
+    margin-left: -49px;
+    padding-left: 50px;
+    padding-top: 59px;
+    padding-bottom: 9px;
 
     &--additionally {
-      margin-top: 128px;
-    }
+      background-color: $main-background;
+      }
+  }
 
-    &--tel {
-      margin-bottom: -72px;
-      margin-left: -142px;
-      padding-top: 67px;
-      padding-bottom: 123px;
-      padding-left: 142px;
-
-      background-color: #f1f1f1;
-    }
+  .user-contacts__item {
+    display: flex;
+    width: 681px;
+    margin-bottom: 40px;
   }
 
   .user-contacts__label {
-    width: 60px;
-    margin-right: 105px;
-    margin-left: -34px;
+    width: 98px;
+    margin-right: 68px;
+    margin-left: 1px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .user-contacts__input {
     width: 501px;
-    margin-top: -12px;
-
-    &--icon-phone {
-      padding-top: 15px;
-      background-color: #f1f1f1;
-    }
-
-    &--icon-envelop {
-      background-color: #f1f1f1;
-    }
-  }
-
-  .user-contacts__wrapper-item {
+    margin-top: -16px;
+    padding-top: 15px;
     background-color: #f1f1f1;
-  }
 
+    &::placeholder {
+      padding-left: 15px;
+    }
+
+    &--envelop {
+      background-color: #f1f1f1;
+      margin-top: -17px;
+    }
+
+    &--additionally {
+      margin-top: -17px;
+      padding: 12px 12px 107px 15px;
+      margin-bottom: 135px;
+      background-color: $main-background;
+    }
+  }
   .user-contacts__icon {
-    top: 68px;
-    left: 743px;
+    top: -7px;
+    left: 617px;
 
     &--envelope {
-      top: -5px;
-      left: 589px;
+      top: -7px;
+      left: 614px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .user-contacts__item {
-    &--tel,
-    &--e-mail {
-      margin-bottom: -46px;
-      margin-left: -142px;
-      padding-top: 87px;
-      padding-bottom: 48px;
-      padding-left: 142px;
+  .user-contacts__list {
+    margin-left: -151px;
+    margin-bottom: 3px;
+    padding: 58px 0px 126px 245px;
+    background-color: #f1f1f1;
 
-      background-color: #f1f1f1;
+    &--additionally {
+      background-color: $main-background;
+      margin-bottom: -178px;
     }
+  }
 
-    &-mail {
-      margin-bottom: -74px;
+  .user-contacts__item {
+    margin-left: -131px;
+    width: 957px;
+
+    &--e-mail {
+      margin-bottom: -76px;
     }
   }
 
   .user-contacts__label {
-    margin-right: 57px;
+    margin-right: 17px;
   }
 
   .user-contacts__input {
@@ -145,7 +192,7 @@
   }
 
   .user-contacts__icon {
-    top: 87px;
-    left: 884px;
+    top: -5px;
+    left: 779px;
   }
 }

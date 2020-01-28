@@ -6,6 +6,10 @@
   color: #010000;
 
   background-color: #f1f1f1;
+
+  &--form {
+    margin-bottom: 26px;
+  }
 }
 
 .intro__title {
@@ -23,23 +27,28 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    margin-bottom: 64px;
+    margin-bottom: 75px;
 
     &--form {
       margin-bottom: 58px;
     }
   }
 
-  .intro-catalog,
-  .intro-form {
+  .intro--catalog,
+  .intro--form {
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-position: 0 153px;
+    background-position: 0 181px;
+  }
+
+  .intro--form {
+    background-position: 0 154px;
+    margin-bottom: 65px;
   }
 
   .intro__title {
-    margin-left: -19px;
-    padding-top: 30px;
+    margin-left: -2px;
+    padding-top: 38px;
 
     font-size: 43px;
     line-height: 50px;
@@ -49,10 +58,21 @@
 @media (min-width: $desktop-width) {
   .intro {
     margin-bottom: 147px;
+
+    &--catalog {
+      margin-bottom: 137px;
+      min-height: 204px;
+    }
+
+    &--form {
+      min-height: 207px;
+      background-position: 0 169px;
+      margin-bottom: 122px;
+    }
   }
 
   .intro__title {
-    padding-top: 43px;
+    padding-top: 52px;
 
     font-size: 53px;
     line-height: 57px;

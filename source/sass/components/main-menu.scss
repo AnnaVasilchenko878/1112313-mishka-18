@@ -12,12 +12,12 @@
     margin-left: -31px;
   }
 
-  &:hover > .main-menu__link,
-  &:focus > .main-menu__link {
+  &:hover>.main-menu__link,
+  &:focus>.main-menu__link {
     opacity: 0.6;
   }
 
-  &:active > .main-menu__link {
+  &:active>.main-menu__link {
     opacity: 0.3;
   }
 }
@@ -42,13 +42,21 @@
     }
   }
 
+  .main-menu__link {
+    font-size: 15px;
+  }
+
   .main-menu__item {
     width: 221px;
     margin-right: -86px;
     margin-left: 33px;
-    padding: 16px 14px;
+    padding: 14px 14px;
 
     border-bottom: none;
+  }
+
+  .main-menu__link {
+    font-size: 15px;
   }
 }
 
@@ -69,5 +77,9 @@
       padding-top: 29px;
       padding-left: 2px;
     }
+  }
+
+  .main-menu__link {
+    font-size: 17px;
   }
 }

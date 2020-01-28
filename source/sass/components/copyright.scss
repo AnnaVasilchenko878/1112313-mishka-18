@@ -1,5 +1,9 @@
 .copyright {
   display: flex;
+
+  &--form {
+    margin-top: -5px;
+  }
 }
 
 .copyright__title {
