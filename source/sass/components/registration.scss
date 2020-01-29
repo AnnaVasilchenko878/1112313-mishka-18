@@ -75,8 +75,12 @@
     padding-left: 19px;
   }
 
-  .registration-group {
-    margin-left: 51px;
+  .registration__group {
+
+    &--color {
+      margin-left: -51px;
+      background-color: #f1f1f1;
+    }
   }
 
   .registration__text {
@@ -117,6 +121,7 @@
     flex-direction: row-reverse;
     margin-top: -131px;
     margin-bottom: -12px;
+    align-items: center;
   }
 
   .registration__explanation {
@@ -126,10 +131,11 @@
 
   .registration__button {
     margin-right: 138px;
-    margin-top: -1px;
-    padding-left: 26px;
+    margin-top: -6px;
+    padding-left: 22px;
     padding-right: 26px;
-    padding-top: 5px;
+    padding-top: 16px;
+    padding-bottom: 13px;
     flex-basis: 291px;
  }
 }
@@ -158,6 +164,7 @@
     width: 1055px;
     margin: 0 auto;
   }
+
   .registration__text {
     width: 672px;
     margin-left: 78px;
